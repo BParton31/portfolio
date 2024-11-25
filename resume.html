@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SBDPCL7X2');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Parton - Product Manager Resume</title>
@@ -240,6 +249,23 @@ a:hover {
     color: #FF4500; /* Red-orange accent */
     margin-bottom: 10px;
 }
+/* Footer section */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #555;
+}
+
+footer a {
+    color: #FF4500;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 </style>
 
@@ -355,5 +381,16 @@ a:hover {
             </div>
     </div>
 </section>
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 </body>
+<footer>
+    <p>
+        © <span id="current-year"></span> Brian Parton.
+        <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+
 </html>

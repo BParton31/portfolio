@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SBDPCL7X2');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Parton's Product Portfolio - Home Page</title>
@@ -75,6 +84,18 @@ p {
     margin-bottom: 30px;
 }
 
+/* Standard link color */
+.hero a {
+    color: white; /* Set your desired standard link color */
+    text-decoration: none; /* Optional: Remove underline if desired */
+}
+
+/* Ignore visited link color */
+.hero a:visited {
+    color: white; /* Ensure visited links appear the same as unvisited */
+    text-decoration: none; /* Match the normal link style */
+}
+
 /* About Section */
 .about {
     background-color: #FFF; /* White */
@@ -136,18 +157,6 @@ p {
 /* Tools Section */
 .tools-section {
     margin-top: 40px;
-}
-
-/* Standard link color */
-a {
-    color: white; /* Set your desired standard link color */
-    text-decoration: none; /* Optional: Remove underline if desired */
-}
-
-/* Ignore visited link color */
-a:visited {
-    color: white; /* Ensure visited links appear the same as unvisited */
-    text-decoration: none; /* Match the normal link style */
 }
 
 /* Contact Section */
@@ -441,6 +450,31 @@ button {
     background-color: #F53A1D;
 }
 
+/* Footer section */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+	padding: 10px 0;
+	background-color: #f7f7f7;
+    color: #555;
+}
+
+footer a {
+    color: #FF4500;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
     </style>
 </head>
 <body id="load">
@@ -455,7 +489,7 @@ button {
             	  <button class="dropdown-btn"><a href="portfolio.html">▼</a></button>
         	      <div class="dropdown-content">
     	      	    <a href="portfolio.html">View Portfolio</a>
-	            	<a href="assets/brian_parton_portfolio.pdf"  target="_blank" download>Download Portfolio</a>
+	            	<a href="assets/brian_parton_portfolio_1.pdf"  target="_blank" download>Download Portfolio</a>
 	        	  </div>
 	    		</div>
 	    	    <div class="button-container">
@@ -463,7 +497,7 @@ button {
 	              <button class="dropdown-btn"><a href="resume.html">▼</a></button>
             	  <div class="dropdown-content">
         	        <a href="resume.html">View Resume</a>
-    	            <a href="assets/brian_parton_resume.pdf"  target="_blank" download>Download Resume</a>
+    	            <a href="assets/brian_parton_resume_1.pdf"  target="_blank" download>Download Resume</a>
 	              </div>
             	</div>
         	</div>
@@ -592,5 +626,16 @@ button {
         }
     });
 </script>
+<script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 </body>
+<footer>
+    <p>
+        © <span id="current-year"></span> Brian Parton.
+        <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+
 </html>
