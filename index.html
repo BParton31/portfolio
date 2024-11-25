@@ -40,14 +40,14 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    color: #000000; /* Black */
+    color: #FF4500; /* Black */
 }
 
 p {
     margin: 0 0 15px;
     text-align: left;
     font-size: 1.1rem;
-    color: #555;
+    color: #white;
 }
 
 .container {
@@ -73,23 +73,6 @@ p {
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 30px;
-}
-
-.cta-buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #FFF;
-    background-color: #FF4500; /* Red-orange accent */
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-buttons a:hover {
-    background-color: #F53A1D; /* Slightly darker red-orange */
 }
 
 /* About Section */
@@ -155,48 +138,6 @@ p {
     margin-top: 40px;
 }
 
-
-/* Call-to-Action Section */
-.cta-section {
-    background-color: #000; /* Black */
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    border-radius: 8px;
-    margin: 40px 0;
-}
-
-.cta-section .cta-button, .cta-section .cta-button-secondary {
-    display: inline-block;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cta-section .cta-button {
-    background-color: #FF4500; /* Red-orange accent */
-    color: white;
-}
-
-.cta-section .cta-button:hover {
-    background-color: #F53A1D;
-}
-
-.cta-section .cta-button-secondary {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-}
-
-.cta-section .cta-button-secondary:hover {
-    background-color: white;
-    color: #FF4500; /* Red-orange accent */
-}
-
 /* Contact Section */
 .contact {
     background-color: #FFF; /* White */
@@ -241,6 +182,253 @@ p {
 .work {
 	color: #FF4500;
 }
+
+/* Split Button Container */
+.split-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #FF4500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #F53A1D;
+}
+
+.split-button-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.split-button {
+    display: inline-flex;
+    align-items: center;
+}
+
+.split-button .main-button,
+.split-button .dropdown-toggle {
+    margin: 0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.split-button .main-button {
+    background-color: #FF4500;
+    color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.split-button .dropdown-toggle {
+    background-color: #333;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.split-button .main-button:hover {
+    background-color: #F53A1D;
+}
+
+.split-button .dropdown-toggle:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FF4500;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.split-button-container:hover .dropdown-content,
+.split-button-container .dropdown-content:hover {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #F53A1D;
+}
+
+/* General Button Styles */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Main Buttons */
+.view-button {
+  background-color: #FF4500;
+  color: white;
+  margin-right: 40px;
+}
+
+.view-button:hover {
+  background-color: #F53A1D;
+}
+
+/* Dropdown Arrow Buttons */
+.dropdown-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -40px;
+}
+
+.dropdown-btn:hover {
+  background-color: #555;
+}
+
+/* Add some padding for clarity and spacing */
+.button-container:last-of-type {
+  margin-right: 0; /* No extra margin after the last button set */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Attach directly below the button */
+  left: 0;
+  background-color: #FF4500; /* Same as button color */
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 10;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Content Links */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #F53A1D; /* Slightly darker red-orange */
+}
+
+/* Ensure Dropdown is Visible on Hover */
+.button-container:hover .dropdown-content {
+  display: block;
+}
+
+/* Button Container */
+.button-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative; /* For dropdown positioning */
+  margin-right: 90px; /* Control spacing between button sets */
+}
+
+.view-button, .dropdown-btn {
+  margin: 0;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-button {
+  background-color: #FF4500;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.view-button:hover {
+  background-color: #F53A1D;
+}
+
+.dropdown-btn {
+  background-color: #333;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 15px;
+}
+
+.dropdown-btn:hover {
+  background-color: #555;
+}
+
+/* Show Dropdown on Hover */
+.button-container:hover .dropdown-content {
+  display: block;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    text-align: center;
+    padding: 100px 20px 100px 20px;
+    background-color: #000;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #FF4500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #F53A1D;
+}
+
     </style>
 </head>
 <body id="load">
@@ -250,8 +438,24 @@ p {
             <h1>Brian Parton</h1>
             <p>Product Manager | Driving User-Centric, Data-Driven Product Solutions</p>
             <div class="cta-buttons">
-                <a href="portfolio.html">View My Portfolio</a>
-				<a href="resume.html" class="cta-button">View My Resume</a>
+<div class="button-container">
+  <button class="view-button">Brian's Portfolio</button>
+  <button class="dropdown-btn">▼</button>
+  <div class="dropdown-content">
+    <a href="portfolio.html" target="_blank">View Portfolio</a>
+    <a href="assets/brian_parton_portfolio.pdf" download>Download Portfolio</a>
+  </div>
+</div>
+
+<div class="button-container">
+  <button class="view-button">Brian's Resume</button>
+  <button class="dropdown-btn">▼</button>
+  <div class="dropdown-content">
+    <a href="resume.html" target="_blank">View Resume</a>
+    <a href="assets/brian_parton_resume.pdf" download>Download Resume</a>
+  </div>
+</div>
+
             </div>
         </div>
     </header>
@@ -355,24 +559,11 @@ p {
         </div>
     </div>
 </section>
-
-
-    <!-- Call-to-Action Section -->
-    <section class="cta-section" id="cta">
-        <div class="container">
-            <h2 class="work">Explore My Work</h2>
-            <p class="center">Check out detailed case studies showcasing my impact in FinTech and SaaS.</p>
-            <div class="cta-buttons">
-                <a href="portfolio.html" class="cta-button">View My Portfolio</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Feel free to connect with me via the links below:</p>
+<!-- Contact Section -->
+<section id="contact" class="cta-section">
+    <div class="cta-container">
+        <h2>Interested in Working Together?</h2>
+        <p>Let's create something extraordinary. Whether you're looking for a skilled Product Manager or want to discuss innovative product solutions, I'm excited to hear from you.</p>
             <div class="contact-links">
                 <a href="mailto:bparton31.jobs@gmail.com" class="contact-link">
                     <i class="fas fa-envelope"></i> Email Me
@@ -381,8 +572,8 @@ p {
                     <i class="fab fa-linkedin"></i> Connect on LinkedIn
                 </a>
             </div>
-        </div>
-    </section>
+    </div>
+</section>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const targetSection = document.querySelector("#load");
