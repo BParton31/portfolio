@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Parton - Product Manager Resume</title>
+<style>
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #F7F7F7;
+    color: #333;
+}
+
+
+/* Sticky Header Navigation */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000; /* Black background for header */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sticky-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Ensures navigation doesn't exceed the container */
+    margin: 0 auto; /* Centers the content in the viewport */
+    padding: 0 15px; /* Adds inner padding for spacing */
+    box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+.sticky-header .left-nav {
+    display: flex;
+    gap: 20px; /* Space between Home and Contact links */
+}
+
+.sticky-header .left-nav a {
+    font-size: 0.9rem; /* Adjusted for better fit */
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.sticky-header .left-nav a:hover {
+    background-color: #FF4500;
+    color: white;
+}
+
+.sticky-header .center-title h2 {
+    font-size: 1.5rem; /* Slightly smaller title */
+    color: #FF4500; /* Accent color for title */
+    margin: 0;
+	padding: 0 25px 0 90px;
+}
+
+.sticky-header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Ensures navigation wraps properly */
+    gap: 10px; /* Improved spacing for case study links */
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-header nav ul li {
+    margin: 0;
+}
+
+.sticky-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem; /* Slightly smaller for better alignment */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.sticky-header nav ul li a:hover {
+    background-color: #FF4500;
+    color: white;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #DDD;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #FF4500;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Dividers */
+.divider {
+    margin: 20px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+/* Links */
+a {
+    color: #FF4500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+<header class="sticky-header">
+        <div class="header-content">
+            <!-- Left navigation: Home and Contact -->
+            <div class="left-nav">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <!-- Center title with portfolio information -->
+            <div class="center-title">
+                <h2>Case Studies</h2>
+            </div>
+            
+            <!-- Right navigation: Case studies -->
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html#case-study-1">Mobile App</a></li>
+                    <li><a href="portfolio.html#case-study-2">Fuel Finder</a></li>
+                    <li><a href="portfolio.html#case-study-3">Vendor Payable Board</a></li>
+                    <li><a href="portfolio.html#case-study-4">Auto Invoice Feature</a></li>
+                    <li><a href="portfolio.html#case-study-5">Freight Rate Analyzer</a></li>
+                    <li><a href="portfolio.html#case-study-6">Bulk Gift Card Ordering MVP</a></li>
+                    <li><a href="portfolio.html#case-study-7">Multi-Step Signup Flow</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h1>Brian Parton</h1>
+            <h2>Product Manager</h2>
+            <p><strong>Location:</strong> Alpharetta, GA</p>
+            <p><strong>Email:</strong> bparton31.jobs@gmail.com</p>
+            <p><strong>Mobile:</strong> (404) 981-2570‬</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/brian-parton</p>
+            <p><strong>Website:</strong> bparton31.github.io/portfolio</p>
+            <div class="divider"></div>
+            
+            <h3>Education</h3>
+            <p><strong>Master of Science in Physics</strong><br>Clemson University, May 2013</p>
+            <p><strong>Bachelor of Science in Physics</strong><br>Emory University, May 2010</p>
+            <div class="divider"></div>
+            
+            <h3>Certifications</h3>
+            <p><strong>PSPO I:</strong> Professional Scrum Product Owner I, 2024</p>
+            <div class="divider"></div>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li>Product Lifecycle Management</li>
+                <li>Agile, Scrum, & Kanban Methodologies</li>
+                <li>Cross-functional Team Leadership</li>
+                <li>AI-Driven Product Development</li>
+                <li>User Experience and User-centric Design</li>
+                <li>Data Analysis and Metrics Evaluation</li>
+                <li>Roadmap Planning and Strategic Execution</li>
+                <li>Tools: SQL, Jira, Figma, Hotjar, Lucidchart</li>
+            </ul>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Professional Experience</h2>
+            
+            <h3>Key Accomplishments</h3>
+            <ul>
+                <li><strong>4.9-Star Rated OTR Solutions Mobile App Rebuild:</strong> Directed a comprehensive UI/UX redesign within the Kanban framework, collaborating with a newly onboarded engineer to enhance user satisfaction and invoice submission functionality. Achieved a 4.9-star rating from 1,200+ Apple Store reviews, driving a 30% increase in invoice submissions within three months.</li>
+                <li><strong>New Revenue Generating Bulk Gift Card Platform:</strong> Spearheaded a cross-departmental initiative to plan, develop, and beta launch a DIY incentive rewards platform supported by a 'Wizard of Oz' MVP. The successful beta validated market demand, resulting in a roadmap to automate bulk ordering and expand the GoTu Rewards bulk gift card offering.</li>
+                <li><strong>Driving OTR Fuel Card Adoption with Discount Truckstop Locator:</strong> Conceptualized the UI/UX of the Fuel Finder feature for the OTR Solutions Mobile App, enabling users to locate OTR Fuel Card discounted diesel truck stops. This tool drove a 15+% increase in card loads, usage, and gallons purchased within the first two months.</li>
+            </ul>
+            
+			<h3>Professional Roles</h3>
+            
+            <h3>Product Manager</h3>
+            <p><strong>Extu, Inc., Atlanta, GA</strong> | April 2023 – April 2024</p>
+            <ul>
+                <li>Leveraged insights from Google Analytics to uncover onboarding challenges and innovatively utilized existing technology workflows to design a revamped registration UI/UX, increasing successful signups through referral links from 0% to 4%.</li>
+                <li>Deployed AI-driven tools to enhance market research, streamline product documentation, and support product marketing efforts, resulting in up to a 90% reduction in time spent on routine product-related tasks.</li>
+                <li>Introduced structured processes and improved workflows for Product and our touch points with Engineering, increasing visibility to the business, streamlining sprint ceremonies, and enhancing documentation standards.</li>
+                <li>Designed the UI/UX of a workflow to enforce acceptance of updated terms of service, tracking acceptance timestamps for improved compliance, and following best practices to enable login only after acknowledgment of updated terms of service.</li>
+            </ul>
+            
+            <h3>Product Manager</h3>
+            <p><strong>OTR Solutions, Roswell, GA</strong> | April 2018 – January 2023</p>
+            <ul>
+                <li>Managed the backlog for up to four teams of three engineers and one QA, ensuring alignment on product goals. Led high-impact cross-functional projects, fostering accountability, improving workflows, and consistently delivering quality results.</li>
+                <li>Optimized deployment processes, increasing cadence from seven releases per quarter to seven per month as Release Manager, enhancing agility, operational predictability, and system reliability.</li>
+                <li>Orchestrated the design and development of the Vendor Payable Board, which streamlined payment workflows, reduced management time by 90%+ at launch, and improved client retention and satisfaction.</li>
+                <li>Implemented the end-to-end development of an Auto-Invoice feature, addressing a key pain point through ideation and design. Later spearheaded its modernization to a microservice architecture with user-centric enhancements.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
