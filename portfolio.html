@@ -1,294 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en" data-theme="default"
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-7SBDPCL7X2');
+		</script>
+	    <meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Include FontAwesome for Icons -->
+    	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    	<link rel="stylesheet" href="assets/styles.css">
+	    <title>Brian Parton's Product Portfolio</title>
+	</head>
+	<body>
+<header class="header-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+</header>
 
-  gtag('config', 'G-7SBDPCL7X2');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Brian Parton</title>
-    <!-- Include FontAwesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-/* General Layout */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #F7F7F7;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-}
+   	 <!-- Sidebar Navigation (Portfolio Page Only) -->
+    	<aside class="sidebar portfolio-sidebar">
+	    	<nav>
+    	    	<ul> 
+    	    		<li><h2>Case Studies</h2></li>
+        	    	<li><a href="#Mobile-App-Rebuild">Mobile App Rebuild</a></li>
+	            	<li><a href="#Discount-Fuel-Finder">Fuel Finder</a></li>
+		            <li><a href="#Vendor-Payable-Board">Vendor Payable Board</a></li>
+    		        <li><a href="#Auto-Invoice-Feature">Auto Invoice Feature</a></li>
+        		    <li><a href="#Freight-Rate-Analyzer">Freight Rate Analyzer</a></li>
+            		<li><a href="#Bulk-Gift-Card">Bulk Gift Card Ordering MVP</a></li>
+	            	<li><a href="#Multi-Step-Signup">Multi-Step Signup Flow</a></li>
+    	    	</ul>
+    		</nav>
+		</aside>
 
-/* Sticky Header Navigation */
-.sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #000; /* Black background for header */
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.sticky-header .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Ensures navigation doesn't exceed the container */
-    margin: 0 auto; /* Centers the content in the viewport */
-    padding: 0 15px; /* Adds inner padding for spacing */
-    box-sizing: border-box; /* Ensures consistent sizing */
-}
-
-.sticky-header .left-nav {
-    display: flex;
-    gap: 20px; /* Space between Home and Contact links */
-}
-
-.sticky-header .left-nav a {
-    font-size: 0.9rem; /* Adjusted for better fit */
-    font-weight: bold;
-    color: white;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 0;
-    border-radius: 4px;
-    text-decoration: none;    
-}
-
-.sticky-header .left-nav a:hover {
-    background-color: #FF4500;
-    color: white;
-}
-
-.sticky-header .center-title h2 {
-    font-size: 1.5rem; /* Slightly smaller title */
-    color: #FF4500; /* Accent color for title */
-    margin: 0;
-	padding: 0 25px 0 90px;
-}
-
-.sticky-header nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; /* Ensures navigation wraps properly */
-    gap: 10px; /* Improved spacing for case study links */
-    margin: 0;
-    padding: 0;
-}
-
-.sticky-header nav ul li {
-    margin: 0;
-}
-
-.sticky-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.85rem; /* Slightly smaller for better alignment */
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-    white-space: nowrap; /* Prevents text wrapping */
-}
-
-.sticky-header nav ul li a:hover {
-    background-color: #FF4500;
-    color: white;
-}
-
-/* Main Layout */
-.portfolio-layout {
-    padding: 0px;
-    max-width: 1200px;
-    margin: 0px auto;
-}
-
-/* Case Studies */
-.case-study {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-left: 5px solid #FF4500;
-    background-color: #FFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    scroll-margin-top: 90px; /* Adds offset for smooth scrolling and visibility */
-}
-
-.case-study h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.case-study h3 {
-    font-size: 1.4rem;
-    color: #FF4500;
-    margin-bottom: 15px;
-}
-
-.case-study img {
-    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
-    max-height: 400px; /* Limit the height to prevent stretching */
-    height: auto; /* Maintain aspect ratio */
-    width: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 15px auto; /* Center the image */
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
-}
-
-.case-study figcaption {
-    font-size: 0.9rem;
-    color: #555;
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Call-to-Action Section */
-.cta-section {
-    text-align: center;
-    padding: 100px 20px 100px 20px;
-    background-color: #000;
-    color: white;
-}
-
-.cta-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #FF4500;
-}
-
-.cta-section p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #FF4500;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #F53A1D;
-}
-/* Contact Section */
-.contact {
-    background-color: #FFF; /* White */
-    padding: 60px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.contact-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #FF4500; /* Red-orange accent */
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-    color: #F53A1D;
-}
-
-.contact-link i {
-    font-size: 2rem;
-    color: #FF4500; /* Red-orange accent */
-    margin-bottom: 10px;
-}
-/* Footer section */
-footer {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 20px;
-    color: #555;
-}
-
-footer a {
-    color: #FF4500;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-    </style>
-</head>
-<body id="load">
-<header class="sticky-header">
-        <div class="header-content">
-            <!-- Left navigation: Home and Contact -->
-            <div class="left-nav">
-                <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="resume.html">Resume</a>
-            </div>
-            
-            <!-- Center title with portfolio information -->
-            <div class="center-title">
-                <h2>Case Studies</h2>
-            </div>
-            
-            <!-- Right navigation: Case studies -->
-            <nav>
-                <ul>
-                    <li><a href="#case-study-1">Mobile App</a></li>
-                    <li><a href="#case-study-2">Fuel Finder</a></li>
-                    <li><a href="#case-study-3">Vendor Payable Board</a></li>
-                    <li><a href="#case-study-4">Auto Invoice Feature</a></li>
-                    <li><a href="#case-study-5">Freight Rate Analyzer</a></li>
-                    <li><a href="#case-study-6">Bulk Gift Card Ordering MVP</a></li>
-                    <li><a href="#case-study-7">Multi-Step Signup Flow</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Main Layout -->
+<!-- Main Content Wrapper -->
 	<div class="portfolio-layout brian">
-		<h1>Brian Parton's Product Portfolio</h1>
-    </div>
-<!-- Case Study #1 -->
-<section id="case-study-1" class="case-study">
+		<h1>Product Portfolio</h1>
 
-    <h2>Mobile App</h2>
+<!-- Case Study #1 -->
+<section id="Mobile-App-Rebuild" class="case-study">
+
+    <h2>Mobile App Rebuild</h2>
     <h3>Modernizing the OTR Solutions Mobile App: Enhancing User Experience and Efficiency</h3>
     <figure class="case-study-image">
         <img src="assets/OTR_Solutions_Mobile_App.png" alt="Mobile App Screenshot" />
@@ -333,7 +95,7 @@ footer a:hover {
     <p>Understanding all user pain points is critical before replacing features. In this case, replacing a buggy feature without understanding why users relied on it created a gap in the new app experience. Comprehensive user research is essential to avoid similar oversights.</p>
 </section>
 <!-- Case Study #2 -->
-<section id="case-study-2" class="case-study">
+<section id="Discount-Fuel-Finder" class="case-study">
 
     <h2>Fuel Finder</h2>
     <h3>Driving Fuel Card Usage and Sales Growth</h3>
@@ -377,7 +139,7 @@ footer a:hover {
     <p>Leveraging internal data can save significant costs. For example, we used access to internal card swipe data to avoid a $50K/year data subscription. Maximizing existing resources is invaluable for product development.</p>
 </section>
 <!-- Case Study #3 -->
-<section id="case-study-3" class="case-study">
+<section id="Vendor-Payable-Board" class="case-study">
 
     <h2>Vendor Payable Board</h2>
     <h3>Automating Manual Payments for Operational Efficiency</h3>
@@ -425,7 +187,7 @@ footer a:hover {
     <p>I learned the importance of documenting business logic, especially for complex features like recurring payments. By addressing all edge cases during refinement, we ensured smoother implementation.</p>
 </section>
 <!-- Case Study #4 -->
-<section id="case-study-4" class="case-study">
+<section id="Auto-Invoice-Feature" class="case-study">
 
     <h2>Auto Invoice Feature</h2>
     <h3>Automating Invoice Approval: Reducing Manual Work for Recourse Clients</h3>
@@ -466,7 +228,7 @@ footer a:hover {
     <p>Building features with scalability in mind is essential, especially as client needs grow. The transition to a microservice architecture ensured long-term system performance. Monitoring system metrics and proactively addressing bottlenecks are critical for maintaining user satisfaction.</p>
 </section>
 <!-- Case Study #5 -->
-<section id="case-study-5" class="case-study">
+<section id="Freight-Rate-Analyzer" class="case-study">
 
     <h2>Freight Rate Analyzer</h2>
     <h3>Testing Market Demand Through Rapid Iteration</h3>
@@ -506,7 +268,7 @@ footer a:hover {
     <p>Failing fast is an essential principle in product management, allowing teams to pivot or halt projects that lack feasibility. This project reinforced the importance of continuous feedback and data validation in uncovering potential issues early in the product lifecycle.</p>
 </section>
 <!-- Case Study #6 -->
-<section id="case-study-6" class="case-study">
+<section id="Bulk-Gift-Card" class="case-study">
 
     <h2>Bulk Gift Card Ordering MVP</h2>
     <h3>Simplifying Bulk Gift Card Orders: A Market Test for Extu</h3>
@@ -547,7 +309,7 @@ footer a:hover {
     <p>Testing market demand through a low-tech MVP proved to be a cost-effective strategy. This approach highlighted the value of manual solutions for early-stage validation, ensuring resource efficiency while gathering critical customer insights.</p>
 </section>
 <!-- Case Study #7 -->
-<section id="case-study-7" class="case-study">
+<section id="Multi-Step-Signup" class="case-study">
 
     <h2>Multi-Step Signup Flow</h2>
     <h3>Streamlining Onboarding: Enhancing User Experience with a Multi-Step Signup Flow</h3>
@@ -581,7 +343,7 @@ footer a:hover {
         <li><strong>25% reduction:</strong> In user drop-offs at critical stages of the process.</li>
         <li><strong>15% decrease:</strong> In signup process completion time.</li>
     </ul>
-
+ 
     <h4>Outcomes</h4>
     <p>The multi-step signup flow significantly improved the onboarding experience, driving better conversion rates and ensuring users could navigate the process with reduced frustration. This enhancement established a more user-friendly entry point for GoTu Rewards, boosting engagement and satisfaction.</p>
 
@@ -592,7 +354,7 @@ footer a:hover {
 <section id="contact" class="cta-section">
     <div class="cta-container">
         <h2>Interested in Working Together?</h2>
-        <p>Let's create something extraordinary. Whether you're looking for a skilled Product Manager or want to discuss innovative product solutions, I'm excited to hear from you.</p>
+        <p>Let's create something extraordinary.</p>
             <div class="contact-links">
                 <a href="mailto:bparton31.jobs@gmail.com" class="contact-link">
                     <i class="fas fa-envelope"></i> Email Me
@@ -603,6 +365,7 @@ footer a:hover {
             </div>
     </div>
 </section>
+    </div>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const targetSection = document.querySelector("#load");
@@ -614,13 +377,13 @@ footer a:hover {
 <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
 </script>
-</body>
+
 <footer>
     <p>
         © <span id="current-year"></span> Brian Parton.
         <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
     </p>
 </footer>
-
+</body>
 
 </html>

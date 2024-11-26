@@ -1,338 +1,68 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7SBDPCL7X2');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Parton - Product Manager Resume</title>
-    <!-- Include FontAwesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    background-color: #F7F7F7;
-    color: #333;
-}
-
-
-/* Sticky Header Navigation */
-.sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #000; /* Black background for header */
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.sticky-header .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Ensures navigation doesn't exceed the container */
-    margin: 0 auto; /* Centers the content in the viewport */
-    padding: 0 15px; /* Adds inner padding for spacing */
-    box-sizing: border-box; /* Ensures consistent sizing */
-}
-
-.sticky-header .left-nav {
-    display: flex;
-    gap: 20px; /* Space between Home and Contact links */
-}
-
-.sticky-header .left-nav a {
-    font-size: 0.9rem; /* Adjusted for better fit */
-    font-weight: bold;
-    color: white;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 0;
-    border-radius: 4px;
-}
-
-.sticky-header .left-nav a:hover {
-    background-color: #FF4500;
-    color: white;
-}
-
-.sticky-header .center-title h2 {
-    font-size: 1.5rem; /* Slightly smaller title */
-    color: #FF4500; /* Accent color for title */
-    margin: 0;
-	padding: 0 25px 0 90px;
-}
-
-.sticky-header nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; /* Ensures navigation wraps properly */
-    gap: 10px; /* Improved spacing for case study links */
-    margin: 0;
-    padding: 0;
-}
-
-.sticky-header nav ul li {
-    margin: 0;
-}
-
-.sticky-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.85rem; /* Slightly smaller for better alignment */
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-    white-space: nowrap; /* Prevents text wrapping */
-}
-
-.sticky-header nav ul li a:hover {
-    background-color: #FF4500;
-    color: white;
-}
-
-/* Layout */
-.container {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 20px;
-}
-
-.sidebar {
-    width: 30%;
-    background-color: #FFF;
-    padding: 20px;
-    box-sizing: border-box;
-    border-right: 1px solid #DDD;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content {
-    width: 70%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #FFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Headings */
-h1, h2, h3 {
-    margin: 10px 0;
-    font-weight: bold;
-    color: #FF4500;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Lists */
-ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-/* Dividers */
-.divider {
-    margin: 20px 0;
-    border-bottom: 1px solid #DDD;
-}
-
-/* Links */
-a {
-    color: #FF4500;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-/* Call-to-Action Section */
-.cta-section {
-    text-align: center;
-    padding: 100px 20px 100px 20px;
-    background-color: #000;
-    color: white;
-}
-
-.cta-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #FF4500;
-}
-
-.cta-section p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #FF4500;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #F53A1D;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #FFF; /* White */
-    padding: 60px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.contact-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #FF4500; /* Red-orange accent */
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-    color: #F53A1D;
-}
-
-.contact-link i {
-    font-size: 2rem;
-    color: #FF4500; /* Red-orange accent */
-    margin-bottom: 10px;
-}
-/* Footer section */
-footer {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 20px;
-    color: #555;
-}
-
-footer a {
-    color: #FF4500;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-</style>
-
-</head>
+<html lang="en" data-theme="default"
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-7SBDPCL7X2');
+		</script>
+	    <meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Include FontAwesome for Icons -->
+    	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    	<link rel="stylesheet" href="assets/styles.css">
+		<title>Brian Parton - Product Manager Resume</title>
+	</head>
 <body>
-<header class="sticky-header">
-        <div class="header-content">
-            <!-- Left navigation: Home and Contact -->
-            <div class="left-nav">
-                <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="resume.html">Resume</a>
-            </div>
-            
-            <!-- Center title with portfolio information -->
-            <div class="center-title">
-                <h2>Case Studies</h2>
-            </div>
-            
-            <!-- Right navigation: Case studies -->
-            <nav>
-                <ul>
-                    <li><a href="portfolio.html#case-study-1">Mobile App</a></li>
-                    <li><a href="portfolio.html#case-study-2">Fuel Finder</a></li>
-                    <li><a href="portfolio.html#case-study-3">Vendor Payable Board</a></li>
-                    <li><a href="portfolio.html#case-study-4">Auto Invoice Feature</a></li>
-                    <li><a href="portfolio.html#case-study-5">Freight Rate Analyzer</a></li>
-                    <li><a href="portfolio.html#case-study-6">Bulk Gift Card Ordering MVP</a></li>
-                    <li><a href="portfolio.html#case-study-7">Multi-Step Signup Flow</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
     </header>
 
+    <!-- Main Container -->
     <div class="container">
         <!-- Sidebar Section -->
-        <div class="sidebar">
-            <h1>Brian Parton</h1>
-            <h2>Product Manager</h2>
-            <p><strong>Location:</strong> Alpharetta, GA</p>
-            <p><strong>Email:</strong> bparton31.jobs@gmail.com</p>
-            <p><strong>G-Voice:</strong> (404) 981-2570‬</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/brian-parton</p>
-            <p><strong>Website:</strong> bparton31.github.io/portfolio</p>
-            <div class="divider"></div>
-            
-            <h3>Education</h3>
-            <p><strong>Master of Science in Physics</strong><br>Clemson University, May 2013</p>
-            <p><strong>Bachelor of Science in Physics</strong><br>Emory University, May 2010</p>
-            <div class="divider"></div>
-            
-            <h3>Certifications</h3>
-            <p><strong>PSPO I:</strong> Professional Scrum Product Owner I, 2024</p>
-            <div class="divider"></div>
-            
-            <h3>Skills</h3>
-            <ul>
-                <li>Product Lifecycle Management</li>
-                <li>Agile, Scrum, & Kanban Methodologies</li>
-                <li>Cross-functional Team Leadership</li>
-                <li>AI-Driven Product Development</li>
-                <li>User Experience and User-centric Design</li>
-                <li>Data Analysis and Metrics Evaluation</li>
-                <li>Roadmap Planning and Strategic Execution</li>
-                <li>Tools: SQL, Jira, Figma, Hotjar, Lucidchart</li>
-            </ul>
-        </div>
+<aside class="sidebar resume-sidebar">
+    <h1>Brian Parton</h1>
+    <h2>Product Manager</h2>
+    <p><strong>Location:</strong> Alpharetta, GA</p>
+    <p><strong>Email:</strong> bparton31.jobs@gmail.com</p>
+    <p><strong>G-Voice:</strong> (404) 981-2570‬</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/brian-parton</p>
+    <p><strong>Website:</strong> bparton31.github.io/portfolio</p>
+    <div class="divider"></div>
+    
+    <h3>Education</h3>
+    <p><strong>Master of Science in Physics</strong><br>Clemson University, May 2013</p>
+    <p><strong>Bachelor of Science in Physics</strong><br>Emory University, May 2010</p>
+    <div class="divider"></div>
+    
+    <h3>Certifications</h3>
+    <p><strong>PSPO I:</strong> Professional Scrum Product Owner I, 2024</p>
+    <div class="divider"></div>
+    
+    <h3>Skills</h3>
+    <ul>
+        <li>Product Lifecycle Management</li>
+        <li>Agile, Scrum, & Kanban Methodologies</li>
+        <li>Cross-functional Team Leadership</li>
+        <li>AI-Driven Product Development</li>
+        <li>User Experience and User-centric Design</li>
+        <li>Data Analysis and Metrics Evaluation</li>
+        <li>Roadmap Planning and Strategic Execution</li>
+        <li>Tools: SQL, Jira, Figma, Hotjar, Lucidchart</li>
+    </ul>
+</aside>
+
 
         <!-- Content Section -->
         <div class="content">
@@ -345,7 +75,7 @@ footer a:hover {
                 <li><strong>Driving OTR Fuel Card Adoption with Discount Truckstop Locator:</strong> Conceptualized the UI/UX of the Fuel Finder feature for the OTR Solutions Mobile App, enabling users to locate OTR Fuel Card discounted diesel truck stops. This tool drove a 15+% increase in card loads, usage, and gallons purchased within the first two months.</li>
             </ul>
             
-			<h3>Professional Roles</h3>
+			<h2 class="roles">Professional Roles</h2>
             
             <h3>Product Manager</h3>
             <p><strong>Extu, Inc., Atlanta, GA</strong> | April 2023 – April 2024</p>
@@ -370,7 +100,7 @@ footer a:hover {
 <section id="contact" class="cta-section">
     <div class="cta-container">
         <h2>Interested in Working Together?</h2>
-        <p>Let's create something extraordinary. Whether you're looking for a skilled Product Manager or want to discuss innovative product solutions, I'm excited to hear from you.</p>
+        <p>Let's create something extraordinary.</p>
             <div class="contact-links">
                 <a href="mailto:bparton31.jobs@gmail.com" class="contact-link">
                     <i class="fas fa-envelope"></i> Email Me
@@ -381,16 +111,25 @@ footer a:hover {
             </div>
     </div>
 </section>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const targetSection = document.querySelector("#load");
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+</script>
 <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
 </script>
-</body>
+
 <footer>
     <p>
         © <span id="current-year"></span> Brian Parton.
         <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
     </p>
 </footer>
-
+</body>
 
 </html>

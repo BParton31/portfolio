@@ -1,0 +1,808 @@
+:root {
+    --primary-color: #FF4500; /* Bright orange for accents */
+    --secondary-color: #000000; /* Black for nav bars and footer */
+    --background-color: #F7F7F7; /* Light gray for page background */
+    --text-color: #333333; /* Neutral dark gray for text */
+    --white: #FFFFFF; /* White for content and highlights */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default box shadow */
+    --border-color: #ddd; /* Light border color */
+    --font-family: 'Open Sans', Arial, sans-serif; /* Font for consistency */
+    --header-height: 45px;
+    --sidebar-width: 250px; /* portfolio sidebar */
+    --res-sidebar-width: 30%; /* resume sidebar */
+}
+
+
+/* General Styling */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* General Styling for Non-Sidebar Pages */
+body.non-sidebar-page {
+    padding: 0; /* Reset body padding for these pages */
+    margin: 0;
+}
+
+/* Content Layout for Non-Sidebar Pages */
+.container.non-sidebar-page {
+    display: flex;
+    flex-direction: column;
+	margin: 20px auto;  
+    max-width: 1200px; /* Limit content width */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header Navigation */
+.header-nav {
+    background-color: var(--secondary-color); /* Black */
+    color: var(--white);
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Ensures buttons align to the right */
+    align-items: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0 auto; /* Centers the navigation */
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns navigation to the right */
+    gap: 30px;
+}
+
+/* Header Navigation Hover Behavior Update */
+.header-nav ul li a {
+    text-decoration: none;
+    color: var(--white); /* Keep the font color consistent */
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px; /* Optional for a subtle rounded effect */
+}
+
+.header-nav ul li a:hover {
+    background-color: var(--primary-color); /* Add the highlight background */
+    color: var(--white); /* Ensure font color remains the same */
+}
+
+/* Resume-Specific Styling */
+.resume-header {
+    margin-top: var(--header-height);
+    text-align: center;
+    color: var(--primary-color); /* Orange */
+}
+
+.resume-section {
+    margin-bottom: 40px;
+}
+
+.resume-section h3 {
+    font-size: 20px;
+    color: var(--primary-color); /* Orange */
+    margin-bottom: 10px;
+}
+
+.resume-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.resume-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Contact Section Consistency */
+.contact.non-sidebar-page {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact.non-sidebar-page h2 {
+    color: var(--secondary-color);
+}
+
+.contact.non-sidebar-page p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-links.non-sidebar-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-link.non-sidebar-page {
+    color: var(--white);
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid var(--secondary-color);
+}
+
+.contact-link.non-sidebar-page:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Header for Non-Sidebar Pages */
+.header-nav.non-sidebar-page {
+    position: relative; /* Adjust for scrollable content */
+    z-index: 100; /* Ensure no overlap */
+}
+
+/* Content Section for Non-Sidebar Pages */
+.content.non-sidebar-page {
+    width: 100%; /* Full width for content */
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+
+/* Main Content Layout */
+.portfolio-layout.brian {
+    margin-left: var(--sidebar-width);
+    padding: 40px 10px 10px 5px;
+    background-color: var(--white);
+    border-left: 1px solid var(--border-color);
+}
+
+.portfolio-layout.brian h1 {
+	color: var(--primary-color); /* Orange */
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* Case Study Styling */
+.case-study {
+    margin-bottom: 40px;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.case-study h2 {
+    font-size: 24px;
+    color: var(--primary-color); /* Orange */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.case-study h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Case Study Images */
+.case-study img {
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.case-study .case-study-image figcaption {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--secondary-color); /* Black */
+    color: var(--white);
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color); /* Orange */
+}
+
+/* Contact Links */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between buttons */
+    flex-wrap: wrap; /* Ensures buttons stack on smaller screens */
+}
+
+.contact-link {
+    display: inline-block;
+    background-color: var(--secondary-color); /* Orange button background */
+    color: var(--white); /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid var(--secondary-color);
+}
+
+.contact-link:hover {
+    background-color: var(--white); /* White background */
+    color: var(--secondary-color); /* Orange text */
+    border-color: var(--secondary-color);
+}
+
+/* Icons within Contact Links */
+.contact-link i {
+    margin-right: 8px; /* Adds spacing between the icon and text */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Center-aligns text */
+    padding: 20px 0; /* Adds more padding for better visibility */
+    background-color: var(--secondary-color); /* Black background */
+    color: var(--white); /* White text for contrast */
+    font-size: 0.9rem; /* Slightly larger font for readability */
+
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.8; /* Adjust line spacing */
+}
+
+footer a {
+    color: var(--primary-color); /* Orange text for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Header (if applicable) */
+footer h2 {
+    color: var(--primary-color); /* Orange header text */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Footer Buttons */
+footer button {
+    background-color: var(--white); /* White button */
+    color: var(--primary-color); /* Orange text */
+    border: 2px solid var(--primary-color); /* Orange border */
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 5px; /* Add spacing between buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: var(--primary-color); /* Orange background on hover */
+    color: var(--white); /* White text on hover */
+}
+
+/* Responsive Adjustments for Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px; /* Adjust padding for smaller screens */
+    }
+    footer button {
+        font-size: 0.9rem; /* Reduce button size */
+        padding: 8px 12px; /* Adjust padding */
+    }
+}
+
+/* Buttons */
+button {
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color); /* Orange */
+    color: var(--white);
+}
+
+/* Contact Section */
+.cta-section {
+    background-color: var(--primary-color); /* Dark background */
+    color: var(--white); /* White text for contrast */
+    padding: 60px 20px;
+    border-radius: 10px;
+    text-align: center; /* Centers text horizontally */
+    box-shadow: var(--box-shadow); /* Adds a slight shadow for depth */
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--secondary-color); /* Orange header */
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Container Layout */
+.container {
+    display: flex; /* Flex layout for sidebar and content */
+    flex-wrap: nowrap; /* Prevent wrapping of sidebar and content */
+    margin-top: var(--header-height); /* Ensure content starts below the header */
+}
+
+.ind-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Content Area Styling */
+.content {
+    width: 70%; /* Adjust width to balance with sidebar */
+    padding: 20px; /* Match padding with sidebar */
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-left: auto; /* Ensure the content aligns properly */
+    box-sizing: border-box;
+}
+
+/* Headings in Content */
+.content h2 {
+    color: var(--primary-color); /* Bright orange for main headings */
+    font-size: 1.8rem; /* Large headings for emphasis */
+	padding-top: 5px;
+    margin-bottom: -10px;
+}
+
+.content h3 {
+    color: var(--primary-color); /* Bright orange for subheadings */
+    margin-top: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.content .roles {
+	margin: 0;
+}
+
+.content p {
+	margin: 0;
+}
+
+/* List Styling in Content */
+.content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Divider Styling */
+.divider {
+    border-bottom: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+/* General Sidebar Styles */
+.sidebar {
+    display: block;
+    background-color: var(--white); /* Background for sidebar content */
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid var(--border-color); /* Subtle divider */
+    box-shadow: var(--box-shadow); /* Depth for the sidebar */
+    overflow-y: auto;
+}
+
+/* Portfolio Sidebar Specific Styles */
+.portfolio-sidebar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: var(--sidebar-width); /* Defined width for portfolio sidebar */
+    height: 100%; /* Full viewport height */
+    background-color: var(--secondary-color); /* Black background */
+    color: var(--white);
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for distinction */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.portfolio-sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-sidebar nav ul li h2 {
+    color: var(--primary-color); /* Orange for headings */
+    padding-left: 15px;
+}
+
+.portfolio-sidebar nav ul li a {
+    text-decoration: none;
+    color: var(--white); /* White text */
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-sidebar nav ul li a:hover {
+    background-color: var(--primary-color); /* Orange on hover */
+    color: var(--white); /* Keep text white on hover */
+}
+
+/* Resume Sidebar Specific Styles */
+.resume-sidebar {
+    width: var(--res-sidebar-width); /* Slightly wider for better balance */
+    background-color: var(--white);
+    padding: 25px; /* Increase padding for more spacing */
+    box-sizing: border-box;
+    border-right: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+}
+
+.resume-sidebar h1, .resume-sidebar h2 {
+    color: var(--primary-color); /* Bright orange for headers */
+    margin: 0;
+}
+
+.resume-sidebar h1 {
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+.resume-sidebar h2 {
+    font-size: 1.8rem;
+}
+
+.resume-sidebar h3 {
+    color: var(--primary-color); /* Bright orange for headers */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resume-sidebar p {
+    margin: 20px 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--text-color); /* Standard dark gray text */
+}
+
+.resume-sidebar ul {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.resume-sidebar ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.resume-sidebar .divider {
+    margin: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.resume-sidebar a {
+    text-decoration: none;
+    color: var(--primary-color); /* Bright orange links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.resume-sidebar a:hover {
+    color: var(--secondary-color); /* Black on hover */
+}
+
+/* Additional Sidebar Adjustments for Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-sidebar {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height to content */
+        position: static; /* Remove fixed positioning */
+    }
+
+	.resume-sidebar {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove cap */
+        border-right: none; /* Remove border for better mobile experience */
+    }
+
+    .content {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0; /* Align with sidebar */
+    }
+}
+
+
+/* Index specific */
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color); /* Black */
+    color: var(--white); /* White text */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Slightly larger for emphasis */
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Orange */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about {
+    background-color: var(--white); /* White */
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin: 40px 0;
+    max-width: 1200px; /* Keeps width consistent with container */
+    margin: 20px auto; /* Centers the section horizontally */
+}
+
+.about strong {
+    color: var(--primary-color); /* Orange for emphasis */
+}
+
+.about-container p {
+	padding: 0 50px;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 40px 20px;
+    background-color: var(--background-color); /* Light gray */
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-container, .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.skill-item, .tool-item {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-item img, .tool-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item img:hover, .tool-item img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.skill-item p, .tool-item p {
+    font-size: 0.9rem;
+    color: var(--text-color); /* Standard dark text */
+}
+
+/* Footer Adjustments */
+footer {
+    background-color: var(--background-color); /* Light gray */
+    color: var(--text-color); /* Neutral dark gray */
+    padding: 10px 0;
+}
+
+/* 'About Me' Container */
+.about-container {
+    max-width: 100%; /* Increase the width for better balance */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 30px; /* Add padding for spacing */
+    background-color: var(--white); /* Match the page background */
+    border-radius: 10px; /* Slightly round the edges */
+    box-shadow: var(--box-shadow); /* Add subtle shadow for depth */
+}
+
+/* 'About Me' Section Text */
+.about-container h2 {
+    font-size: 2rem; /* Larger, more prominent heading */
+    font-weight: bold;
+    color: var(--primary-color); /* Bright orange to match theme */
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.about-container p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    line-height: 1.8; /* Space out the text for clarity */
+    text-align: justify; /* Align text for cleaner look */
+    color: var(--text-color); /* Standard text color */
+}
+
+/* Index Page Specific Buttons */
+/* Button Container (Scoped to Index Page) */
+.ind-container .button-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-right: 20px; /* Space between buttons */
+}
+
+.ind-container .button-container a:visited {
+	color: white;
+}
+
+/* Dropdown Content Styling (Scoped) */
+.ind-container .dropdown-content {
+  display: none;
+  position: absolute;
+  top: calc(100%); /* Below the button */
+  left: 0;
+  background-color: #FF4500; /* Orange */
+  border-radius: 5px;
+  padding: 5px 0;
+  z-index: 10;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ind-container .dropdown-content a {
+  color: white; /* White text */
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.ind-container .dropdown-content a:hover {
+  background-color: #F53A1D; /* Slightly darker orange on hover */
+}
+
+/* Ensure Dropdown is Visible on Hover (Scoped) */
+.ind-container .button-container:hover .dropdown-content {
+  display: block;
+}
+
+/* Main Buttons (Scoped) */
+.ind-container .view-button {
+  background-color: #FF4500; /* Orange */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px 0 0 5px; /* Rounded left corners */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ind-container .view-button:hover {
+  background-color: #F53A1D; /* Slightly darker orange */
+}
+
+/* Dropdown Arrow Button (Scoped) */
+.ind-container .dropdown-btn {
+  background-color: #333; /* Dark gray */
+  color: white; /* White text */
+  padding: 10px 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ind-container .dropdown-btn:hover {
+  background-color: #555; /* Slightly lighter gray */
+}
+
+/* Privacy page */
+/* Privacy Page Styling */
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px 20px 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.privacy-container h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.privacy-container h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.privacy-container p {
+    margin-bottom: 15px;
+}
+
+.privacy-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.privacy-container a:hover {
+    text-decoration: underline;
+}
