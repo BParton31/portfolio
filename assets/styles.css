@@ -8,7 +8,7 @@
     --border-color: #ddd; /* Light border color */
     --font-family: 'Open Sans', Arial, sans-serif; /* Font for consistency */
     --header-height: 45px;
-    --sidebar-width: 250px; /* portfolio sidebar */
+    --sidebar-width: 275px; /* portfolio sidebar */
     --res-sidebar-width: 30%; /* resume sidebar */
 }
 
@@ -818,7 +818,6 @@ footer {
 }
 
 .hamburger-menu {
-	visibility: hidden;
     display: block;
     cursor: pointer;
     background-color: var(--secondary-color);
