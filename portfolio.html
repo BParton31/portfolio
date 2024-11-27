@@ -1,389 +1,352 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="default"
+<html lang="en" data-theme="default">
 	<head>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'G-7SBDPCL7X2');
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-7SBDPCL7X2');
+			gtag('event', 'scroll', {
+   				'event_category': 'Engagement',
+			    'event_label': 'Scroll Depth',
+			    'value': percentageScrolled
+			});
 		</script>
+		<meta name="description" content="Brian Parton's portfolio featuring case studies on impactful product management projects, including UI/UX redesigns and Agile solutions.">
+		<meta name="keywords" content="Product Management, Portfolio, UI/UX, Agile, Brian Parton">
+		<meta name="author" content="Brian Parton">
 	    <meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <!-- Include FontAwesome for Icons -->
     	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     	<link rel="stylesheet" href="assets/styles.css">
-	    <title>Brian Parton's Product Portfolio</title>
+	    <title>Product Portfolio</title>
+	    <!-- Favicon for different devices -->
+		<link rel="icon" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+		<link rel="icon" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+		<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+		<link rel="manifest" href="assets/favicon/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-<header class="header-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-    </ul>
-</header>
-
-   	 <!-- Sidebar Navigation (Portfolio Page Only) -->
+    	<!-- Header -->
+	    <header class="header">
+    	    <nav class="header-nav">
+    	        <button class="hamburger-menu" aria-label="Toggle navigation menu">☰</button>
+        	    <ul>
+            	    <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+                	<li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
+	                <li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
+    	            <li><a href="privacy.html" aria-label="Go to Privacy Page">Privacy</a></li>
+        	    </ul>
+	        </nav>
+    	</header>
+	   	<!-- Sidebar Navigation (Portfolio Page Only) -->
     	<aside class="sidebar portfolio-sidebar">
-	    	<nav>
+			<nav>
     	    	<ul> 
     	    		<li><h2>Case Studies</h2></li>
-        	    	<li><a href="#Mobile-App-Rebuild">Mobile App Rebuild</a></li>
-	            	<li><a href="#Discount-Fuel-Finder">Fuel Finder</a></li>
-		            <li><a href="#Vendor-Payable-Board">Vendor Payable Board</a></li>
-    		        <li><a href="#Auto-Invoice-Feature">Auto Invoice Feature</a></li>
-        		    <li><a href="#Freight-Rate-Analyzer">Freight Rate Analyzer</a></li>
-            		<li><a href="#Bulk-Gift-Card">Bulk Gift Card Ordering MVP</a></li>
-	            	<li><a href="#Multi-Step-Signup">Multi-Step Signup Flow</a></li>
+        	    	<li><a href="#Mobile-App-Rebuild" aria-label="Go to Mobile App Rebuild">Mobile App Rebuild</a></li>
+	            	<li><a href="#Discount-Fuel-Finder" aria-label="Go to Fuel Finder">Fuel Finder</a></li>
+		            <li><a href="#Vendor-Payable-Board" aria-label="Go to Vendor Payable Board">Vendor Payable Board</a></li>
+    		        <li><a href="#Auto-Invoice-Feature" aria-label="Go to Auto Invoice Feature">Auto Invoice Feature</a></li>
+        		    <li><a href="#Freight-Rate-Analyzer" aria-label="Go to Freight Rate Analyzer">Freight Rate Analyzer</a></li>
+            		<li><a href="#Bulk-Gift-Card" aria-label="Go to Bulk Gift Card Order Beta">Bulk Gift Card Ordering Beta</a></li>
+	            	<li><a href="#Multi-Step-Signup" aria-label="Go to Multi-Step Signup">Multi-Step Signup Flow</a></li>
     	    	</ul>
     		</nav>
 		</aside>
-
-<!-- Main Content Wrapper -->
-	<div class="portfolio-layout brian">
-		<h1>Product Portfolio</h1>
-
-<!-- Case Study #1 -->
-<section id="Mobile-App-Rebuild" class="case-study">
-
-    <h2>Mobile App Rebuild</h2>
-    <h3>Modernizing the OTR Solutions Mobile App: Enhancing User Experience and Efficiency</h3>
-    <figure class="case-study-image">
-        <img src="assets/OTR_Solutions_Mobile_App.png" alt="Mobile App Screenshot" />
-        <figcaption>Dashboard and Broker Check screens from the redesigned OTR Solutions Mobile App.</figcaption>
-    </figure>
-    <p><strong>Summary:</strong> OTR Solutions redesigned its mobile app with a modern REACT-based front-end and microservices API management. The overhaul improved user experience and development efficiency, resulting in a 4.9-star rating from over 1,200 Apple Store reviews to date, and a 30% increase in mobile invoice submissions within three months of launch.</p>
-
-    <h4>Context</h4>
-    <p>OTR's outdated mobile app lacked essential features and had an unstable codebase. Clients expected modern functionality, including streamlined invoice submission and broker checks, while OTR needed a platform that supported future enhancements.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>Clients struggled with an outdated app and limited functionality.</li>
-        <li>OTR couldn’t add new features due to technical limitations.</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>I was the Lead Product Manager responsible for the app redesign, gathering user insights, coordinating cross-functional teams, and leading beta testing. My focus was on identifying pain points, driving the development process, and ensuring seamless delivery.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>We used Agile methodology and Scrum practices to plan sprints and manage delivery, leveraging iterative development cycles to validate improvements with real users.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>A new dashboard to highlight daily client tasks.</li>
-        <li>Simplified, multi-step invoice submission process.</li>
-        <li>Visibility into all active, unpaid invoices.</li>
-        <li>Broker factorability check to streamline client decision-making.</li>
-        <li>OTR Fuel Card balance check or targeted advertising for the card.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>4.9-star rating:</strong> Achieved on iOS with over 1,200 reviews.</li>
-        <li><strong>30% increase:</strong> In mobile invoice submissions within three months of launch.</li>
-    </ul>
-
-    <h4>Outcomes</h4>
-    <p>The redesign allowed OTR to attract clients who required a modern mobile app experience, significantly enhancing OTR's competitiveness in the factoring industry by meeting client expectations and supporting long-term growth.</p>
-
-    <h4>Key Learnings</h4>
-    <p>Understanding all user pain points is critical before replacing features. In this case, replacing a buggy feature without understanding why users relied on it created a gap in the new app experience. Comprehensive user research is essential to avoid similar oversights.</p>
-</section>
-<!-- Case Study #2 -->
-<section id="Discount-Fuel-Finder" class="case-study">
-
-    <h2>Fuel Finder</h2>
-    <h3>Driving Fuel Card Usage and Sales Growth</h3>
-        <figure class="case-study-image">
-        <img src="assets/OTR_Solutions_Fuel_Finder.png" alt="Mobile App Screenshot" />
-        <figcaption>Interactive map and search functionality in the Fuel Finder tool.</figcaption>
-    </figure>
-    <p><strong>Summary:</strong> OTR Solutions developed a Fuel Finder tool for its mobile app, enabling clients to locate discounted diesel truck stops. The tool led to a 50% increase in card usage and sales growth over six months.</p>
-
-    <h4>Context</h4>
-    <p>OTR had aggregated competitive fuel discounts across the US but lacked a way for clients to find participating truck stops. The Fuel Finder provided real-time discount information, driving user engagement and fuel card usage.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>Clients had no way to find discounted truck stops.</li>
-        <li>Competing fuel cards, while offering smaller discounts and more limited coverage, made it easier for users to identify discount locations (e.g., Love's discount cards are straightforward as they only apply to Love's truck stops).</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>I was the Lead Product Manager responsible for the end-to-end lifecycle of the Fuel Finder. My prior experience launching the Fuel Desk informed the product’s development, allowing me to align business goals with user needs effectively.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>We leveraged existing card swipe data and followed Agile methods to build the tool, ensuring rapid iteration and user feedback integration.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>Interactive map of discounted fuel stops with last-swipe pricing data.</li>
-        <li>Search functionality based on location, route, or truck stop.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>15%+ increase:</strong> Card loads, usage, and gallons purchased within the first two months.</li>
-        <li><strong>Reduced onboarding time:</strong> Time to first card swipe dropped from over 30 days to under 7 days.</li>
-    </ul>
-
-    <h4>Outcomes</h4>
-    <p>The Fuel Finder transformed OTR's Fuel Card into a self-selling product, allowing the Fuel Desk to focus on support rather than outbound sales. This significantly improved operational efficiency and product adoption.</p>
-
-    <h4>Key Learnings</h4>
-    <p>Leveraging internal data can save significant costs. For example, we used access to internal card swipe data to avoid a $50K/year data subscription. Maximizing existing resources is invaluable for product development.</p>
-</section>
-<!-- Case Study #3 -->
-<section id="Vendor-Payable-Board" class="case-study">
-
-    <h2>Vendor Payable Board</h2>
-    <h3>Automating Manual Payments for Operational Efficiency</h3>
-    <p><strong>Summary:</strong> OTR Solutions developed an automated system for managing Vendor Payables, which were previously handled manually. This iterative solution allowed users to create payables, withhold client funds, and automate payment releases. The result was a significant reduction in management time—from over 2 hours to under 5 minutes per week—along with improved scalability and client retention.</p>
-
-    <h4>Context</h4>
-    <p>OTR Solutions wanted to increase client retention by offering a service to withhold invoice payouts for key payments, such as auto insurance. The process was entirely manual and inefficient, with Account Managers manually creating records, withholding funds, and making payments. As client demand for this feature grew, the need for automation became essential.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>Missed payments due to manual tracking, risking client relationships and the client's ability to run their business.</li>
-        <li>Inefficiency in handling payables, causing delays and errors.</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>As the Product Manager, I led the end-to-end lifecycle of the project, collaborating with Account Teams, Engineering, and select clients. I gathered requirements, defined Acceptance Criteria, and worked closely with Engineering to build and test the solution.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>We used Scrum methods and Azure for project management. The solution was delivered in three phases:</p>
-    <ul>
-        <li>Creation and visibility of Vendor Payables.</li>
-        <li>Fund withholding processes.</li>
-        <li>Automated payment release.</li>
-    </ul>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>Creation of recurring Vendor Payable objects with detailed payment information.</li>
-        <li>A comprehensive review board for payables.</li>
-        <li>Vendor management page.</li>
-        <li>Easy fund withholding and automated payment releases.</li>
-        <li>Return funds to Client option.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>Time savings:</strong> Reduced account management need from over 2 hours to under 5 minutes per week.</li>
-        <li><strong>Increased payables:</strong> Grew from 75 open payables to 500 in six months.</li>
-    </ul>
-
-    <h4>Outcomes</h4>
-    <p>The Vendor Payable Board became a key offering at OTR Solutions, significantly improving client retention. Clients who used the tool were 80% more likely to stay with OTR over the first six months.</p>
-
-    <h4>Key Learnings</h4>
-    <p>I learned the importance of documenting business logic, especially for complex features like recurring payments. By addressing all edge cases during refinement, we ensured smoother implementation.</p>
-</section>
-<!-- Case Study #4 -->
-<section id="Auto-Invoice-Feature" class="case-study">
-
-    <h2>Auto Invoice Feature</h2>
-    <h3>Automating Invoice Approval: Reducing Manual Work for Recourse Clients</h3>
-    <p><strong>Summary:</strong> OTR Solutions introduced an Auto-Approve Invoice feature that automated the approval of thousands of invoices daily for Recourse Clients. This feature saved the Account Team approximately 14 minutes per 100 invoices, eliminating monotonous tasks and freeing up time for higher-value work. As usage grew, the feature was optimized through a microservice architecture to maintain system performance.</p>
-
-    <h4>Context</h4>
-    <p>Recourse Account Teams at OTR Solutions were manually approving thousands of invoices daily. As these clients scaled, the manual process became inefficient and unsustainable. The Auto-Approve feature was designed to reduce manual approval time by automatically processing invoices for trusted Recourse Clients.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>Manual approval of invoices was a time-consuming and repetitive task.</li>
-        <li>As usage grew, the system experienced performance degradation, slowing down users' workflows.</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>I was the Lead Product Owner responsible for the discovery, design, and QA testing of the Auto-Approve feature, both in its initial implementation and later as a microservice. I worked closely with the Engineering team to ensure seamless implementation and addressed edge cases during refinement to ensure smooth operation at scale.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>We followed an iterative approach, launching the feature with synchronous approval logic and later transitioning to an asynchronous microservice architecture to improve system performance.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>Automated invoice approval for Recourse Clients.</li>
-        <li>Microservice architecture to approve invoices asynchronously.</li>
-        <li>Performance tracking and monitoring to ensure system reliability.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>Initial time savings:</strong> 100 invoices were approved in under 1 minute, saving the team more than 8 hours per day.</li>
-        <li><strong>Performance improvements:</strong> After the microservice update, page load times while invoice approval ran dropped to under 4 seconds system-wide.</li>
-    </ul>
-
-    <h4>Outcomes</h4>
-    <p>The feature scaled successfully from handling 3,500 invoices daily to over 7,500 by the time I left OTR. It became a core feature, enabling OTR to efficiently manage larger clients and reducing manual workloads for the Account Team.</p>
-
-    <h4>Key Learnings</h4>
-    <p>Building features with scalability in mind is essential, especially as client needs grow. The transition to a microservice architecture ensured long-term system performance. Monitoring system metrics and proactively addressing bottlenecks are critical for maintaining user satisfaction.</p>
-</section>
-<!-- Case Study #5 -->
-<section id="Freight-Rate-Analyzer" class="case-study">
-
-    <h2>Freight Rate Analyzer</h2>
-    <h3>Testing Market Demand Through Rapid Iteration</h3>
-    <p><strong>Summary:</strong> OTR Solutions developed a Freight Rate Analyzer tool to provide clients with competitive rate insights based on lane data. Although the tool was not launched, iterative testing revealed data issues, informing future improvements and preventing a misstep in product launch.</p>
-
-    <h4>Context</h4>
-    <p>OTR aimed to offer clients a rate analyzer tool to help them negotiate better freight rates. The tool relied on lane data collected from OTR’s factoring clients, positioning it as a value-added service to enhance client retention and satisfaction.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>Clients needed competitive insights to secure better rates in a highly competitive market.</li>
-        <li>OTR’s data was incomplete, leading to inaccurate pricing that could undermine trust and usability.</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>I was the Lead Product Manager, spearheading the rapid iteration of the Freight Rate Analyzer. Collaborating closely with software and data engineers, internal stakeholders, and beta testers, I prioritized user feedback and data accuracy to refine the tool.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>We adopted Agile and Lean principles to ensure a rapid and iterative approach. Continuous feedback loops enabled us to validate the tool’s functionality and identify critical data shortcomings early in the process.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>Lane data insights for competitive rate analysis.</li>
-        <li>Interactive interface for user exploration of freight rates.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>Iteration frequency:</strong> Released updates multiple times per week over two sprints, enabling rapid validation of features.</li>
-        <li><strong>Data insights:</strong> Discovered significant data granularity issues, preventing an accurate and reliable product launch.</li>
-    </ul>
-
-    <h4>Outcomes</h4>
-    <p>Although the project was shelved due to data limitations, the rapid iteration process informed future improvements in data intake and quality. This approach saved valuable resources by identifying critical issues early, preventing further investment in an unviable product.</p>
-
-    <h4>Key Learnings</h4>
-    <p>Failing fast is an essential principle in product management, allowing teams to pivot or halt projects that lack feasibility. This project reinforced the importance of continuous feedback and data validation in uncovering potential issues early in the product lifecycle.</p>
-</section>
-<!-- Case Study #6 -->
-<section id="Bulk-Gift-Card" class="case-study">
-
-    <h2>Bulk Gift Card Ordering MVP</h2>
-    <h3>Simplifying Bulk Gift Card Orders: A Market Test for Extu</h3>
-    <p><strong>Summary:</strong> Extu launched the GoTu Rewards Bulk Gift Card MVP ahead of the holiday season. This Wizard of Oz-style MVP enabled users to place bulk gift card orders through a simple form, with manual backend fulfillment. Success during the peak selling season validated market demand and led to full product development.</p>
-
-    <h4>Context</h4>
-    <p>Extu aimed to explore bulk gift card sales as a potential revenue stream, leveraging the holiday season as a test window for market validation. This initiative sought to assess demand without committing significant resources to full development.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>Bulk gift card orders were cumbersome to process without a dedicated tool.</li>
-        <li>Uncertainty about market demand made resource-intensive product development risky.</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>As Product Manager, I led the MVP launch from concept to execution. I collaborated with Sales and Operations teams to create a seamless front-end experience while coordinating manual backend fulfillment. My focus was on ensuring smooth customer interactions and gathering data to validate market demand.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>We adopted a Wizard of Oz MVP model, where the front-end experience was automated, but backend fulfillment was handled manually. Leveraging Scrum and Kanban methods, we iterated quickly to refine the MVP and address emerging challenges.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>Simple, user-friendly online form for bulk order requests.</li>
-        <li>Manual backend operations for order processing and fulfillment.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>Orders processed:</strong> Achieved a double-digit count of orders during the beta test over the holiday season.</li>
-        <li><strong>Customer feedback:</strong> 90% of users reported satisfaction with the ease of order placement.</li>
-        <li><strong>User onboarding:</strong> Encountered onboarding friction (addressed in the GoTu Rewards Multi-Step Signup Flow case study).</li>
-    </ul>
-
-    <h4>Outcomes</h4>
-    <p>The MVP successfully confirmed market demand for a bulk gift card solution. Based on these results, Extu approved the development of a fully automated ordering system, unlocking a new revenue stream and improving customer satisfaction.</p>
-
-    <h4>Key Learnings</h4>
-    <p>Testing market demand through a low-tech MVP proved to be a cost-effective strategy. This approach highlighted the value of manual solutions for early-stage validation, ensuring resource efficiency while gathering critical customer insights.</p>
-</section>
-<!-- Case Study #7 -->
-<section id="Multi-Step-Signup" class="case-study">
-
-    <h2>Multi-Step Signup Flow</h2>
-    <h3>Streamlining Onboarding: Enhancing User Experience with a Multi-Step Signup Flow</h3>
-    <p><strong>Summary:</strong> Extu revamped the GoTu Rewards platform with a multi-step signup flow, significantly improving user onboarding by breaking the process into digestible steps. The new design led to a 40% increase in completed signups and reduced user drop-off rates by 25%.</p>
-
-    <h4>Context</h4>
-    <p>Extu’s original onboarding process was lengthy and cumbersome, leading to high abandonment rates, especially at stages requiring detailed user information. The multi-step signup flow aimed to simplify this process, optimizing user engagement from initial sign-up to account creation.</p>
-
-    <h4>Pain Points</h4>
-    <ul>
-        <li>The lengthy, one-page signup process created friction, discouraging users from completing registration.</li>
-        <li>Users felt overwhelmed by the upfront presentation of extensive required information.</li>
-    </ul>
-
-    <h4>My Role</h4>
-    <p>I served as the Lead Product Manager, overseeing the end-to-end transformation of the onboarding process. My responsibilities included conducting user research, analyzing feedback, and collaborating with design and engineering teams to implement the multi-step signup flow.</p>
-
-    <h4>Methodology/Tools</h4>
-    <p>Agile practices were employed to iteratively design and refine the new signup flow, incorporating user insights and feedback throughout the process.</p>
-
-    <h4>Key Features</h4>
-    <ul>
-        <li>Multi-step signup process with clear progress indicators, providing users with a sense of achievement.</li>
-        <li>Contextual tooltips and help sections to guide users through complex steps.</li>
-        <li>An auto-save feature enabling users to pause and return to incomplete signups seamlessly.</li>
-    </ul>
-
-    <h4>Metrics</h4>
-    <ul>
-        <li><strong>40% increase:</strong> In completed signups post-launch.</li>
-        <li><strong>25% reduction:</strong> In user drop-offs at critical stages of the process.</li>
-        <li><strong>15% decrease:</strong> In signup process completion time.</li>
-    </ul>
- 
-    <h4>Outcomes</h4>
-    <p>The multi-step signup flow significantly improved the onboarding experience, driving better conversion rates and ensuring users could navigate the process with reduced frustration. This enhancement established a more user-friendly entry point for GoTu Rewards, boosting engagement and satisfaction.</p>
-
-    <h4>Key Learnings</h4>
-    <p>Simplifying the onboarding journey into manageable steps, paired with strategic guidance and support, can substantially improve user completion rates. Providing tools such as auto-save and progress indicators enhances the overall user experience and satisfaction.</p>
-</section>
-<!-- Contact Section -->
-<section id="contact" class="cta-section">
-    <div class="cta-container">
-        <h2>Interested in Working Together?</h2>
-        <p>Let's create something extraordinary.</p>
-            <div class="contact-links">
-                <a href="mailto:bparton31.jobs@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/brian-parton/" target="_blank" class="contact-link">
-                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                </a>
-            </div>
-    </div>
-</section>
-    </div>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const targetSection = document.querySelector("#load");
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: "smooth" });
-        }
-    });
-</script>
-<script>
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-</script>
-
-<footer>
-    <p>
-        © <span id="current-year"></span> Brian Parton.
-        <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-    </p>
-</footer>
-</body>
-
+		<!-- Main Content Wrapper -->
+		<div class="portfolio-layout brian">
+			<h1>Product Portfolio</h1>
+			<!-- Case Study #1 -->
+			<section id="Mobile-App-Rebuild" class="case-study">
+			    <h2>Mobile App Rebuild</h2>
+			    <h3>Modernizing the OTR Solutions Mobile App: Enhancing User Experience and Efficiency</h3>
+			    <figure class="case-study-image">
+				    <img src="assets/OTR_Solutions_Mobile_App.png" alt="Mobile App Screenshot" loading="lazy">
+				    <figcaption>Dashboard and Broker Check screens from the redesigned OTR Solutions Mobile App.</figcaption>
+			    </figure>
+			    <p><strong>Summary:</strong> OTR Solutions redesigned its mobile app with a modern REACT-based front-end and microservices API management. The overhaul improved user experience and development efficiency, resulting in a 4.9-star rating from over 1,200 Apple Store reviews to date, and a 30% increase in mobile invoice submissions within three months of launch.</p>
+			    <h4>Context</h4>
+			    <p>OTR's outdated mobile app lacked essential features and had an unstable codebase. Clients expected modern functionality, including streamlined invoice submission and broker checks, while OTR needed a platform that supported future enhancements.</p>
+				<h4>Pain Points</h4>
+			    <ul>
+			        <li>Clients struggled with an outdated app and limited functionality.</li>
+			        <li>OTR couldn’t add new features due to technical limitations.</li>
+			    </ul>
+				<h4>My Role</h4>
+			    <p>I was the Lead Product Manager responsible for the app redesign, gathering user insights, coordinating cross-functional teams, and leading beta testing. My focus was on identifying pain points, driving the development process, and ensuring seamless delivery.</p>
+			    <h4>Methodology/Tools</h4>
+			    <p>We used Agile methodology and Scrum practices to plan sprints and manage delivery, leveraging iterative development cycles to validate improvements with real users.</p>
+			    <h4>Key Features</h4>
+				<ul>
+			        <li>A new dashboard to highlight daily client tasks.</li>
+			        <li>Simplified, multi-step invoice submission process.</li>
+			        <li>Visibility into all active, unpaid invoices.</li>
+			        <li>Broker factorability check to streamline client decision-making.</li>
+				    <li>OTR Fuel Card balance check or targeted advertising for the card.</li>
+				</ul>
+			    <h4>Metrics</h4>
+			    <ul>
+			        <li><strong>4.9-star rating:</strong> Achieved on iOS with over 1,200 reviews.</li>
+			        <li><strong>30% increase:</strong> In mobile invoice submissions within three months of launch.</li>
+				</ul>
+			    <h4>Outcomes</h4>
+			    <p>The redesign allowed OTR to attract clients who required a modern mobile app experience, significantly enhancing OTR's competitiveness in the factoring industry by meeting client expectations and supporting long-term growth.</p>
+			    <h4>Key Learnings</h4>
+			    <p>Understanding all user pain points is critical before replacing features. In this case, replacing a buggy feature without understanding why users relied on it created a gap in the new app experience. Comprehensive user research is essential to avoid similar oversights.</p>
+			</section>
+			<!-- Case Study #2 -->
+			<section id="Discount-Fuel-Finder" class="case-study">
+			    <h2>Fuel Finder</h2>
+				<h3>Driving Fuel Card Usage and Sales Growth</h3>
+			        <figure class="case-study-image">
+			        <img src="assets/OTR_Solutions_Fuel_Finder.png" alt="Mobile App Screenshot" loading="lazy">
+			        <figcaption>Interactive map and search functionality in the Fuel Finder tool.</figcaption>
+			    </figure>
+				<p><strong>Summary:</strong> OTR Solutions developed a Fuel Finder tool for its mobile app, enabling clients to locate discounted diesel truck stops. The tool led to a 50% increase in card usage and sales growth over six months.</p>
+			    <h4>Context</h4>
+			    <p>OTR had aggregated competitive fuel discounts across the US but lacked a way for clients to find participating truck stops. The Fuel Finder provided real-time discount information, driving user engagement and fuel card usage.</p>
+			    <h4>Pain Points</h4>
+			    <ul>
+				    <li>Clients had no way to find discounted truck stops.</li>
+				    <li>Competing fuel cards, while offering smaller discounts and more limited coverage, made it easier for users to identify discount locations (e.g., Love's discount cards are straightforward as they only apply to Love's truck stops).</li>
+			    </ul>
+			    <h4>My Role</h4>
+			    <p>I was the Lead Product Manager responsible for the end-to-end lifecycle of the Fuel Finder. My prior experience launching the Fuel Desk informed the product’s development, allowing me to align business goals with user needs effectively.</p>
+			    <h4>Methodology/Tools</h4>
+				<p>We leveraged existing card swipe data and followed Agile methods to build the tool, ensuring rapid iteration and user feedback integration.</p>
+			    <h4>Key Features</h4>
+			    <ul>
+			        <li>Interactive map of discounted fuel stops with last-swipe pricing data.</li>
+			        <li>Search functionality based on location, route, or truck stop.</li>
+				</ul>
+			    <h4>Metrics</h4>
+			    <ul>
+			        <li><strong>15%+ increase:</strong> Card loads, usage, and gallons purchased within the first two months.</li>
+			        <li><strong>Reduced onboarding time:</strong> Time to first card swipe dropped from over 30 days to under 7 days.</li>
+				</ul>
+			    <h4>Outcomes</h4>
+			    <p>The Fuel Finder transformed OTR's Fuel Card into a self-selling product, allowing the Fuel Desk to focus on support rather than outbound sales. This significantly improved operational efficiency and product adoption.</p>
+			    <h4>Key Learnings</h4>
+			    <p>Leveraging internal data can save significant costs. For example, we used access to internal card swipe data to avoid a $50K/year data subscription. Maximizing existing resources is invaluable for product development.</p>
+			</section>
+			<!-- Case Study #3 -->
+			<section id="Vendor-Payable-Board" class="case-study">
+			    <h2>Vendor Payable Board</h2>
+				<h3>Automating Manual Payments for Operational Efficiency</h3>
+			    <p><strong>Summary:</strong> OTR Solutions developed an automated system for managing Vendor Payables, which were previously handled manually. This iterative solution allowed users to create payables, withhold client funds, and automate payment releases. The result was a significant reduction in management time—from over 2 hours to under 5 minutes per week—along with improved scalability and client retention.</p>
+			    <h4>Context</h4>
+			    <p>OTR Solutions wanted to increase client retention by offering a service to withhold invoice payouts for key payments, such as auto insurance. The process was entirely manual and inefficient, with Account Managers manually creating records, withholding funds, and making payments. As client demand for this feature grew, the need for automation became essential.</p>
+			    <h4>Pain Points</h4>
+				<ul>
+			        <li>Missed payments due to manual tracking, risking client relationships and the client's ability to run their business.</li>
+			        <li>Inefficiency in handling payables, causing delays and errors.</li>
+			    </ul>
+			    <h4>My Role</h4>
+				<p>As the Product Manager, I led the end-to-end lifecycle of the project, collaborating with Account Teams, Engineering, and select clients. I gathered requirements, defined Acceptance Criteria, and worked closely with Engineering to build and test the solution.</p>
+			    <h4>Methodology/Tools</h4>
+			    <p>We used Scrum methods and Azure for project management. The solution was delivered in three phases:</p>
+			    <ul>
+			    	<li>Creation and visibility of Vendor Payables.</li>
+				    <li>Fund withholding processes.</li>
+			        <li>Automated payment release.</li>
+			    </ul>
+			    <h4>Key Features</h4>
+			    <ul>
+				    <li>Creation of recurring Vendor Payable objects with detailed payment information.</li>
+				    <li>A comprehensive review board for payables.</li>
+			        <li>Vendor management page.</li>
+			        <li>Easy fund withholding and automated payment releases.</li>
+			        <li>Return funds to Client option.</li>
+			    </ul>
+				<h4>Metrics</h4>
+			    <ul>
+			        <li><strong>Time savings:</strong> Reduced account management need from over 2 hours to under 5 minutes per week.</li>
+			        <li><strong>Increased payables:</strong> Grew from 75 open payables to 500 in six months.</li>
+			    </ul>
+				<h4>Outcomes</h4>
+			    <p>The Vendor Payable Board became a key offering at OTR Solutions, significantly improving client retention. Clients who used the tool were 80% more likely to stay with OTR over the first six months.</p>
+			    <h4>Key Learnings</h4>
+			    <p>I learned the importance of documenting business logic, especially for complex features like recurring payments. By addressing all edge cases during refinement, we ensured smoother implementation.</p>
+			</section>
+			<!-- Case Study #4 -->
+			<section id="Auto-Invoice-Feature" class="case-study">
+			    <h2>Auto Invoice Feature</h2>
+			    <h3>Automating Invoice Approval: Reducing Manual Work for Recourse Clients</h3>
+				<p><strong>Summary:</strong> OTR Solutions introduced an Auto-Approve Invoice feature that automated the approval of thousands of invoices daily for Recourse Clients. This feature saved the Account Team approximately 14 minutes per 100 invoices, eliminating monotonous tasks and freeing up time for higher-value work. As usage grew, the feature was optimized through a microservice architecture to maintain system performance.</p>
+			    <h4>Context</h4>
+			    <p>Recourse Account Teams at OTR Solutions were manually approving thousands of invoices daily. As these clients scaled, the manual process became inefficient and unsustainable. The Auto-Approve feature was designed to reduce manual approval time by automatically processing invoices for trusted Recourse Clients.</p>
+			    <h4>Pain Points</h4>
+			    <ul>
+				    <li>Manual approval of invoices was a time-consuming and repetitive task.</li>
+				    <li>As usage grew, the system experienced performance degradation, slowing down users' workflows.</li>
+			    </ul>
+			    <h4>My Role</h4>
+			    <p>I was the Lead Product Owner responsible for the discovery, design, and QA testing of the Auto-Approve feature, both in its initial implementation and later as a microservice. I worked closely with the Engineering team to ensure seamless implementation and addressed edge cases during refinement to ensure smooth operation at scale.</p>
+			    <h4>Methodology/Tools</h4>
+				<p>We followed an iterative approach, launching the feature with synchronous approval logic and later transitioning to an asynchronous microservice architecture to improve system performance.</p>
+			    <h4>Key Features</h4>
+			    <ul>
+			        <li>Automated invoice approval for Recourse Clients.</li>
+			        <li>Microservice architecture to approve invoices asynchronously.</li>
+				    <li>Performance tracking and monitoring to ensure system reliability.</li>
+				</ul>
+			    <h4>Metrics</h4>
+			    <ul>
+			        <li><strong>Initial time savings:</strong> 100 invoices were approved in under 1 minute, saving the team more than 8 hours per day.</li>
+			        <li><strong>Performance improvements:</strong> After the microservice update, page load times while invoice approval ran dropped to under 4 seconds system-wide.</li>
+				</ul>
+			    <h4>Outcomes</h4>
+			    <p>The feature scaled successfully from handling 3,500 invoices daily to over 7,500 by the time I left OTR. It became a core feature, enabling OTR to efficiently manage larger clients and reducing manual workloads for the Account Team.</p>
+			    <h4>Key Learnings</h4>
+			    <p>Building features with scalability in mind is essential, especially as client needs grow. The transition to a microservice architecture ensured long-term system performance. Monitoring system metrics and proactively addressing bottlenecks are critical for maintaining user satisfaction.</p>
+			</section>
+			<!-- Case Study #5 -->
+			<section id="Freight-Rate-Analyzer" class="case-study">
+			    <h2>Freight Rate Analyzer</h2>
+				<h3>Testing Market Demand Through Rapid Iteration</h3>
+			    <p><strong>Summary:</strong> OTR Solutions developed a Freight Rate Analyzer tool to provide clients with competitive rate insights based on lane data. Although the tool was not launched, iterative testing revealed data issues, informing future improvements and preventing a misstep in product launch.</p>
+			    <h4>Context</h4>
+			    <p>OTR aimed to offer clients a rate analyzer tool to help them negotiate better freight rates. The tool relied on lane data collected from OTR’s factoring clients, positioning it as a value-added service to enhance client retention and satisfaction.</p>
+			    <h4>Pain Points</h4>
+				<ul>
+			        <li>Clients needed competitive insights to secure better rates in a highly competitive market.</li>
+			        <li>OTR’s data was incomplete, leading to inaccurate pricing that could undermine trust and usability.</li>
+			    </ul>
+			    <h4>My Role</h4>
+				<p>I was the Lead Product Manager, spearheading the rapid iteration of the Freight Rate Analyzer. Collaborating closely with software and data engineers, internal stakeholders, and beta testers, I prioritized user feedback and data accuracy to refine the tool.</p>
+			    <h4>Methodology/Tools</h4>
+			    <p>We adopted Agile and Lean principles to ensure a rapid and iterative approach. Continuous feedback loops enabled us to validate the tool’s functionality and identify critical data shortcomings early in the process.</p>
+			    <h4>Key Features</h4>
+			    <ul>
+				    <li>Lane data insights for competitive rate analysis.</li>
+				    <li>Interactive interface for user exploration of freight rates.</li>
+			    </ul>
+			    <h4>Metrics</h4>
+			    <ul>
+			        <li><strong>Iteration frequency:</strong> Released updates multiple times per week over two sprints, enabling rapid validation of features.</li>
+				    <li><strong>Data insights:</strong> Discovered significant data granularity issues, preventing an accurate and reliable product launch.</li>
+				</ul>
+			    <h4>Outcomes</h4>
+			    <p>Although the project was shelved due to data limitations, the rapid iteration process informed future improvements in data intake and quality. This approach saved valuable resources by identifying critical issues early, preventing further investment in an unviable product.</p>
+			    <h4>Key Learnings</h4>
+			    <p>Failing fast is an essential principle in product management, allowing teams to pivot or halt projects that lack feasibility. This project reinforced the importance of continuous feedback and data validation in uncovering potential issues early in the product lifecycle.</p>
+			</section>
+			<!-- Case Study #6 -->
+			<section id="Bulk-Gift-Card" class="case-study">
+			    <h2>Bulk Gift Card Ordering Beta</h2>
+				<h3>Simplifying Bulk Gift Card Orders: A Market Test for Extu</h3>
+			    <p><strong>Summary:</strong> Extu launched the GoTu Rewards Bulk Gift Card MVP ahead of the holiday season. This Wizard of Oz-style MVP enabled users to place bulk gift card orders through a simple form, with manual backend fulfillment. Success during the peak selling season validated market demand and led to full product development.</p>
+			    <h4>Context</h4>
+			    <p>Extu aimed to explore bulk gift card sales as a potential revenue stream, leveraging the holiday season as a test window for market validation. This initiative sought to assess demand without committing significant resources to full development.</p>
+			    <h4>Pain Points</h4>
+				<ul>
+			        <li>Bulk gift card orders were cumbersome to process without a dedicated tool.</li>
+			        <li>Uncertainty about market demand made resource-intensive product development risky.</li>
+			    </ul>
+			    <h4>My Role</h4>
+				<p>As Product Manager, I led the MVP launch from concept to execution. I collaborated with Sales and Operations teams to create a seamless front-end experience while coordinating manual backend fulfillment. My focus was on ensuring smooth customer interactions and gathering data to validate market demand.</p>
+			    <h4>Methodology/Tools</h4>
+			    <p>We adopted a Wizard of Oz MVP model, where the front-end experience was automated, but backend fulfillment was handled manually. Leveraging Scrum and Kanban methods, we iterated quickly to refine the MVP and address emerging challenges.</p>
+			    <h4>Key Features</h4>
+			    <ul>
+				    <li>Simple, user-friendly online form for bulk order requests.</li>
+				    <li>Manual backend operations for order processing and fulfillment.</li>
+			    </ul>
+			    <h4>Metrics</h4>
+			    <ul>
+			        <li><strong>Orders processed:</strong> Achieved a double-digit count of orders during the beta test over the holiday season.</li>
+				    <li><strong>Customer feedback:</strong> 90% of users reported satisfaction with the ease of order placement.</li>
+				    <li><strong>User onboarding:</strong> Encountered onboarding friction (addressed in the GoTu Rewards Multi-Step Signup Flow case study).</li>
+			    </ul>
+			    <h4>Outcomes</h4>
+			    <p>The MVP successfully confirmed market demand for a bulk gift card solution. Based on these results, Extu approved the development of a fully automated ordering system, unlocking a new revenue stream and improving customer satisfaction.</p>
+			    <h4>Key Learnings</h4>
+				<p>Testing market demand through a low-tech MVP proved to be a cost-effective strategy. This approach highlighted the value of manual solutions for early-stage validation, ensuring resource efficiency while gathering critical customer insights.</p>
+			</section>
+			<!-- Case Study #7 -->
+			<section id="Multi-Step-Signup" class="case-study">
+			    <h2>Multi-Step Signup Flow</h2>
+				<h3>Streamlining Onboarding: Enhancing User Experience with a Multi-Step Signup Flow</h3>
+			    <p><strong>Summary:</strong> Extu revamped the GoTu Rewards platform with a multi-step signup flow, significantly improving user onboarding by breaking the process into digestible steps. The new design led to a 40% increase in completed signups and reduced user drop-off rates by 25%.</p>
+			    <h4>Context</h4>
+			    <p>Extu’s original onboarding process was lengthy and cumbersome, leading to high abandonment rates, especially at stages requiring detailed user information. The multi-step signup flow aimed to simplify this process, optimizing user engagement from initial sign-up to account creation.</p>
+			    <h4>Pain Points</h4>
+				<ul>
+			        <li>The lengthy, one-page signup process created friction, discouraging users from completing registration.</li>
+			        <li>Users felt overwhelmed by the upfront presentation of extensive required information.</li>
+			    </ul>
+			    <h4>My Role</h4>
+				<p>I served as the Lead Product Manager, overseeing the end-to-end transformation of the onboarding process. My responsibilities included conducting user research, analyzing feedback, and collaborating with design and engineering teams to implement the multi-step signup flow.</p>
+			    <h4>Methodology/Tools</h4>
+			    <p>Agile practices were employed to iteratively design and refine the new signup flow, incorporating user insights and feedback throughout the process.</p>
+			    <h4>Key Features</h4>
+			    <ul>
+				    <li>Multi-step signup process with clear progress indicators, providing users with a sense of achievement.</li>
+				    <li>Contextual tooltips and help sections to guide users through complex steps.</li>
+			        <li>An auto-save feature enabling users to pause and return to incomplete signups seamlessly.</li>
+			    </ul>
+			    <h4>Metrics</h4>
+			    <ul>
+				    <li><strong>40% increase:</strong> In completed signups post-launch.</li>
+				    <li><strong>25% reduction:</strong> In user drop-offs at critical stages of the process.</li>
+			        <li><strong>15% decrease:</strong> In signup process completion time.</li>
+			    </ul>
+			    <h4>Outcomes</h4>
+			    <p>The multi-step signup flow significantly improved the onboarding experience, driving better conversion rates and ensuring users could navigate the process with reduced frustration. This enhancement established a more user-friendly entry point for GoTu Rewards, boosting engagement and satisfaction.</p>
+				<h4>Key Learnings</h4>
+			    <p>Simplifying the onboarding journey into manageable steps, paired with strategic guidance and support, can substantially improve user completion rates. Providing tools such as auto-save and progress indicators enhances the overall user experience and satisfaction.</p>
+			</section>
+			<!-- Contact Section -->
+			<section id="contact" class="cta-section">
+				<div class="cta-container">
+			        <h2>Interested in Working Together?</h2>
+			        <p>Let's create something extraordinary.</p>
+		            <div class="contact-links">
+            			<a href="mailto:bparton31.jobs@gmail.com" aria-label="Email Me!" class="contact-link">
+				            <i class="fas fa-envelope"></i> Email Me
+				        </a>
+                		<a href="https://www.linkedin.com/in/brian-parton/" aria-label="Find Me On LinkedIn" target="_blank" class="contact-link">
+			                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            			</a>
+		            </div>
+			    </div>
+			</section>
+		</div>
+		<script>
+		    document.addEventListener("DOMContentLoaded", () => {
+		    	const targetSection = document.querySelector("#load");
+	        	if (targetSection) {
+		            targetSection.scrollIntoView({ behavior: "smooth" });
+	    	    }
+			});
+		</script>
+		<script>
+		    document.getElementById("current-year").textContent = new Date().getFullYear();
+		</script>
+		<footer>
+		    <p>
+				© <span id="current-year"></span> Brian Parton.
+			    <a href="privacy.html" aria-label="Go to Privacy Page" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+		    </p>
+		</footer>
+		<!-- JavaScript for the hamburger menu -->
+		<script>
+    		const hamburger = document.querySelector('.hamburger-menu');
+		    const navMenu = document.querySelector('.header-nav ul');
+		    hamburger.addEventListener('click', () => {
+        		navMenu.classList.toggle('active');
+    		});
+		</script>
+	</body>
 </html>

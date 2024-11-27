@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-<div class="privacy-container">
-    <h1>Privacy Policy</h1>
-    <p>
-        This privacy policy explains how we collect, use, and share your personal information when you visit our website.
-    </p>
-
-    <h2>Information We Collect</h2>
-    <p>
-        We collect information such as your IP address, browser type, and pages visited through Google Analytics to improve our website experience.
-    </p>
-
-    <h2>How We Use Information</h2>
-    <p>
-        Data is used solely to improve user experience and is not sold to third parties.
-    </p>
-
-    <h2>Your Rights</h2>
-    <p>
-        You may contact us to inquire about your data or request its deletion.
-    </p>
-
-    <p>
-        For any concerns or questions, please email us at <a href="mailto:bparton31-jobs@gmail.com">bparton31-jobs@gmail.com</a>.
-    </p>
-</div>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Brian Parton. All rights reserved.</p>
-    </footer>
-</body>
+	<head>
+		<meta name="description" content="Privacy Page for Brian Parton's Portfolio'">
+		<meta name="author" content="Brian Parton">
+    	<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Privacy Policy</title>
+	    <link rel="stylesheet" href="assets/styles.css">
+	    <!-- Favicon for different devices -->
+		<link rel="icon" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+		<link rel="icon" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+		<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+		<link rel="manifest" href="assets/favicon/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+    	<!-- Header -->
+	    <header class="header">
+    	    <nav class="header-nav">
+    		        <button class="hamburger-menu" aria-label="Toggle navigation menu">☰</button>
+            	    <ul>
+                	<li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+	                <li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
+    	            <li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
+        	        <li><a href="privacy.html" aria-label="Go to Privacy Page">Privacy</a></li>
+            	</ul>
+	        </nav>
+    	</header>
+	    <!-- Main Content -->
+		<div class="privacy-container">
+		    <h1>Privacy Policy</h1>
+		    <p>
+		        This privacy policy explains how we collect, use, and share your personal information when you visit our website.
+		    </p>
+		    <h2>Information We Collect</h2>
+		    <p>
+		        We collect information such as your IP address, browser type, and pages visited through Google Analytics to improve our website experience.
+		    </p>
+		    <h2>How We Use Information</h2>
+		    <p>
+		        Data is used solely to improve user experience and is not sold to third parties.
+		    </p>
+		    <h2>Your Rights</h2>
+		    <p>
+		        You may contact us to inquire about your data or request its deletion.
+		    </p>
+		    <p>
+        		For any concerns or questions, please email us at <a href="mailto:bparton31-jobs@gmail.com" aria-label="Send me an email">bparton31-jobs@gmail.com</a>.
+		    </p>
+		</div>
+	    <!-- Footer -->
+    	<footer class="footer">
+        	<p>&copy; 2024 Brian Parton. All rights reserved.</p>
+	    </footer>
+		<!-- JavaScript for the hamburger menu -->
+		<script>
+    		const hamburger = document.querySelector('.hamburger-menu');
+	    	const navMenu = document.querySelector('.header-nav ul');
+		    hamburger.addEventListener('click', () => {
+    	    	navMenu.classList.toggle('active');
+    		});
+		</script>
+	</body>
 </html>

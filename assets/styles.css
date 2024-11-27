@@ -2,7 +2,7 @@
     --primary-color: #FF4500; /* Bright orange for accents */
     --secondary-color: #000000; /* Black for nav bars and footer */
     --background-color: #F7F7F7; /* Light gray for page background */
-    --text-color: #333333; /* Neutral dark gray for text */
+    --text-color: #111111; /* Neutral dark gray for text */
     --white: #FFFFFF; /* White for content and highlights */
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default box shadow */
     --border-color: #ddd; /* Light border color */
@@ -14,6 +14,10 @@
 
 
 /* General Styling */
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: var(--font-family);
     margin: 0;
@@ -215,6 +219,11 @@ body.non-sidebar-page {
     box-shadow: var(--box-shadow);
 }
 
+.case-study img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 .case-study .case-study-image figcaption {
     font-size: 14px;
     color: #888;
@@ -271,12 +280,13 @@ body.non-sidebar-page {
 
 /* Footer */
 footer {
+    bottom: 0;
+    width: 100%;
     text-align: center; /* Center-aligns text */
     padding: 20px 0; /* Adds more padding for better visibility */
     background-color: var(--secondary-color); /* Black background */
     color: var(--white); /* White text for contrast */
     font-size: 0.9rem; /* Slightly larger font for readability */
-
 }
 
 footer p {
@@ -805,4 +815,35 @@ footer {
 
 .privacy-container a:hover {
     text-decoration: underline;
+}
+
+.hamburger-menu {
+	visibility: hidden;
+    display: block;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 0.1rem;
+}
+
+@media (max-width: 768px) {
+    .header-nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header-nav ul.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: var(--secondary-color);
+        color: var(--white);
+        border: none;
+        font-size: 1.5rem;
+    }
 }
