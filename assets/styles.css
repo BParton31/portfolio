@@ -403,6 +403,14 @@ button:hover {
     box-sizing: border-box;
 }
 
+.content h1 {
+    color: var(--primary-color); /* Bright orange for headers */
+    padding-top: 0.1in;
+    margin-bottom: -0.3in;
+    font-size: 2rem;
+    text-align: center;
+}
+
 /* Headings in Content */
 .content h2 {
     color: var(--primary-color); /* Bright orange for main headings */
