@@ -672,6 +672,7 @@ button:hover {
 .skill-item p, .tool-item p {
     font-size: 0.9rem;
     color: var(--text-color); /* Standard dark text */
+    width: 150px;
 }
 
 /* Footer Adjustments */
