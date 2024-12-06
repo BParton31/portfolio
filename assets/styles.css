@@ -573,151 +573,14 @@ button:hover {
     margin: 20px 0;
 }
 
-/* General Sidebar Styles */
-.sidebar {
-    display: block;
-    background-color: var(--white); /* Background for sidebar content */
-    padding: 20px;
-    box-sizing: border-box;
-    border-right: 1px solid var(--border-color); /* Subtle divider */
-    box-shadow: var(--box-shadow); /* Depth for the sidebar */
-    overflow-y: auto;
-}
-
-/* Portfolio Sidebar Specific Styles */
-.portfolio-sidebar {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: var(--sidebar-width); /* Defined width for portfolio sidebar */
-    height: 100%; /* Full viewport height */
-    background-color: var(--secondary-color); /* Black background */
-    color: var(--white);
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for distinction */
-    overflow-y: auto; /* Enable scrolling */
-}
-
-.portfolio-sidebar nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.portfolio-sidebar nav ul li h2 {
-    color: var(--primary-color); /* Orange for headings */
-    padding-left: 15px;
-}
-
-.portfolio-sidebar nav ul li a {
-    text-decoration: none;
-    color: var(--white); /* White text */
-    font-weight: 500;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.portfolio-sidebar nav ul li a:hover {
-    background-color: var(--primary-color); /* Orange on hover */
-    color: var(--white); /* Keep text white on hover */
-}
-
-/* Resume Sidebar Specific Styles */
-.resume-sidebar {
-    width: var(--res-sidebar-width); /* Slightly wider for better balance */
-    background-color: var(--white);
-    padding: 25px; /* Increase padding for more spacing */
-    box-sizing: border-box;
-    border-right: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
-    overflow-y: auto;
-}
-
-.resume-sidebar h1, .resume-sidebar h2 {
-    color: var(--primary-color); /* Bright orange for headers */
-    margin: 0;
-}
-
-.resume-sidebar h1 {
-    font-size: 2rem;
-    padding-top: 25px;
-}
-
-.resume-sidebar h2 {
-    font-size: 1.8rem;
-}
-
-.resume-sidebar h3 {
-    color: var(--primary-color); /* Bright orange for headers */
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.resume-sidebar p {
-    margin: 20px 0;
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: var(--text-color); /* Standard dark gray text */
-}
-
-.resume-sidebar ul {
-    list-style-type: disc; /* Standard bullet points */
-    padding-left: 20px;
-    margin: 10px 0;
-}
-
-.resume-sidebar ul li {
-    margin-bottom: 8px;
-    font-size: 1rem;
-}
-
-.resume-sidebar .divider {
-    margin: 15px 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.resume-sidebar a {
-    text-decoration: none;
-    color: var(--primary-color); /* Bright orange links */
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.resume-sidebar a:hover {
-    color: var(--secondary-color); /* Black on hover */
-}
-
-/* Additional Sidebar Adjustments for Responsive Design */
-@media (max-width: 768px) {
-    .portfolio-sidebar {
-        width: 100%; /* Full width for smaller screens */
-        height: auto; /* Adjust height to content */
-        position: static; /* Remove fixed positioning */
-    }
-
-	.resume-sidebar {
-        width: 100%; /* Full width on small screens */
-        max-width: none; /* Remove cap */
-        border-right: none; /* Remove border for better mobile experience */
-    }
-
-    .content {
-        width: 100%; /* Full width on small screens */
-        margin-left: 0; /* Align with sidebar */
-    }
-}
-
-
 /* Index specific */
 /* Hero Section */
 .hero {
+    width: 100%; /* Full-width for the section container */
     background-color: var(--secondary-color); /* Black */
     color: var(--white); /* White text */
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0px;
 }
 
 .hero h1 {
@@ -854,7 +717,8 @@ footer {
   background-color: #FF4500; /* Orange */
   color: white; /* White text */
   border: none;
-  border-radius: 5px 0 0 5px; /* Rounded left corners */
+  border-radius: 0; 
+  height: 40px;
   font-size: 1rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -871,8 +735,8 @@ footer {
   background-color: #333; /* Dark gray */
   color: white; /* White text */
   padding: 10px 15px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  height: 40px;
+  border-radius: 0; 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -954,12 +818,9 @@ footer {
 
 /* 'About Me' Container */
 .about-container {
-    max-width: 100%; /* Increase the width for better balance */
-    margin: 0 auto; /* Center the container */
-    padding: 20px 30px; /* Add padding for spacing */
-    background-color: var(--background-color); /* Match the page background */
-    border-radius: 10px; /* Slightly round the edges */
-    box-shadow: var(--box-shadow); /* Add subtle shadow for depth */
+    width: 100%; /* Full-width for the section container */
+    background-color: var(--background-color); /* Match background color */
+    padding: 40px 0; /* Add some vertical padding */
 }
 
 /* 'About Me' Section Text */
@@ -994,7 +855,7 @@ footer {
   
 .case-study-brief {
     max-width: 1200px; /* Match the width of About Me content */
-    margin: 0 auto 20px; /* Center align and add spacing between items */
+    margin: 0 auto; /* Center align and add spacing between items */
     display: flex;
     align-items: center;
     padding: 15px;
@@ -1089,3 +950,175 @@ footer {
     font-size: 1rem;
 }
 
+.layout-container {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    box-shadow: var(--box-shadow); /* Depth for the sidebar */
+    overflow-y: auto;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: var(--primary-color);
+}
+
+/* Portfolio Sidebar Specific Styles */
+.portfolio-sidebar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: var(--sidebar-width); /* Defined width for portfolio sidebar */
+    height: 100%; /* Full viewport height */
+    background-color: var(--secondary-color); /* Black background */
+    color: var(--white);
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for distinction */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.portfolio-sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-sidebar nav ul li h2 {
+    color: var(--primary-color); /* Orange for headings */
+    padding-left: 15px;
+}
+
+.portfolio-sidebar nav ul li a {
+    text-decoration: none;
+    color: var(--white); /* White text */
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-sidebar nav ul li a:hover {
+    background-color: var(--primary-color); /* Orange on hover */
+    color: var(--white); /* Keep text white on hover */
+}
+
+/* Resume Sidebar Specific Styles */
+.resume-sidebar {
+    width: var(--res-sidebar-width); /* Slightly wider for better balance */
+    background-color: var(--white);
+    padding: 25px; /* Increase padding for more spacing */
+    box-sizing: border-box;
+    border-right: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+}
+
+.resume-sidebar h1, .resume-sidebar h2 {
+    color: var(--primary-color); /* Bright orange for headers */
+    margin: 0;
+}
+
+.resume-sidebar h1 {
+    font-size: 2rem;
+    padding-top: 25px;
+}
+
+.resume-sidebar h2 {
+    font-size: 1.8rem;
+}
+
+.resume-sidebar h3 {
+    color: var(--primary-color); /* Bright orange for headers */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resume-sidebar p {
+    margin: 20px 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--text-color); /* Standard dark gray text */
+}
+
+.resume-sidebar ul {
+    list-style-type: disc; /* Standard bullet points */
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.resume-sidebar ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.resume-sidebar .divider {
+    margin: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.resume-sidebar a {
+    text-decoration: none;
+    color: var(--primary-color); /* Bright orange links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.resume-sidebar a:hover {
+    color: var(--secondary-color); /* Black on hover */
+}
+
+/* Additional Sidebar Adjustments for Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-sidebar {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height to content */
+        position: static; /* Remove fixed positioning */
+        display: none;
+    }
+
+	.resume-sidebar {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove cap */
+        border-right: none; /* Remove border for better mobile experience */
+    }
+
+    .content {
+        width: 100%; /* Full width on small screens */
+        margin-left: 0; /* Align with sidebar */
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 0px;
+    flex: 1;
+}
