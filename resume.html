@@ -40,7 +40,6 @@
             	    <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
                 	<li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
 	                <li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
-    	            <li><a href="privacy.html" aria-label="Go to Privacy Page">Privacy</a></li>
         	    </ul>
 	        </nav>
     	</header>
@@ -119,17 +118,6 @@
         	        </div>
 	        </div>
 	    </section>
-	    <script>
-	        document.addEventListener("DOMContentLoaded", () => {
-        	    const targetSection = document.querySelector("#load");
-	            if (targetSection) {
-        	        targetSection.scrollIntoView({ behavior: "smooth" });
-	            }
-	        });
-	    </script>
-	    <script>
-	        document.getElementById("current-year").textContent = new Date().getFullYear();
-	    </script>
 	    <footer>
 	        <p>
         	    © <span id="current-year"></span> Brian Parton.
@@ -143,6 +131,15 @@
 		    hamburger.addEventListener('click', () => {
         		navMenu.classList.toggle('active');
     		});
-		</script>
+
+	        document.addEventListener("DOMContentLoaded", () => {
+        	    const targetSection = document.querySelector("#load");
+	            if (targetSection) {
+        	        targetSection.scrollIntoView({ behavior: "smooth" });
+	            }
+	        });
+
+	        document.getElementById("current-year").textContent = new Date().getFullYear();
+	    </script>
 	</body>
 </html>
