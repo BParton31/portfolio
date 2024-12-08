@@ -783,6 +783,14 @@ body.modal-active {
 
 /* Enhanced Mobile Styling */
 @media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
     /* Main Content */
     .main-content {
         margin: 0 auto; /* Center align */
@@ -843,6 +851,7 @@ body.modal-active {
 
     /* Header Navigation */
     .header-nav {
+        max-width: 100%;
         height: 50px;
         padding: 5px 0;
         justify-content: flex-start;
