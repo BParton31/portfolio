@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="default">
 	<head>
-		<title>Resume Page</title>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SBDPCL7X2"></script>
 		<script>
@@ -10,18 +9,15 @@
 		  gtag('js', new Date());
 		  gtag('config', 'G-7SBDPCL7X2');
 		</script>
-		<!-- Meta tags -->
-		<meta name="description" content="Brian Parton's Resume.">
+		<meta name="description" content="Home Page for Brian Parton's Portfolio'">
 		<meta name="author" content="Brian Parton">
 	    <meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
 	    <!-- Include FontAwesome for Icons -->
     	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     	<link rel="stylesheet" href="assets/styles.css">
+	    <title>Resume Page</title>
 	    <!-- Favicon for different devices -->
 		<link rel="icon" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
 		<link rel="icon" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
@@ -30,116 +26,208 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 		<link rel="shortcut icon" href="assets/favicon/favicon.ico">
 		<link rel="manifest" href="assets/favicon/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 	</head>
-	<body>
+	<body id="load">
     	<!-- Header -->
-	    <header class="header">
-    	    <nav class="header-nav">
-				<button class="hamburger-menu" aria-label="Toggle navigation menu">☰</button>
-        	    <ul>
-            	    <li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
-                	<li><a href="case-study.html" aria-label="Go to Case Studies Page">Case Studies</a></li>
-	                <li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
-        	    </ul>
-	        </nav>
-    	</header>
-	    <!-- Main Container -->
-    	<div class="container">
-        	<!-- Sidebar Section -->
-			<aside class="resume-sidebar">
-			    <h1>Brian Parton</h1>
-		    	<p><strong>Location:</strong> Alpharetta, GA</p>
-			    <p><strong>Email:</strong> bparton31.jobs@gmail.com</p>
-			    <p><strong>G-Voice:</strong> (404) 981-2570</p>
-			    <p><strong>LinkedIn:</strong> linkedin.com/in/brian-parton</p>
-		    	<p><strong>Portfolio:</strong> brianparton.dev</p>
-			    <div class="divider"></div>
-			    <h3>Education</h3>
-			    <p><strong>Master of Science in Physics</strong><br>Clemson University, May 2013</p>
-		    	<p><strong>Bachelor of Science in Physics</strong><br>Emory University, May 2010</p>
-			    <div class="divider"></div>
-			    <h3>Certifications</h3>
-			    <p><strong>PSPO I:</strong> Professional Scrum Product Owner I, 2024</p>
-		    	<div class="divider"></div>
-			    <h3>Skills</h3>
-			    <ul>
-			    	<li>Strategic Roadmap Planning for Product Growth and Execution</li>
-				    <li>Product Lifecycle Management</li>
-				    <li>Agile, Scrum, & Kanban Methodologies</li>
-				    <li>AI-Driven Product Development</li>
-				    <li>User-Centric UX Design</li>
-			    	<li>Proficiency in SQL for Data Analysis and Reporting</li>
-				    <li>Data Analysis and Metrics-Driven Decision Making</li>
-				    <li>Experience with API Development, Integration, and Performance Testing</li>
-				    <li>Stakeholder Engagement and Workshop Facilitation</li>
-			    </ul>
-			</aside>
-        	<!-- Content Section -->
-	        <div class="content">
-    	        <h1>Professional Experience</h1>            
-        	    <h2>Key Accomplishments</h2>
-            	<ul>
-        	        <li><strong>Highly-Rated Mobile App Rebuild:</strong> Directed a comprehensive UI/UX redesign using Kanban, collaborating closely with a newly onboarded engineer to enhance engagement and client satisfaction. Achieved a 4.9-star rating from 1,200+ Apple Store reviews and a 30% increase in invoice submissions within three months.</li>
-    	            <li><strong>New Revenue Generating Platform:</strong> Spearheaded a cross-departmental initiative to design, develop, and beta launch a personalized incentive rewards platform supported by a 'Wizard of Oz' MVP. Validated market demand and drove a roadmap focused on scaling client engagement and loyalty while improving cost efficiency with automation.</li>
-	                <li><strong>Driving Fuel Card Adoption:</strong> Partnered with Data and Engineering to create a data pipeline and API orchestration powering an OTR Fuel Card Discount Truck Stop Finder tool. Improved client decision-making efficiency, driving a 15%+ increase in fuel card usage within the first two months.</li>
-            	</ul>            
-				<h1 class="roles">Roles</h1>
-    	        <h2>Product Manager</h2>
-        	    <p><strong>Extu, Inc., Atlanta, GA</strong> | April 2023 – April 2024</p>
-            	<ul>
-                	<li>Revamped client onboarding workflows by leveraging analytics to identify root-cause issues, boosting referral link signups from 0% to 4% and reducing customer support load.</li>
-            	    <li>Streamlined product team processes by implementing AI-driven tools for research and documentation, achieving up to a 90% reduction in time spent on repetitive tasks.</li>
-        	        <li>Led a cross-functional team to deliver a user-friendly workflow for compliance acceptance, ensuring adherence to evolving regulations while enhancing customer trust.</li>
-    	            <li>Collaborated with super users to validate prototype features for the GoTu Rewards platform, driving informed decisions on product enhancements.</li>
-	            </ul>
+            <div class="content-wrapper">
+            <header class="header">
+                <nav class="header-nav">
+                    <button class="hamburger-menu" aria-label="Toggle navigation menu">☰</button>
+                    <ul>
+                        <li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
+                        <li><a href="case-study.html" aria-label="Go to Case Studies Page">Case Studies</a></li>
+                        <li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="layout-container">
+                <aside class="sidebar portfolio-sidebar">
+                    <nav>
+                        <ul>
+                            <li><h2>Resume</h2></li>
+                            <li><a href="#key-accomplishments">Key Accomplishments</a></li>
+                            <li><a href="#roles">Professional Roles</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#certifications">Certifications</a></li>
+                            <li><a href="#contact">Contact Information</a></li>
+                        </ul>
+                    </nav>
+                </aside>            
+                <main class="main-content">
+                    <!-- Hero Section -->
+                    <section class="hero">
+                        <div class="ind-container">
+                            <h1>Brian Parton</h1>
+                            <p>Product Manager | Driving User-Centric, Data-Driven Product Solutions</p>
+                            <div class="cta-buttons">
+                                <div class="button-container">
+                                    <button class="view-button">
+                                        Brian's Portfolio
+                                    </button>
+                                    <button class="dropdown-btn">
+                                        ▼
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="portfolio.html" aria-label="View My Portfolio">View Portfolio</a>
+                                        <a href="assets/brian_parton_portfolio_2.pdf" aria-label="Download My Portfolio" target="_blank" download>Download Portfolio</a>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button class="view-button">
+                                        Brian's Resume
+                                    </button>
+                                    <button class="dropdown-btn">
+                                        ▼
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="resume.html" aria-label="View My Resume">Viewing My Resume</a>
+                                        <a href="assets/brian_parton_resume_3.pdf" aria-label="Download My Resume" target="_blank" download>Download Resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Content Section -->
+                    <div class="content">
+                        <div class="content-subsection">
+                            <h2 id="key-accomplishments">Professional Experience</h2>
+                            <h3>Key Accomplishments</h3>
+                            <ul>
+                                <li><strong>Highly-Rated Mobile App Rebuild:</strong> Directed a comprehensive UI/UX redesign using Kanban, collaborating closely with a newly onboarded engineer to enhance engagement and client satisfaction. Achieved a 4.9-star rating from 1,200+ Apple Store reviews and a 30% increase in invoice submissions within three months.</li>
+                                <li><strong>New Revenue Generating Platform:</strong> Spearheaded a cross-departmental initiative to design, develop, and beta launch a personalized incentive rewards platform supported by a 'Wizard of Oz' MVP. Validated market demand and drove a roadmap focused on scaling client engagement and loyalty while improving cost efficiency with automation.</li>
+                                <li><strong>Driving Fuel Card Adoption:</strong> Partnered with Data and Engineering to create a data pipeline and API orchestration powering an OTR Fuel Card Discount Truck Stop Finder tool. Improved client decision-making efficiency, driving a 15%+ increase in fuel card usage within the first two months.</li>
+                            </ul>
+                        </div>
+                        <div class="content-subsection">
+                            <h2 id="roles">Roles</h2>
+                            <h3>Product Manager</h3>
+                            <p><strong>Extu, Inc., Atlanta, GA</strong> | April 2023 – April 2024</p>
+                            <ul>
+                                <li>Revamped client onboarding workflows by leveraging analytics to identify root-cause issues, boosting referral link signups from 0% to 4% and reducing customer support load.</li>
+                                <li>Streamlined product team processes by implementing AI-driven tools for research and documentation, achieving up to a 90% reduction in time spent on repetitive tasks.</li>
+                                <li>Led a cross-functional team to deliver a user-friendly workflow for compliance acceptance, ensuring adherence to evolving regulations while enhancing customer trust.</li>
+                                <li>Collaborated with super users to validate prototype features for the GoTu Rewards platform, driving informed decisions on product enhancements.</li>
+                            </ul>
+                        </div>
+                        <div class="content-subsection">
+                            <h3>Product Manager</h3>
+                            <p><strong>OTR Solutions, Roswell, GA</strong> | April 2018 – January 2023</p>
+                            <ul>
+                                <li>Facilitated stakeholder workshop conversations, leading to the design and launch of the Lumper Advance feature, reducing care team intervention time and enhancing client satisfaction.</li>
+                                <li>Guided the successful migration of the Auto-Invoice feature to a microservice architecture, ensuring seamless API management and scalability.</li>
+                                <li>Balanced shifting priorities across up to four Agile teams, aligning stakeholders and ensuring high-value initiatives were delivered on time without sacrificing quality.</li>
+                                <li>Worked closely with UX and engineering teams to design and refine the Freight Rate Analyzer, leveraging iterative user feedback to shape a data-informed roadmap.</li>
+                            </ul>
+                        </div>
+<!-- Skills Section -->
+<div class="content-subsection">
+    <h2 id="skills">Skills</h2>
+    <div class="skills-container">
+        <!-- Skill 1 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=i0hL8zAATSGG&format=png&color=1A1A1A" alt="Strategic Roadmap Planning Icon">
+            <p>Vision-Driven Roadmaps</p>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=jF2D8fiq63xm&format=png&color=1A1A1A" alt="Product Lifecycle Management Icon">
+            <p>Product Lifecycle Management</p>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=6IHIz9vAjakU&format=png&color=1A1A1A" alt="Agile, Scrum, & Kanban Methodologies Icon">
+            <p>Agile, Scrum, & Kanban</p>
+        </div>
+        <!-- Skill 4 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=61864&format=png&color=1A1A1A" alt="AI-Driven Product Development Icon">
+            <p>AI-Driven Product Development</p>
+        </div>
+        <!-- Skill 5 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=4669&format=png&color=1A1A1A" alt="User-Centric UX Design Icon">
+            <p>User-Centric UX Design</p>
+        </div>
+        <!-- Skill 6 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=77694&format=png&color=1A1A1A" alt="SQL for Data Analysis Icon">
+            <p>Proficiency in SQL for Data Analysis</p>
+        </div>
+        <!-- Skill 7 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=30872&format=png&color=1A1A1A" alt="Data Analysis and Metrics-Driven Decision Making Icon">
+            <p>Data-Backed Strategy</p>
+        </div>
+        <!-- Skill 8 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=55499&format=png&color=1A1A1A" alt="API Development and Testing Icon">
+            <p>API Development & Testing</p>
+        </div>
+        <!-- Skill 9 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=UCjgZwwVdfWI&format=png&color=1A1A1A" alt="Workshop Facilitation Icon">
+            <p>Stakeholder Collaboration</p>
+        </div>
+        <!-- Skill 10 -->
+        <div class="skill-item">
+            <img src="https://img.icons8.com/?size=100&id=122808&format=png&color=1A1A1A" alt="Performance Testing Icon">
+            <p>Cross-Functional Team Leadership</p>
+        </div>
+    </div>
+</div>
 
-        	    <h2>Product Manager</h2>
-    	        <p><strong>OTR Solutions, Roswell, GA</strong> | April 2018 – January 2023</p>
-	            <ul>
-            	    <li>Facilitated stakeholder workshop conversations, leading to the design and launch of the Lumper Advance feature, reducing care team intervention time and enhancing client satisfaction.</li>
-        	        <li>Guided the successful migration of the Auto-Invoice feature to a microservice architecture, ensuring seamless API management and scalability.</li>
-    	            <li>Balanced shifting priorities across up to four Agile teams, aligning stakeholders and ensuring high-value initiatives were delivered on time without sacrificing quality.</li>
-	                <li>Worked closely with UX and engineering teams to design and refine the Freight Rate Analyzer, leveraging iterative user feedback to shape a data-informed roadmap.</li>
-	            </ul>
-    	    </div>
-	    </div>
-		<!-- Contact Section -->
-	    <section id="contact" class="cta-section">
-	        <div class="cta-container">
-        	    <h2>Interested in Working Together?</h2>
-	            <p>Let's create something extraordinary.</p>
-	                <div class="contact-links">
-	                    <a href="mailto:bparton31.jobs@gmail.com" aria-label="Email Me!" class="contact-link">
-	                        <i class="fas fa-envelope"></i> Email Me
-	                    </a>
-	                    <a href="https://www.linkedin.com/in/brian-parton/" aria-label="Find Me On LinkedIn" target="_blank" class="contact-link">
-        	                <i class="fab fa-linkedin"></i> Connect on LinkedIn
-	                    </a>
-        	        </div>
-	        </div>
-	    </section>
-	    <footer>
-	        <p>
-        	    © <span id="current-year"></span> Brian Parton.
-	            <a href="privacy.html" aria-label="Go to Privacy Page" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-	        </p>
-	    </footer>
-		<!-- JavaScript for the hamburger menu -->
-		<script>
-    		const hamburger = document.querySelector('.hamburger-menu');
-		    const navMenu = document.querySelector('.header-nav ul');
-		    hamburger.addEventListener('click', () => {
-        		navMenu.classList.toggle('active');
-    		});
+                        <div class="content-subsection">
+                            <h2 id="certifications">Education</h2>
+                            <p><strong>Master of Science in Physics</strong><br>Clemson University, May 2013</p>
+                            <p><strong>Bachelor of Science in Physics</strong><br>Emory University, May 2010</p>
+                            <h2 id="education">Certifications</h2>
+                            <p><strong>PSPO I:</strong> Professional Scrum Product Owner I, 2024</p>
+                        </div>
+                    </div>
+                    <!-- Contact Section -->
+                    <section id="contact" class="cta-section">
+                        <div class="cta-container">
+                            <h2>Interested in Working Together?</h2>
+                            <p>Let's create something extraordinary.</p>
+                            <div class="contact-links">
+                                <a href="mailto:bparton31.jobs@gmail.com" aria-label="Send Me An Email" class="contact-link">
+                                    <i class="fas fa-envelope"></i> Email Me
+                                </a>
+                                <a href="https://www.linkedin.com/in/brian-parton/" aria-label="Find Me On LinkedIn" target="_blank" class="contact-link">
+                                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer>
+                <p>
+                    © <span id="current-year"></span> Brian Parton.
+                    <a href="privacy.html" aria-label="Go to Privacy Page" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                </p>
+            </footer>
+            <!-- JavaScript for the hamburger menu -->
+            <script>
+                const hamburger = document.querySelector('.hamburger-menu');
+                const navMenu = document.querySelector('.header-nav ul');
+                hamburger.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
 
-	        document.addEventListener("DOMContentLoaded", () => {
-        	    const targetSection = document.querySelector("#load");
-	            if (targetSection) {
-        	        targetSection.scrollIntoView({ behavior: "smooth" });
-	            }
-	        });
+                document.addEventListener("DOMContentLoaded", () => {
+                    const targetSection = document.querySelector("#load");
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
 
-	        document.getElementById("current-year").textContent = new Date().getFullYear();
-	    </script>
+                document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>
+        </div>
 	</body>
 </html>

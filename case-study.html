@@ -36,728 +36,727 @@
 		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-	<body>
+	<body id="load">
 		<!-- Full Image Preview -->
-<div id="full-image-container" class="full-image-container">
-    <div class="modal-content">
-        <button id="close-preview-button" onclick="closeImage()">Close</button>
-        <img id="full-image" src="" alt="Full-Size Image">
-        <p id="full-image-caption"></p>
-    </div>
-</div>
+		<div id="full-image-container" class="full-image-container">
+			<div class="modal-content">
+				<button id="close-preview-button" onclick="closeImage()">Close</button>
+				<img id="full-image" src="" alt="Full-Size Image">
+				<p id="full-image-caption"></p>
+			</div>
+		</div>
     	<!-- Header -->
     	<div class="content-wrapper">
-	    <header class="header">
-    	    <nav class="header-nav">
-    	        <button class="hamburger-menu" aria-label="Toggle navigation menu">☰</button>
-        	    <ul>
-            	    <li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
-                	<li><a href="case-study.html" aria-label="Go to Case Studies Page">Case Studies</a></li>
-	                <li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
-        	    </ul>
-	        </nav>
-    	</header>
-	   	<!-- Sidebar Navigation (Portfolio Page Only) -->
-    	<aside class="sidebar portfolio-sidebar">
-			<nav>
-    	    	<ul> 
-    	    		<li><h2>Case Studies</h2></li>
-					<li><a href="#Mobile-App-Rebuild" aria-label="Go to Mobile App Rebuild">Modernizing the Mobile App</a></li>
-					<li><a href="#Discount-Fuel-Finder" aria-label="Go to Fuel Finder">Finding Discounts: Fuel Finder</a></li>
-					<li><a href="#Vendor-Payable-Board" aria-label="Go to Vendor Payable Board">Streamlining Vendor Payables</a></li>
-					<li><a href="#Auto-Invoice-Feature" aria-label="Go to Auto Invoice Feature">Automating Invoices</a></li>
-					<li><a href="#Freight-Rate-Analyzer" aria-label="Go to Freight Rate Analyzer">Analyzing Freight Rates</a></li>
-					<li><a href="#Bulk-Gift-Card" aria-label="Go to Bulk Gift Card Order Beta">Bulk Gift Card Order MVP</a></li>
-					<li><a href="#Multi-Step-Signup" aria-label="Go to Multi-Step Signup">Simplifying Signup Flow</a></li>
-    	    	</ul>
-    		</nav>
-		</aside>
-		<!-- Main Content Wrapper -->
-		<div class="portfolio-layout brian">
-			<h1>Product Portfolio</h1>
-			<!-- Case Study #1 -->
-            <section id="Mobile-App-Rebuild" class="case-study">
-                <h2 class="case-study-title">Modernizing Freight Management: Transforming OTR Solutions Mobile App</h2>
-                <div class="image-gallery">
-                    <div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Mobile App Dashboard.png', 'Fig. 1: Dashboard Mockup')">
-                        <img src="assets/OTR Solutions Mobile App Dashboard.png" alt="Dashboard Mockup Thumbnail">
-                        <figcaption>Fig. 1: Dashboard Mockup</figcaption>
-                    </div>
-                    <div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Mobile App Broker Check.png', 'Fig. 2: Broker Check Mockup')">
-                        <img src="assets/OTR Solutions Mobile App Broker Check.png" alt="Broker Check Mockup Thumbnail">
-                        <figcaption>Fig. 2: Broker Check Mockup</figcaption>
-                    </div>
-                    <div class="thumbnail-container" onclick="showImage('assets/App-Invoice Submission Workflow.drawio.png', 'Fig. 3: Invoice Submission Workflow')">
-                        <img src="assets/App-Invoice Submission Workflow.drawio.png" alt="Invoice Submission Workflow Thumbnail">
-                        <figcaption>Fig. 3: Invoice Submission Workflow</figcaption>
-                    </div>
-                </div>
-                <!-- The Problem Section -->
-                <!-- Hook Section -->
-                <blockquote class="case-study-hook">
-                    <span class="highlight-hook">Rebuilding the Mobile App to meet market demands and enhance competitiveness.</span>
-                </blockquote>
-                <h3 class="case-study-heading">The Problem: An Outdated Mobile App</h3>
-                <div class="case-study-content">
-                    <p><strong>For Clients:</strong> The existing invoice submission form was inefficient and lacked user-friendly design elements, contributing to user dissatisfaction. The app’s limited functionality only allowed invoice submissions and broker checks, leaving most user needs unmet.</p>
-                    <p><strong>For OTR:</strong> The outdated app structure created a barrier to client onboarding, impacting acquisition and retention rates. Freight owner-operators required a mobile solution optimized for submitting and reviewing invoices efficiently while on the road. Without app adoption, users submitted invoices through email, creating operational inefficiencies as internal teams had to process data manually.</p>
-                </div>
-                <!-- Vision Section -->
-                <h3 class="case-study-heading">The Vision: A Comprehensive Overhaul</h3>
-                <div class="case-study-content">
-                    <p><strong>Goal:</strong></p>
-                    <p>Rearchitected the codebase to align with modern frameworks, introduced a redesigned UI adhering to updated design systems (see <strong>Fig. 1</strong> and <strong>Fig. 2</strong>), optimized the user experience, and enhanced engagement metrics, ensuring scalability for future feature development.</p>
-                    <p><strong>Defining Success:</strong></p>
-                    <ul>
-                        <li>Engagement Metrics: Track active users and app-based invoice submissions.</li>
-                        <li>Satisfaction: Positive client feedback, better app store ratings, and favorable mentions during sales demos.</li>
-                        <li>Seamless Transition: Execute a clean transition to the updated app, ensuring zero downtime and uninterrupted client access during deployment.</li>
-                    </ul>
-                </div>
-                <!-- Execution Section -->
-                <h3 class="case-study-heading">Execution: Delivering Results Through Strategic Adjustments</h3>
-                <div class="case-study-content">
-                    <p><strong>A Unique Approach:</strong></p>
-                    <ul>
-                        <li><strong>Quality Assurance:</strong> Rigorous internal testing ensured the product met high performance and usability standards before release.</li>
-                        <li><strong>Streamlined UX:</strong> Developed an intuitive invoice submission wizard, seamlessly integrating the Google Location API to address client pain points and replace a frustrating form-based process.</li>
-                        <li><strong>Efficient Collaboration:</strong> Worked closely with a single engineer and an intern for bug fixes. Managed progress using Kanban methodology and Azure dashboards.</li>
-                    </ul>
-                    <p><strong>Ease of Scalability and Future Feature Integration:</strong> The app was designed to support easier debugging, enhance future development velocity, and simplify the addition of new features.</p>
-                </div>
-                <!-- Outcomes Section -->
-                <h3 class="case-study-heading">Outcomes: Transformational Impact</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>30% Increase:</strong> In invoice submissions through the app's new Invoice workflow (see <strong>Fig. 3</strong>) within the first three months.</li>
-                        <li><strong>4.9-Star Rating:</strong> Achieved on the <a href="https://apps.apple.com/us/app/otr-solutions/id1535523322" aria-label="Go to iOS App Store">iOS app store</a> with over 1,200 reviews.</li>
-                        <li><strong>Internal Feedback:</strong> "Went from something you didn't want to mention while onboarding a new client to something driving the growth of new business." – OTR Sales/Operations Team Member.</li>
-                    </ul>
-                </div>
-                <!-- Learnings Section -->
-                <h3 class="case-study-heading">Learnings: Lessons from Rebuilding</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Understand All Pain Points:</strong> While the rebuild addressed major user frustrations, some niche features relied upon by a small subset of users were unintentionally removed. Deeper research could have avoided this oversight.</li>
-                        <li><strong>Flexible Documentation Strategies:</strong> Starting the project on short notice left limited time for detailed planning. The team’s ability to adapt and collaborate overcame these challenges.</li>
-                    </ul>
-                </div>
-            </section>
-			<!-- Case Study #2 -->
-            <section id="Discount-Fuel-Finder" class="case-study">
-                <h2 class="case-study-title">Boosting Fuel Card Usage with OTR Fuel Finder</h2>
-                    <div class="image-gallery">
-                        <div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Fuel Finder Location.png', 'Fig. 4: Fuel Finder Map with Selected Station')">
-                            <img src="assets/OTR Solutions Fuel Finder Location.png" alt="Fuel Finder Map Thumbnail">
-                            <figcaption>Fig. 4: Fuel Finder Map with Selected Station</figcaption>
-                        </div>
-                        <div class="thumbnail-container" onclick="showImage('assets/FF-Data Pipeline Workflow.drawio.png', 'Fig. 5: Data Pipeline Processing Workflow')">
-                            <img src="assets/FF-Data Pipeline Workflow.drawio.png" alt="Data Pipeline Workflow Thumbnail">
-                            <figcaption>Fig. 5: Data Pipeline Processing Workflow</figcaption>
-                        </div>
-                    </div>
-                <!-- The Problem Section -->
-                <!-- Hook -->
-			    <blockquote class="case-study-hook">
-			        <span class="highlight-hook">Empowering clients with real-time fuel savings at their fingertips.</span>
-                </blockquote>
-                <h3 class="case-study-heading">The Problem: Clients Lost in the Search for Savings</h3>
-                    <div class="case-study-content">
-                        <p><strong>Context:</strong></p>
-                        <p>
-                            OTR Solutions offered fuel discounts through its Fuel Card but lacked a user-friendly way for clients to locate these savings. Clients were unaware of where they could get discounts, what the discounts would be, or how they compared to other cards. This gap hindered card usage and client satisfaction.
-                        </p>
-                        <p><strong>Pain Points:</strong></p>
-                        <ul>
-                            <li><strong>Lack of Visibility:</strong> Clients couldn't easily find truck stops offering discounts with the OTR Fuel Card.</li>
-                            <li><strong>Competitive Disadvantage:</strong> Clients compared OTR's card unfavorably against competitors due to lack of accessible discount information.</li>
-                        </ul>
-                    </div>
-                    <!-- Vision Section -->
-                    <h3 class="case-study-heading">The Vision: A Fuel Discounts Finder for Enhanced Engagement</h3>
-                    <div class="case-study-content">
-                        <p><strong>Goal:</strong></p>
-                        <p>
-                            Develop a Fuel Finder tool that allows users to locate discounted diesel truck stops, boosting OTR's card usage and sales, and providing value to clients (see <strong>Fig. 4</strong>).
-                        </p>
-                        <p><strong>Defining Success:</strong></p>
-                        <ul>
-                            <li>Increase in fuel card usage and gallons purchased.</li>
-                            <li>Reduction in time to first card swipe after receiving the card.</li>
-                            <li>Positive client feedback and engagement with the Fuel Finder feature.</li>
-                        </ul>
-                    </div>
-                    <!-- Execution Section -->
-                    <h3 class="case-study-heading">Execution: Overcoming Constraints with Creative Solutions</h3>
-                    <div class="case-study-content">
-                        <p><strong>Research and Planning:</strong></p>
-                        <ul>
-                            <li>Conducted competitive analysis on other Fuel Finder apps to identify expected features and potential pitfalls.</li>
-                            <li>Leveraged deep knowledge of OTR's fuel data to design a cost-effective solution.</li>
-                            <li>Collaborated with UI/UX designers and stakeholders to define essential requirements and MVP design.</li>
-                        </ul>
-                        <p><strong>Innovative Approach:</strong></p>
-                        <ul>
-                            <li>Utilized card swipe data to display recent pricing, avoiding $50K/year in third-party data costs.</li>
-                            <li>Created a data pipeline that processed daily card swipe data to provide up-to-date pricing information (see <strong>Fig. 5</strong>).</li>
-                        </ul>
-                        <p><strong>Development and Testing:</strong></p>
-                        <ul>
-                            <li>Coordinated between Data and Software teams to build the pipeline and integrate it with the app.</li>
-                            <li>Conducted a company-wide Beta test during Thanksgiving, leveraging employees traveling across the country to validate data accuracy and user experience.</li>
-                        </ul>
-                    </div>
-                    <!-- Outcomes Section -->
-                    <h3 class="case-study-heading">Outcomes: Driving Engagement and Sales Growth</h3>
-                    <div class="case-study-content">
-                        <ul>
-                            <li><strong>50% Increase:</strong> In fuel card usage and gallons purchased over six months.</li>
-                            <li><strong>Reduction in Time to First Swipe:</strong> Decreased from over 30 days to under 7 days.</li>
-                            <li><strong>Operational Shift:</strong> Fuel Desk transitioned from outbound sales to focused support and application processing due to self-selling nature of the Fuel Card.</li>
-                        </ul>
-                    </div>
-                    <!-- Learnings Section -->
-                    <h3 class="case-study-heading">Learnings: Leveraging Internal Resources for Success</h3>
-                    <div class="case-study-content">
-                        <ul>
-                            <li><strong>Value of Internal Testing:</strong> Utilizing employees for Beta testing provided confidence in data accuracy and user experience.</li>
-                            <li><strong>Cost-Effective Solutions:</strong> Creative use of existing data resources can significantly reduce costs and accelerate development.</li>
-                            <li><strong>Long-Term Planning:</strong> Gathering post-launch feedback was essential for informing future enhancements despite limited immediate development opportunities.</li>
-                        </ul>
-                    </div>
-                </section>
+			<header class="header">
+				<nav class="header-nav">
+					<button class="hamburger-menu" aria-label="Toggle navigation menu">☰</button>
+					<ul>
+						<li><a href="portfolio.html" aria-label="Go to Portfolio Page">Portfolio</a></li>
+						<li><a href="case-study.html" aria-label="Go to Case Studies Page">Case Studies</a></li>
+						<li><a href="resume.html" aria-label="Go to Resume Page">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Sidebar Navigation (Portfolio Page Only) -->
+			<aside class="sidebar">
+				<nav>
+					<ul> 
+						<li><h2>Case Studies</h2></li>
+						<li><a href="#Mobile-App-Rebuild" aria-label="Go to Mobile App Rebuild">Modernizing the Mobile App</a></li>
+						<li><a href="#Discount-Fuel-Finder" aria-label="Go to Fuel Finder">Finding Discounts: Fuel Finder</a></li>
+						<li><a href="#Vendor-Payable-Board" aria-label="Go to Vendor Payable Board">Streamlining Vendor Payables</a></li>
+						<li><a href="#Auto-Invoice-Feature" aria-label="Go to Auto Invoice Feature">Automating Invoices</a></li>
+						<li><a href="#Freight-Rate-Analyzer" aria-label="Go to Freight Rate Analyzer">Analyzing Freight Rates</a></li>
+						<li><a href="#Bulk-Gift-Card" aria-label="Go to Bulk Gift Card Order Beta">Bulk Gift Card Order MVP</a></li>
+						<li><a href="#Multi-Step-Signup" aria-label="Go to Multi-Step Signup">Simplifying Signup Flow</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<!-- Main Content Wrapper -->
+			<div class="portfolio-layout brian">
+				<h1>Product Portfolio: Case Studies</h1>
+				<!-- Case Study #1 -->
+				<section id="Mobile-App-Rebuild" class="case-study">
+					<h2 class="case-study-title">Modernizing Freight Management: Transforming OTR Solutions Mobile App</h2>
+					<div class="image-gallery">
+						<div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Mobile App Dashboard.png', 'Fig. 1: Dashboard Mockup')">
+							<img src="assets/OTR Solutions Mobile App Dashboard.png" alt="Dashboard Mockup Thumbnail">
+							<figcaption>Fig. 1: Dashboard Mockup</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Mobile App Broker Check.png', 'Fig. 2: Broker Check Mockup')">
+							<img src="assets/OTR Solutions Mobile App Broker Check.png" alt="Broker Check Mockup Thumbnail">
+							<figcaption>Fig. 2: Broker Check Mockup</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/App-Invoice Submission Workflow.drawio.png', 'Fig. 3: Invoice Submission Workflow')">
+							<img src="assets/App-Invoice Submission Workflow.drawio.png" alt="Invoice Submission Workflow Thumbnail">
+							<figcaption>Fig. 3: Invoice Submission Workflow</figcaption>
+						</div>
+					</div>
+					<!-- The Problem Section -->
+					<!-- Hook Section -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">Rebuilding the Mobile App to meet market demands and enhance competitiveness.</span>
+					</blockquote>
+					<h3 class="case-study-heading">The Problem: An Outdated Mobile App</h3>
+					<div class="case-study-content">
+						<p><strong>For Clients:</strong> The existing invoice submission form was inefficient and lacked user-friendly design elements, contributing to user dissatisfaction. The app’s limited functionality only allowed invoice submissions and broker checks, leaving most user needs unmet.</p>
+						<p><strong>For OTR:</strong> The outdated app structure created a barrier to client onboarding, impacting acquisition and retention rates. Freight owner-operators required a mobile solution optimized for submitting and reviewing invoices efficiently while on the road. Without app adoption, users submitted invoices through email, creating operational inefficiencies as internal teams had to process data manually.</p>
+					</div>
+					<!-- Vision Section -->
+					<h3 class="case-study-heading">The Vision: A Comprehensive Overhaul</h3>
+					<div class="case-study-content">
+						<p><strong>Goal:</strong></p>
+						<p>Rearchitected the codebase to align with modern frameworks, introduced a redesigned UI adhering to updated design systems (see <strong>Fig. 1</strong> and <strong>Fig. 2</strong>), optimized the user experience, and enhanced engagement metrics, ensuring scalability for future feature development.</p>
+						<p><strong>Defining Success:</strong></p>
+						<ul>
+							<li>Engagement Metrics: Track active users and app-based invoice submissions.</li>
+							<li>Satisfaction: Positive client feedback, better app store ratings, and favorable mentions during sales demos.</li>
+							<li>Seamless Transition: Execute a clean transition to the updated app, ensuring zero downtime and uninterrupted client access during deployment.</li>
+						</ul>
+					</div>
+					<!-- Execution Section -->
+					<h3 class="case-study-heading">Execution: Delivering Results Through Strategic Adjustments</h3>
+					<div class="case-study-content">
+						<p><strong>A Unique Approach:</strong></p>
+						<ul>
+							<li><strong>Quality Assurance:</strong> Rigorous internal testing ensured the product met high performance and usability standards before release.</li>
+							<li><strong>Streamlined UX:</strong> Developed an intuitive invoice submission wizard, seamlessly integrating the Google Location API to address client pain points and replace a frustrating form-based process.</li>
+							<li><strong>Efficient Collaboration:</strong> Worked closely with a single engineer and an intern for bug fixes. Managed progress using Kanban methodology and Azure dashboards.</li>
+						</ul>
+						<p><strong>Ease of Scalability and Future Feature Integration:</strong> The app was designed to support easier debugging, enhance future development velocity, and simplify the addition of new features.</p>
+					</div>
+					<!-- Outcomes Section -->
+					<h3 class="case-study-heading">Outcomes: Transformational Impact</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>30% Increase:</strong> In invoice submissions through the app's new Invoice workflow (see <strong>Fig. 3</strong>) within the first three months.</li>
+							<li><strong>4.9-Star Rating:</strong> Achieved on the <a href="https://apps.apple.com/us/app/otr-solutions/id1535523322" aria-label="Go to iOS App Store">iOS app store</a> with over 1,200 reviews.</li>
+							<li><strong>Internal Feedback:</strong> "Went from something you didn't want to mention while onboarding a new client to something driving the growth of new business." – OTR Sales/Operations Team Member.</li>
+						</ul>
+					</div>
+					<!-- Learnings Section -->
+					<h3 class="case-study-heading">Learnings: Lessons from Rebuilding</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Understand All Pain Points:</strong> While the rebuild addressed major user frustrations, some niche features relied upon by a small subset of users were unintentionally removed. Deeper research could have avoided this oversight.</li>
+							<li><strong>Flexible Documentation Strategies:</strong> Starting the project on short notice left limited time for detailed planning. The team’s ability to adapt and collaborate overcame these challenges.</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Case Study #2 -->
+				<section id="Discount-Fuel-Finder" class="case-study">
+					<h2 class="case-study-title">Boosting Fuel Card Usage with OTR Fuel Finder</h2>
+						<div class="image-gallery">
+							<div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Fuel Finder Location.png', 'Fig. 4: Fuel Finder Map with Selected Station')">
+								<img src="assets/OTR Solutions Fuel Finder Location.png" alt="Fuel Finder Map Thumbnail">
+								<figcaption>Fig. 4: Fuel Finder Map with Selected Station</figcaption>
+							</div>
+							<div class="thumbnail-container" onclick="showImage('assets/FF-Data Pipeline Workflow.drawio.png', 'Fig. 5: Data Pipeline Processing Workflow')">
+								<img src="assets/FF-Data Pipeline Workflow.drawio.png" alt="Data Pipeline Workflow Thumbnail">
+								<figcaption>Fig. 5: Data Pipeline Processing Workflow</figcaption>
+							</div>
+						</div>
+					<!-- The Problem Section -->
+					<!-- Hook -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">Empowering clients with real-time fuel savings at their fingertips.</span>
+					</blockquote>
+					<h3 class="case-study-heading">The Problem: Clients Lost in the Search for Savings</h3>
+						<div class="case-study-content">
+							<p><strong>Context:</strong></p>
+							<p>
+								OTR Solutions offered fuel discounts through its Fuel Card but lacked a user-friendly way for clients to locate these savings. Clients were unaware of where they could get discounts, what the discounts would be, or how they compared to other cards. This gap hindered card usage and client satisfaction.
+							</p>
+							<p><strong>Pain Points:</strong></p>
+							<ul>
+								<li><strong>Lack of Visibility:</strong> Clients couldn't easily find truck stops offering discounts with the OTR Fuel Card.</li>
+								<li><strong>Competitive Disadvantage:</strong> Clients compared OTR's card unfavorably against competitors due to lack of accessible discount information.</li>
+							</ul>
+						</div>
+						<!-- Vision Section -->
+						<h3 class="case-study-heading">The Vision: A Fuel Discounts Finder for Enhanced Engagement</h3>
+						<div class="case-study-content">
+							<p><strong>Goal:</strong></p>
+							<p>
+								Develop a Fuel Finder tool that allows users to locate discounted diesel truck stops, boosting OTR's card usage and sales, and providing value to clients (see <strong>Fig. 4</strong>).
+							</p>
+							<p><strong>Defining Success:</strong></p>
+							<ul>
+								<li>Increase in fuel card usage and gallons purchased.</li>
+								<li>Reduction in time to first card swipe after receiving the card.</li>
+								<li>Positive client feedback and engagement with the Fuel Finder feature.</li>
+							</ul>
+						</div>
+						<!-- Execution Section -->
+						<h3 class="case-study-heading">Execution: Overcoming Constraints with Creative Solutions</h3>
+						<div class="case-study-content">
+							<p><strong>Research and Planning:</strong></p>
+							<ul>
+								<li>Conducted competitive analysis on other Fuel Finder apps to identify expected features and potential pitfalls.</li>
+								<li>Leveraged deep knowledge of OTR's fuel data to design a cost-effective solution.</li>
+								<li>Collaborated with UI/UX designers and stakeholders to define essential requirements and MVP design.</li>
+							</ul>
+							<p><strong>Innovative Approach:</strong></p>
+							<ul>
+								<li>Utilized card swipe data to display recent pricing, avoiding $50K/year in third-party data costs.</li>
+								<li>Created a data pipeline that processed daily card swipe data to provide up-to-date pricing information (see <strong>Fig. 5</strong>).</li>
+							</ul>
+							<p><strong>Development and Testing:</strong></p>
+							<ul>
+								<li>Coordinated between Data and Software teams to build the pipeline and integrate it with the app.</li>
+								<li>Conducted a company-wide Beta test during Thanksgiving, leveraging employees traveling across the country to validate data accuracy and user experience.</li>
+							</ul>
+						</div>
+						<!-- Outcomes Section -->
+						<h3 class="case-study-heading">Outcomes: Driving Engagement and Sales Growth</h3>
+						<div class="case-study-content">
+							<ul>
+								<li><strong>50% Increase:</strong> In fuel card usage and gallons purchased over six months.</li>
+								<li><strong>Reduction in Time to First Swipe:</strong> Decreased from over 30 days to under 7 days.</li>
+								<li><strong>Operational Shift:</strong> Fuel Desk transitioned from outbound sales to focused support and application processing due to self-selling nature of the Fuel Card.</li>
+							</ul>
+						</div>
+						<!-- Learnings Section -->
+						<h3 class="case-study-heading">Learnings: Leveraging Internal Resources for Success</h3>
+						<div class="case-study-content">
+							<ul>
+								<li><strong>Value of Internal Testing:</strong> Utilizing employees for Beta testing provided confidence in data accuracy and user experience.</li>
+								<li><strong>Cost-Effective Solutions:</strong> Creative use of existing data resources can significantly reduce costs and accelerate development.</li>
+								<li><strong>Long-Term Planning:</strong> Gathering post-launch feedback was essential for informing future enhancements despite limited immediate development opportunities.</li>
+							</ul>
+						</div>
+					</section>
 
-			<!-- Case Study #3 -->
-			<section id="Vendor-Payable-Board" class="case-study">
-			    <h2 class="case-study-title">Streamlining Vendor Payables: Boosting Efficiency for OTR Solutions' Account Teams</h2>
-			    <div class="image-gallery">
-					<div class="thumbnail-container" onclick="showImage('assets/VPB-Vendor Payable Workflow_Before.drawio.png', 'Fig. 6: Manual Workflow (Before)')">
-			            <img src="assets/VPB-Vendor Payable Workflow_Before.drawio.png" alt="Before Workflow Diagram">
-    			    	<figcaption>Fig. 6: Manual Workflow (Before)</figcaption>
-			        </div>
-			        <div class="thumbnail-container" onclick="showImage('assets/VPB-Vendor Payable Workflow_After.drawio.png', 'Fig. 7: Automated Workflow (After)')">
-			            <img src="assets/VPB-Vendor Payable Workflow_After.drawio.png" alt="After Workflow Diagram">
-    		            <figcaption>Fig. 7: Automated Workflow (After)</figcaption>
-    		        </div>
-    				<div class="thumbnail-container" onclick="showImage('assets/Vendor Payable Board, with Modal.png', 'Fig. 8: Vendor Payable Board with Modal')">
-        				<img src="assets/Vendor Payable Board, with Modal.png" alt="Vendor Payable Board with Modal">
-	                	<figcaption>Fig. 8: Vendor Payable Board with Modal</figcaption>
-    		        </div>
-    		        <div class="thumbnail-container" onclick="showImage('assets/Schedule Payment Alert to Withhold VP Funds.png', 'Fig. 9: Payment Page Alert')">
-            			<img src="assets/Schedule Payment Alert to Withhold VP Funds.png" alt="Payment Page Alert">
-            			<figcaption>Fig. 9: Payment Page Alert</figcaption>
-    		        </div>
-    			</div>
-			    <!-- Problem Section -->
-			    <!-- Hook -->
-			    <blockquote class="case-study-hook">
-			        <span class="highlight-hook">When your business depends on a moving truck, even one missed payment can derail your livelihood.</span>
-			    </blockquote>
-			    <h3 class="case-study-heading">The Problem: Managing Chaos Without Tools</h3>
-			    <div class="case-study-content">
-			        <p><strong>Context:</strong></p>
-			    <p>
-			        OTR Solutions needed a scalable solution to improve client retention by offering Vendor Payment services. However, manual tracking through scattered Google Docs created inefficiencies and frequent errors 
-			        (see <strong>Fig. 6</strong> for the manual workflow). Account teams were overburdened, risking client trust. Without a centralized system or clear processes, the feature was on the verge of failure, despite its growing demand.
-			    </p>
-			        <p><strong>Pain Points:</strong></p>
-			        <ul>
-			            <li><strong>Operational Chaos:</strong> No centralized repository; team members depended on individual processes.</li>
-			            <li><strong>Missed Payments:</strong> Tracking inconsistencies jeopardized client operations.</li>
-            			<li><strong>Employee Overload:</strong> Account teams spent 2+ hours weekly following a process ill-suited to scaling demands.</li>
-			        </ul>
-			    </div>
-			    <!-- Vision Section -->
-			    <h3 class="case-study-heading">The Vision: Building a Scalable Solution</h3>
-			    <div class="case-study-content">
-			        <p><strong>Goal:</strong></p>
-			        <p>
-			            Introduce an automated Vendor Payable management system that reduces manual effort, increases visibility, 
-			            and empowers account teams to focus on high-value tasks.
-			        </p>
-			        <p><strong>Plan:</strong></p>
-			        <p>
-			            The project was delivered in three iterative phases using Scrum methodologies and Azure for backlog management:
-			        </p>
-			        <ul>
-            			<li><strong>Phase 1:</strong> Introduced centralized data and increased visibility into Vendor Payables.</li>
-			            <li><strong>Tools:</strong> Lucid Charts for flowchart creation, Figma for UI/UX design.</li>
-            			<li><strong>Phase 2:</strong> Automate fund withholding, support accounting exports, and facilitate emergency fund returns.</li>
-			            <li><strong>Phase 3:</strong> Introduced fully automated payment releases, streamlining the entire workflow (see <strong>Fig. 7</strong> for the automated process).</li>
-			        </ul>
-			    </div>
-			    <!-- Execution Section -->
-			    <h3 class="case-study-heading">Execution: Collaboration at the Core</h3>
-			    <div class="case-study-content">
-			        <p><strong>Discovery and Solution Design:</strong></p>
-			        <p>
-			            The project involved cross-functional collaboration between Operations, Engineering, and Product teams.
-            			The Vendor Payable Board (see <strong>Fig. 8</strong>) provided a centralized platform where Account Teams could easily manage 
-			            payables with clear visibility and actionable options.
-			        </p>
-			        <ul>
-			            <li><strong>Discovery and Solutioning Sessions:</strong> Identified pain points with Operations stakeholders and ideated solutions with Engineering.</li>
-            			<li><strong>Refinement Workshops:</strong> Standardized team processes using user stories, acceptance criteria, and detailed flowcharts.</li>
-			        </ul>
-			        <p><strong>Methodologies and Tools:</strong></p>
-			        <p>
-            			Tools: Azure for backlog management, Lucid Charts for flow diagrams, and Figma for UI/UX design.
-			        </p>
-			        <p>Practices: Delivered value iteratively to provide benefits immediately and incorporate user feedback sooner.</p>
-			        <p><strong>Challenges and Solutions:</strong></p>
-			        <ul>
-            			<li><strong>Complex Recurring Payment Logic:</strong> Engineering tackled edge cases like holidays and weekends to avoid missed payments.</li>
-			            <li><strong>Payables Not Funded:</strong> The payment page alert (see <strong>Fig. 9</strong>) proactively notified Account Teams to withhold funds during payment scheduling, ensuring the process remained accurate and seamless.</li>
-            			<li><strong>Accounting Integration:</strong> Worked closely with finance to ensure accurate IIF file exports.</li>
-			        </ul>
-			    </div>
-			    <!-- Outcomes Section -->
-			    <h3 class="case-study-heading">Outcomes: Transformational Impact</h3>
-			    <div class="case-study-content">
-			        <p><strong>Metrics:</strong></p>
-			        <ul>
-            			<li><strong>Time savings:</strong> Reduced account management need from over 2 hours to under 5 minutes per week.</li>
-			            <li><strong>Increased payables:</strong> Grew from 75 open payables to 500 in six months.</li>
-            			<li><strong>Retention:</strong> Clients using the program were 90% more likely to remain with OTR after six months.</li>
-			        </ul>
-			        <p><strong>Business Value:</strong></p>
-			        <p>
-			            The Vendor Payable Board became a critical feature for retaining clients and enabling account 
-						teams to focus on strategic priorities, aligning with OTR’s mission to support small trucking businesses. Long-term, this service could evolve into 
-			            a standalone subscription offering or be integrated into a SaaS model contract structure.
-			        </p>
+				<!-- Case Study #3 -->
+				<section id="Vendor-Payable-Board" class="case-study">
+					<h2 class="case-study-title">Streamlining Vendor Payables: Boosting Efficiency for OTR Solutions' Account Teams</h2>
+					<div class="image-gallery">
+						<div class="thumbnail-container" onclick="showImage('assets/VPB-Vendor Payable Workflow_Before.drawio.png', 'Fig. 6: Manual Workflow (Before)')">
+							<img src="assets/VPB-Vendor Payable Workflow_Before.drawio.png" alt="Before Workflow Diagram">
+							<figcaption>Fig. 6: Manual Workflow (Before)</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/VPB-Vendor Payable Workflow_After.drawio.png', 'Fig. 7: Automated Workflow (After)')">
+							<img src="assets/VPB-Vendor Payable Workflow_After.drawio.png" alt="After Workflow Diagram">
+							<figcaption>Fig. 7: Automated Workflow (After)</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/Vendor Payable Board, with Modal.png', 'Fig. 8: Vendor Payable Board with Modal')">
+							<img src="assets/Vendor Payable Board, with Modal.png" alt="Vendor Payable Board with Modal">
+							<figcaption>Fig. 8: Vendor Payable Board with Modal</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/Schedule Payment Alert to Withhold VP Funds.png', 'Fig. 9: Payment Page Alert')">
+							<img src="assets/Schedule Payment Alert to Withhold VP Funds.png" alt="Payment Page Alert">
+							<figcaption>Fig. 9: Payment Page Alert</figcaption>
+						</div>
+					</div>
+					<!-- Problem Section -->
+					<!-- Hook -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">When your business depends on a moving truck, even one missed payment can derail your livelihood.</span>
+					</blockquote>
+					<h3 class="case-study-heading">The Problem: Managing Chaos Without Tools</h3>
+					<div class="case-study-content">
+						<p><strong>Context:</strong></p>
+					<p>
+						OTR Solutions needed a scalable solution to improve client retention by offering Vendor Payment services. However, manual tracking through scattered Google Docs created inefficiencies and frequent errors 
+						(see <strong>Fig. 6</strong> for the manual workflow). Account teams were overburdened, risking client trust. Without a centralized system or clear processes, the feature was on the verge of failure, despite its growing demand.
+					</p>
+						<p><strong>Pain Points:</strong></p>
+						<ul>
+							<li><strong>Operational Chaos:</strong> No centralized repository; team members depended on individual processes.</li>
+							<li><strong>Missed Payments:</strong> Tracking inconsistencies jeopardized client operations.</li>
+							<li><strong>Employee Overload:</strong> Account teams spent 2+ hours weekly following a process ill-suited to scaling demands.</li>
+						</ul>
+					</div>
+					<!-- Vision Section -->
+					<h3 class="case-study-heading">The Vision: Building a Scalable Solution</h3>
+					<div class="case-study-content">
+						<p><strong>Goal:</strong></p>
+						<p>
+							Introduce an automated Vendor Payable management system that reduces manual effort, increases visibility, 
+							and empowers account teams to focus on high-value tasks.
+						</p>
+						<p><strong>Plan:</strong></p>
+						<p>
+							The project was delivered in three iterative phases using Scrum methodologies and Azure for backlog management:
+						</p>
+						<ul>
+							<li><strong>Phase 1:</strong> Introduced centralized data and increased visibility into Vendor Payables.</li>
+							<li><strong>Tools:</strong> Lucid Charts for flowchart creation, Figma for UI/UX design.</li>
+							<li><strong>Phase 2:</strong> Automate fund withholding, support accounting exports, and facilitate emergency fund returns.</li>
+							<li><strong>Phase 3:</strong> Introduced fully automated payment releases, streamlining the entire workflow (see <strong>Fig. 7</strong> for the automated process).</li>
+						</ul>
+					</div>
+					<!-- Execution Section -->
+					<h3 class="case-study-heading">Execution: Collaboration at the Core</h3>
+					<div class="case-study-content">
+						<p><strong>Discovery and Solution Design:</strong></p>
+						<p>
+							The project involved cross-functional collaboration between Operations, Engineering, and Product teams.
+							The Vendor Payable Board (see <strong>Fig. 8</strong>) provided a centralized platform where Account Teams could easily manage 
+							payables with clear visibility and actionable options.
+						</p>
+						<ul>
+							<li><strong>Discovery and Solutioning Sessions:</strong> Identified pain points with Operations stakeholders and ideated solutions with Engineering.</li>
+							<li><strong>Refinement Workshops:</strong> Standardized team processes using user stories, acceptance criteria, and detailed flowcharts.</li>
+						</ul>
+						<p><strong>Methodologies and Tools:</strong></p>
+						<p>
+							Tools: Azure for backlog management, Lucid Charts for flow diagrams, and Figma for UI/UX design.
+						</p>
+						<p>Practices: Delivered value iteratively to provide benefits immediately and incorporate user feedback sooner.</p>
+						<p><strong>Challenges and Solutions:</strong></p>
+						<ul>
+							<li><strong>Complex Recurring Payment Logic:</strong> Engineering tackled edge cases like holidays and weekends to avoid missed payments.</li>
+							<li><strong>Payables Not Funded:</strong> The payment page alert (see <strong>Fig. 9</strong>) proactively notified Account Teams to withhold funds during payment scheduling, ensuring the process remained accurate and seamless.</li>
+							<li><strong>Accounting Integration:</strong> Worked closely with finance to ensure accurate IIF file exports.</li>
+						</ul>
+					</div>
+					<!-- Outcomes Section -->
+					<h3 class="case-study-heading">Outcomes: Transformational Impact</h3>
+					<div class="case-study-content">
+						<p><strong>Metrics:</strong></p>
+						<ul>
+							<li><strong>Time savings:</strong> Reduced account management need from over 2 hours to under 5 minutes per week.</li>
+							<li><strong>Increased payables:</strong> Grew from 75 open payables to 500 in six months.</li>
+							<li><strong>Retention:</strong> Clients using the program were 90% more likely to remain with OTR after six months.</li>
+						</ul>
+						<p><strong>Business Value:</strong></p>
+						<p>
+							The Vendor Payable Board became a critical feature for retaining clients and enabling account 
+							teams to focus on strategic priorities, aligning with OTR’s mission to support small trucking businesses. Long-term, this service could evolve into 
+							a standalone subscription offering or be integrated into a SaaS model contract structure.
+						</p>
 
-			        <p><strong>Testimonial:</strong></p>
-			        <blockquote>
-            			“This tool took something that was front of mind daily out of necessity and turned it into a task we almost 
-			            never think about.” – OTR Account Team Member
-			        </blockquote>
-			    </div>
-			    <!-- Learnings Section -->
-			    <h3 class="case-study-heading">Learnings: Lessons from Iteration</h3>
-			    <div class="case-study-content">
-			        <ul>
-            			<li><strong>Unfinished Doesn't Mean Unvaluable:</strong> Delivering utility in phases provided immediate benefits to Operations, reducing processing time sooner and allowing feedback for future phases.</li>
-			            <li><strong>Anticipate Hidden Complexities:</strong> Seemingly simple features, like recurring payments, can reveal unexpected challenges, such as accounting for non-working days like weekends and holidays.</li>
-            			<li><strong>Empathy for Clients:</strong> Recognizing the financial pressures on small and medium trucking businesses shaped features like emergency fund returns.</li>
-			        </ul>
-			    </div>
-			</section>
-			<!-- Case Study #4 -->
-			<section id="Auto-Invoice-Feature" class="case-study">
-			    <h2 class="case-study-title">Automating Invoice Management: Scaling Efficiency for Large Clients</h2>
-			    <div class="image-gallery">
-			        <div class="thumbnail-container" onclick="showImage('assets/AutoInvoice - Manual Approval workflow.drawio.png', 'Fig. 10: Manual Approval Workflow')">
-			            <img src="assets/AutoInvoice - Manual Approval workflow.drawio.png" alt="Manual Approval Workflow Thumbnail">
-			            <figcaption>Fig. 10: Manual Approval Workflow</figcaption>
-			        </div>
-			        <div class="thumbnail-container" onclick="showImage('assets/AutoInvoice - Initial Auto Approval workflow.drawio.png', 'Fig. 11: Initial Auto-Approval Workflow')">
-			            <img src="assets/AutoInvoice - Initial Auto Approval workflow.drawio.png" alt="Initial Auto-Approval Workflow Thumbnail">
-			            <figcaption>Fig. 11: Initial Auto-Approval Workflow</figcaption>
-			        </div>
-			        <div class="thumbnail-container" onclick="showImage('assets/AutoInvoice - Microservice Approval workflow.drawio.png', 'Fig. 12: Microservice-Based Workflow')">
-			            <img src="assets/AutoInvoice - Microservice Approval workflow.drawio.png" alt="Microservice-Based Workflow Thumbnail">
-			            <figcaption>Fig. 12: Microservice-Based Workflow</figcaption>
-			        </div>
-			    </div>
-			    <!-- Hook -->
-			    <blockquote class="case-study-hook">
-			        <span class="highlight-hook">Focusing on what matters most by automating the repetitive approval of hundreds of invoices daily.</span>
-			    </blockquote>
-			    <h3 class="case-study-heading">The Problem: Inefficiencies in Manual Invoice Approval</h3>
-			    <div class="case-study-content">
-			        <p><strong>For Account Teams:</strong> Account reps were bogged down by repetitive tasks:</p>
-			        <ul>
-			            <li><strong>High Volume of Invoices:</strong> Certain large clients submitted hundreds of invoices daily.</li>
-			            <li><strong>Manual Workflow:</strong> Approval required opening each invoice, changing its status, and saving the changes (see <strong>Fig. 10</strong>)—a time-consuming and monotonous process.</li>
-			            <li><strong>Disproportionate Impact:</strong> High-volume clients consumed disproportionate time and resources compared to smaller clients.</li>
-			        </ul>
-			        <p>The result? Limited bandwidth for tasks requiring critical thinking and human oversight, hindering the growth of OTR Solutions' large-client offering.</p>
-			    </div>
-			    <h3 class="case-study-heading">The Vision: Automating to Enable Growth</h3>
-			    <div class="case-study-content">
-			        <p><strong>Goals:</strong></p>
-			        <ul>
-			            <li><strong>Eliminate Repetitive Tasks:</strong> Freeing account reps to focus on higher-value activities.</li>
-			            <li><strong>Scale Large-Client Support:</strong> By automating invoice approval, OTR Solutions could manage high-volume clients without proportionate increases in staffing.</li>
-			            <li><strong>Future-Proof Operations:</strong> Setting the stage for smarter automation with no-touch approvals based on audit confidence scores.</li>
-			        </ul>
-			    </div>
-			    <h3 class="case-study-heading">Execution: From Initial Build to Microservice Architecture</h3>
-			    <div class="case-study-content">
-			        <p><strong>Initial Implementation:</strong></p>
-			        <ul>
-			            <li><strong>Discovery:</strong> Operations teams tracked time spent on manual approvals, revealing an average of 14 minutes per 100 invoices for large clients. This data quantified the business case for automation.</li>
-			            <li><strong>Development:</strong> Collaborated with a mid-level engineer to architect and build the solution, integrating it seamlessly into the existing UI to ensure user adoption (see <strong>Fig. 11</strong>).</li>
-			            <li><strong>Testing:</strong> Conducted Beta tests with copied production data alongside operations teams to validate functionality and accuracy.</li>
-			        </ul>
-			        <p><strong>Iteration: Microservice Architecture:</strong></p>
-			        <ul>
-			            <li><strong>Challenges:</strong> System slowdowns during peak usage affected the entire platform, with page load times exceeding 10 seconds.</li>
-			            <li><strong>Solution:</strong> Transitioned to a microservice architecture to offload processing, enabling asynchronous approval without impacting the main system (see <strong>Fig. 12</strong>).</li>
-			            <li><strong>Improvements:</strong> Reduced page load times and ensured job completion notifications for better user experience.</li>
-			        </ul>
-			    </div>
-			    <h3 class="case-study-heading">Outcomes: Measurable Impact</h3>
-			    <div class="case-study-content">
-			        <ul>
-			            <li><strong>Time Savings:</strong> Initial implementation reduced approval time for 100 invoices from 14 minutes to 30–60 seconds.</li>
-			            <li><strong>Resource Optimization:</strong> At launch, saved the workload equivalent of one full-time employee, translating to over $45,000 annually.</li>
-			            <li><strong>Invoices Automated:</strong> Supported growth from 3,500 daily invoices at launch to over 7,500 daily invoices.</li>
-			            <li><strong>System Performance:</strong> The microservice update reduced strain, restoring system efficiency even during peak usage.</li>
-			        </ul>
-			    </div>
-			    <h3 class="case-study-heading">Learnings: Key Takeaways</h3>
-			    <div class="case-study-content">
-			        <ul>
-			            <li><strong>Build for Scale:</strong> Early design decisions should consider long-term scalability and performance monitoring.</li>
-			            <li><strong>Monitor Performance:</strong> Establish real-time analytics to detect and address issues before users report them.</li>
-			            <li><strong>User-Centric Design:</strong> Involve users throughout development to ensure the solution fits seamlessly into their workflows.</li>
-			            <li><strong>Iterate Strategically:</strong> Use iterations not just to fix issues but to introduce features that anticipate future needs.</li>
-			        </ul>
-			    </div>
-			</section>
-			<!-- Case Study #5 -->
-			<section id="Freight-Rate-Analyzer" class="case-study">
-			    <h2 class="case-study-title">Freight Rate Analyzer: Testing Market Demand Through Rapid Iteration</h2>
-			    <div class="image-gallery">
-					<div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Rate Analyzer.png', 'Fig. 13: UI Mockup')">
-            			<img src="assets/OTR Solutions Rate Analyzer.png" alt="UI Mockup Thumbnail">
-            			<figcaption>Fig. 13: UI Mockup</figcaption>
-			        </div>
-					<div class="thumbnail-container" onclick="showImage('assets/Freight Rate Analyzer Workflow.drawio.png', 'Fig. 14: Workflow Diagram')">
-			            <img src="assets/Freight Rate Analyzer Workflow.drawio.png" alt="Workflow Diagram Thumbnail">
-            			<figcaption>Fig. 14: Workflow Diagram</figcaption>
-			        </div>
-			    </div>
-			    <!-- Hook Section -->
-			    <blockquote class="case-study-hook">
-			        <span class="highlight-hook">Tackling a $200 per lane earning gap required rapid analysis and bold solutions in freight rate strategy.</span>
-			    </blockquote>
-			    <!-- The Problem Section -->
-			    <h3 class="case-study-heading">The Problem: Understanding Why Clients Earn Less Per Lane</h3>
-			    <div class="case-study-content">
-			        <ul>
-			            <li><strong>Critical Question:</strong> OTR Solutions entered a Client Product Offsite with a critical question: why were clients earning $200 less per lane than their competitors? This earning gap, uncovered through data shared by a top freight broker, highlighted the need to understand root causes and make data-informed decisions.</li>
-            			<li><strong>Client Feedback:</strong> Clients expressed surprise at their comparative disadvantage and asked OTR Solutions for guidance. While some were using existing freight rate analyzer tools, they found them to be expensive and unreliable.</li>
-			            <li><strong>Opportunity Identified:</strong> This feedback emphasized the chance to leverage OTR Solutions' significant lane data to deliver a reliable, affordable tool that addressed client needs.</li>
-			        </ul>
-			    </div>
-			    <!-- Vision Section -->
-			    <h3 class="case-study-heading">The Vision: A Freight Rate Negotiation Helper</h3>
-			    <div class="case-study-content">
-			        <p>OTR Solutions set out to rapidly iterate on a Freight Rate Analyzer so they could:</p>
-			        <ul>
-			            <li><strong>Validate Data Quality:</strong> Confirm that OTR Solutions' lane data was accurate enough to support informed decisions.</li>
-			            <li><strong>Enable Better Negotiations:</strong> Provide clients with reliable rate insights to demand competitive earnings confidently.</li>
-			            <li><strong>Explore SaaS Opportunities:</strong> Position the tool as a potential standalone feature to attract new clients to OTR Solutions' factoring services.</li>
-			        </ul>
-			        <p>Success was envisioned across multiple dimensions:</p>
-			        <ul>
-            			<li><strong>Macro Level:</strong> Improving client earnings per lane booked.</li>
-			            <li><strong>Micro Level:</strong> Measuring how OTR Solutions' rate predictions aligned with actual client bookings.</li>
-            			<li><strong>Human Level:</strong> Instilling confidence in truck owners to negotiate better rates with brokers.</li>
-			        </ul>
-			    </div>
-			    <!-- Execution Section -->
-			    <h3 class="case-study-heading">Execution: Building, Testing, and Learning Rapidly</h3>
-			    <div class="case-study-content">
-			        <ul>
-            			<li><strong>Discovery & Design:</strong> Weekly meetings aligned teams on scope, UI/UX design (see <strong>Fig. 13</strong> and <strong>Fig. 14</strong>), and testing timelines. While the data pipeline was staged, engineering kept the momentum by developing animations and refining interactions based on client feedback.</li>
-			            <li><strong>Challenges:</strong> Early in the project, potential data limitations emerged, but preliminary validations appeared promising. It wasn’t until the full data set reached beta testers that the extent of data granularity issues became evident—especially after adding a filter for truck type, which was a <em>must have</em> for meaningful results.</li>
-            			<li><strong>Iterative Testing:</strong> Continuous feedback from beta users enabled the team to identify limitations before launching a broader beta, saving significant resources.</li>
-			        </ul>
-			    </div>
-			    <!-- Outcomes Section -->
-			    <h3 class="case-study-heading">Outcomes: Failing Fast to Learn More</h3>
-			    <div class="case-study-content">
-			        <ul>
-            			<li><strong>Saved Resources:</strong> Avoided the fallout of releasing an incomplete product, including potential reputational damage and wasted operational efforts.</li>
-			            <li><strong>Improved Processes:</strong> Established a rapid iteration framework, strengthened cross-functional collaboration, and refined approaches to validating invoice data quality.</li>
-            			<li><strong>Strategic Redirection:</strong> Insights from this project drove a company-wide initiative to improve invoice data collection, focusing on truck type categorization for greater accuracy.</li>
-			        </ul>
-			    </div>
-			    <!-- Learnings Section -->
-			    <h3 class="case-study-heading">Learnings: Insights for Future Success</h3>
-			    <div class="case-study-content">
-			        <ul>
-            			<li><strong>Data Matters:</strong> Accurate categorization of truck types is vital for reliable lane insights. This realization influenced data quality improvements across OTR Solutions.</li>
-			            <li><strong>Customer Feedback is Key:</strong> Rapid testing with beta users uncovered limitations early, saving time and resources.</li>
-            			<li><strong>Morale through Momentum:</strong> The team’s enthusiasm transitioned seamlessly to related projects, reinforcing the value of agility and shared goals.</li>
-			        </ul>
-			    </div>
-			</section>
-			<!-- Case Study #6 -->
-            <section id="Bulk-Gift-Card" class="case-study">
-                <h2 class="case-study-title">From Concept to Beta: Building a Bulk Gift Card Ordering Solution</h2>
-                <div class="image-gallery">
-                    <div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Wizard of Oz Support Process.drawio.png', 'Fig. 15: Wizard of Oz Process Workflow')">
-                        <img src="assets/GoTu Rewards - Wizard of Oz Support Process.drawio.png" alt="Wizard of Oz Process Workflow Thumbnail">
-                        <figcaption>Fig. 15: Wizard of Oz Process Workflow</figcaption>
-                    </div>
-                    <div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Automated Process.drawio.png', 'Fig. 16: Future-State Automated Workflow')">
-                        <img src="assets/GoTu Rewards - Automated Process.drawio.png" alt="Future-State Automated Workflow Thumbnail">
-                        <figcaption>Fig. 16: Future-State Automated Workflow</figcaption>
-                    </div>
-                    <div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Bulk Gift Card Wizard.drawio.png', 'Fig. 17: Bulk Gift Card Ordering Wizard Workflow')">
-                        <img src="assets/GoTu Rewards - Bulk Gift Card Wizard.drawio.png" alt="Bulk Gift Card Ordering Wizard Workflow Thumbnail">
-                        <figcaption>Fig. 17: Future-State Bulk Gift Card Ordering Wizard Workflow</figcaption>
-                    </div>
-                </div>
-                <!-- Hook Section -->
-                <blockquote class="case-study-hook">
-                    <span class="highlight-hook">Leveraging existing partnerships and positioning in the loyalty industry to create a new standalone revenue product, selling gift cards in bulk.</span>
-                </blockquote>
-                <!-- The Problem Section -->
-                <h3 class="case-study-heading">The Problem: Limited Options for Bulk Gift Card Orders</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Industry Opportunity:</strong> Extu identified an opportunity to test a potentially massive new product offering in the bulk gift card space. Historically, Extu serviced bulk orders as one-offs, and recent interest from clients highlighted the need to address this market.</li>
-                        <li><strong>Competitor Challenges:</strong> Existing bulk gift card solutions presented several pain points:
-                            <ul>
-                                <li>Poor user experience, with steep learning curves for order setup.</li>
-                                <li>High fees and limited card selection, especially internationally.</li>
-                                <li>Complex ordering processes and inadequate features for tracking and managing orders.</li>
-                            </ul>
-                        </li>
-                        <li><strong>User Feedback:</strong> "I have to build orders across multiple platforms to accommodate all the card types I want, which means a sales call to review <em>how to order</em> across multiple platforms once per year."</li>
-                    </ul>
-                </div>
-                <!-- Vision Section -->
-                <h3 class="case-study-heading">The Vision: Validating the Bulk Gift Card Market</h3>
-                <div class="case-study-content">
-                    <p>Extu set out to launch an MVP for bulk gift card orders with the following goals:</p>
-                    <ul>
-                        <li><strong>Test Market Demand:</strong> Validate interest in bulk gift cards as a standalone revenue product.</li>
-                        <li><strong>Simplify Ordering:</strong> Offer a streamlined user experience for placing bulk orders.</li>
-                        <li><strong>Lay the Foundation for Growth:</strong> Use the MVP to shape future iterations with automation and expanded card offerings.</li>
-                    </ul>
-                    <p><strong>Defining Success:</strong> Success for the MVP was measured by securing initial orders, positive user feedback, and commitments to larger future orders once the platform offered more options.</p>
-                    <p><strong>Aspirational Goals:</strong> Extu aimed to integrate this offering within a broader platform uniting its TCM (Through Channel Marketing) and CIM (Channel Incentive Management) business units.</p>
-                </div>
-                <!-- Execution Section -->
-                <h3 class="case-study-heading">Execution: From Wizard of Oz MVP to Beta</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Planning and Research:</strong>
-                            <ul>
-                                <li>Conducted competitor analysis using AI-powered tools to identify smaller competitors and consolidate actionable insights.</li>
-                                <li>Collaborated with Sales and Operations stakeholders to define a clear process map for manual support (see <strong>Fig. 15</strong>).</li>
-                            </ul>
-                        </li>
-                        <li><strong>Development Approach:</strong>
-                            <ul>
-                                <li>Built a simple one-page form for placing bulk orders on the GoTu Rewards platform.</li>
-                                <li>Used a three-sprint cycle to rapidly iterate on the MVP while simultaneously redesigning the GoTu Rewards platform.</li>
-                                <li>Ensured rigorous internal testing in a Beta environment before launch.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Challenges:</strong>
-                            <ul>
-                                <li>Coordinating operational support between Sales, Finance, and Operations teams.</li>
-                                <li>Addressing technical deployment issues and unplanned legal requirements (e.g., Force-Accept Updated Terms of Service).</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Outcomes Section -->
-                <h3 class="case-study-heading">Outcomes: Early Validation of Market Potential</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Orders and Revenue:</strong> Secured double-digit orders totaling six-figure gross sales during the holiday season.</li>
-                        <li><strong>Client Success:</strong> All orders were fulfilled on time, earning client praise and commitments for larger future orders.</li>
-                        <li><strong>Organic Growth:</strong> Received organic orders from users discovering GoTu Rewards independently, providing additional validation.</li>
-                        <li><strong>Roadmap Development:</strong> Positive feedback and initial success justified further investment in building a fully automated platform (see <strong>Fig. 16</strong>), and a streamlined ordering process (see <strong>Fig. 17</strong>).</li>
-                    </ul>
-                </div>
-                <!-- Learnings Section -->
-                <h3 class="case-study-heading">Learnings: Broad Lessons from Building the MVP</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Embrace Rapid Iteration:</strong> Focus on releasing MVPs quickly to validate ideas before committing to full-scale development.</li>
-                        <li><strong>Prioritize User Simplicity:</strong> A straightforward user experience can make or break adoption, especially in competitive markets.</li>
-                        <li><strong>Expect the Unexpected:</strong> Challenges like legal requirements or unforeseen user profiles (e.g., resellers) require flexibility in planning and execution.</li>
-                        <li><strong>Collaboration is Key:</strong> Regular cross-functional alignment fosters better solutions and ensures smoother execution in tight timelines.</li>
-                    </ul>
-                </div>
-            </section>
+						<p><strong>Testimonial:</strong></p>
+						<blockquote>
+							“This tool took something that was front of mind daily out of necessity and turned it into a task we almost 
+							never think about.” – OTR Account Team Member
+						</blockquote>
+					</div>
+					<!-- Learnings Section -->
+					<h3 class="case-study-heading">Learnings: Lessons from Iteration</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Unfinished Doesn't Mean Unvaluable:</strong> Delivering utility in phases provided immediate benefits to Operations, reducing processing time sooner and allowing feedback for future phases.</li>
+							<li><strong>Anticipate Hidden Complexities:</strong> Seemingly simple features, like recurring payments, can reveal unexpected challenges, such as accounting for non-working days like weekends and holidays.</li>
+							<li><strong>Empathy for Clients:</strong> Recognizing the financial pressures on small and medium trucking businesses shaped features like emergency fund returns.</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Case Study #4 -->
+				<section id="Auto-Invoice-Feature" class="case-study">
+					<h2 class="case-study-title">Automating Invoice Management: Scaling Efficiency for Large Clients</h2>
+					<div class="image-gallery">
+						<div class="thumbnail-container" onclick="showImage('assets/AutoInvoice - Manual Approval workflow.drawio.png', 'Fig. 10: Manual Approval Workflow')">
+							<img src="assets/AutoInvoice - Manual Approval workflow.drawio.png" alt="Manual Approval Workflow Thumbnail">
+							<figcaption>Fig. 10: Manual Approval Workflow</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/AutoInvoice - Initial Auto Approval workflow.drawio.png', 'Fig. 11: Initial Auto-Approval Workflow')">
+							<img src="assets/AutoInvoice - Initial Auto Approval workflow.drawio.png" alt="Initial Auto-Approval Workflow Thumbnail">
+							<figcaption>Fig. 11: Initial Auto-Approval Workflow</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/AutoInvoice - Microservice Approval workflow.drawio.png', 'Fig. 12: Microservice-Based Workflow')">
+							<img src="assets/AutoInvoice - Microservice Approval workflow.drawio.png" alt="Microservice-Based Workflow Thumbnail">
+							<figcaption>Fig. 12: Microservice-Based Workflow</figcaption>
+						</div>
+					</div>
+					<!-- Hook -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">Focusing on what matters most by automating the repetitive approval of hundreds of invoices daily.</span>
+					</blockquote>
+					<h3 class="case-study-heading">The Problem: Inefficiencies in Manual Invoice Approval</h3>
+					<div class="case-study-content">
+						<p><strong>For Account Teams:</strong> Account reps were bogged down by repetitive tasks:</p>
+						<ul>
+							<li><strong>High Volume of Invoices:</strong> Certain large clients submitted hundreds of invoices daily.</li>
+							<li><strong>Manual Workflow:</strong> Approval required opening each invoice, changing its status, and saving the changes (see <strong>Fig. 10</strong>)—a time-consuming and monotonous process.</li>
+							<li><strong>Disproportionate Impact:</strong> High-volume clients consumed disproportionate time and resources compared to smaller clients.</li>
+						</ul>
+						<p>The result? Limited bandwidth for tasks requiring critical thinking and human oversight, hindering the growth of OTR Solutions' large-client offering.</p>
+					</div>
+					<h3 class="case-study-heading">The Vision: Automating to Enable Growth</h3>
+					<div class="case-study-content">
+						<p><strong>Goals:</strong></p>
+						<ul>
+							<li><strong>Eliminate Repetitive Tasks:</strong> Freeing account reps to focus on higher-value activities.</li>
+							<li><strong>Scale Large-Client Support:</strong> By automating invoice approval, OTR Solutions could manage high-volume clients without proportionate increases in staffing.</li>
+							<li><strong>Future-Proof Operations:</strong> Setting the stage for smarter automation with no-touch approvals based on audit confidence scores.</li>
+						</ul>
+					</div>
+					<h3 class="case-study-heading">Execution: From Initial Build to Microservice Architecture</h3>
+					<div class="case-study-content">
+						<p><strong>Initial Implementation:</strong></p>
+						<ul>
+							<li><strong>Discovery:</strong> Operations teams tracked time spent on manual approvals, revealing an average of 14 minutes per 100 invoices for large clients. This data quantified the business case for automation.</li>
+							<li><strong>Development:</strong> Collaborated with a mid-level engineer to architect and build the solution, integrating it seamlessly into the existing UI to ensure user adoption (see <strong>Fig. 11</strong>).</li>
+							<li><strong>Testing:</strong> Conducted Beta tests with copied production data alongside operations teams to validate functionality and accuracy.</li>
+						</ul>
+						<p><strong>Iteration: Microservice Architecture:</strong></p>
+						<ul>
+							<li><strong>Challenges:</strong> System slowdowns during peak usage affected the entire platform, with page load times exceeding 10 seconds.</li>
+							<li><strong>Solution:</strong> Transitioned to a microservice architecture to offload processing, enabling asynchronous approval without impacting the main system (see <strong>Fig. 12</strong>).</li>
+							<li><strong>Improvements:</strong> Reduced page load times and ensured job completion notifications for better user experience.</li>
+						</ul>
+					</div>
+					<h3 class="case-study-heading">Outcomes: Measurable Impact</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Time Savings:</strong> Initial implementation reduced approval time for 100 invoices from 14 minutes to 30–60 seconds.</li>
+							<li><strong>Resource Optimization:</strong> At launch, saved the workload equivalent of one full-time employee, translating to over $45,000 annually.</li>
+							<li><strong>Invoices Automated:</strong> Supported growth from 3,500 daily invoices at launch to over 7,500 daily invoices.</li>
+							<li><strong>System Performance:</strong> The microservice update reduced strain, restoring system efficiency even during peak usage.</li>
+						</ul>
+					</div>
+					<h3 class="case-study-heading">Learnings: Key Takeaways</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Build for Scale:</strong> Early design decisions should consider long-term scalability and performance monitoring.</li>
+							<li><strong>Monitor Performance:</strong> Establish real-time analytics to detect and address issues before users report them.</li>
+							<li><strong>User-Centric Design:</strong> Involve users throughout development to ensure the solution fits seamlessly into their workflows.</li>
+							<li><strong>Iterate Strategically:</strong> Use iterations not just to fix issues but to introduce features that anticipate future needs.</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Case Study #5 -->
+				<section id="Freight-Rate-Analyzer" class="case-study">
+					<h2 class="case-study-title">Freight Rate Analyzer: Testing Market Demand Through Rapid Iteration</h2>
+					<div class="image-gallery">
+						<div class="thumbnail-container" onclick="showImage('assets/OTR Solutions Rate Analyzer.png', 'Fig. 13: UI Mockup')">
+							<img src="assets/OTR Solutions Rate Analyzer.png" alt="UI Mockup Thumbnail">
+							<figcaption>Fig. 13: UI Mockup</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/Freight Rate Analyzer Workflow.drawio.png', 'Fig. 14: Workflow Diagram')">
+							<img src="assets/Freight Rate Analyzer Workflow.drawio.png" alt="Workflow Diagram Thumbnail">
+							<figcaption>Fig. 14: Workflow Diagram</figcaption>
+						</div>
+					</div>
+					<!-- Hook Section -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">Tackling a $200 per lane earning gap required rapid analysis and bold solutions in freight rate strategy.</span>
+					</blockquote>
+					<!-- The Problem Section -->
+					<h3 class="case-study-heading">The Problem: Understanding Why Clients Earn Less Per Lane</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Critical Question:</strong> OTR Solutions entered a Client Product Offsite with a critical question: why were clients earning $200 less per lane than their competitors? This earning gap, uncovered through data shared by a top freight broker, highlighted the need to understand root causes and make data-informed decisions.</li>
+							<li><strong>Client Feedback:</strong> Clients expressed surprise at their comparative disadvantage and asked OTR Solutions for guidance. While some were using existing freight rate analyzer tools, they found them to be expensive and unreliable.</li>
+							<li><strong>Opportunity Identified:</strong> This feedback emphasized the chance to leverage OTR Solutions' significant lane data to deliver a reliable, affordable tool that addressed client needs.</li>
+						</ul>
+					</div>
+					<!-- Vision Section -->
+					<h3 class="case-study-heading">The Vision: A Freight Rate Negotiation Helper</h3>
+					<div class="case-study-content">
+						<p>OTR Solutions set out to rapidly iterate on a Freight Rate Analyzer so they could:</p>
+						<ul>
+							<li><strong>Validate Data Quality:</strong> Confirm that OTR Solutions' lane data was accurate enough to support informed decisions.</li>
+							<li><strong>Enable Better Negotiations:</strong> Provide clients with reliable rate insights to demand competitive earnings confidently.</li>
+							<li><strong>Explore SaaS Opportunities:</strong> Position the tool as a potential standalone feature to attract new clients to OTR Solutions' factoring services.</li>
+						</ul>
+						<p>Success was envisioned across multiple dimensions:</p>
+						<ul>
+							<li><strong>Macro Level:</strong> Improving client earnings per lane booked.</li>
+							<li><strong>Micro Level:</strong> Measuring how OTR Solutions' rate predictions aligned with actual client bookings.</li>
+							<li><strong>Human Level:</strong> Instilling confidence in truck owners to negotiate better rates with brokers.</li>
+						</ul>
+					</div>
+					<!-- Execution Section -->
+					<h3 class="case-study-heading">Execution: Building, Testing, and Learning Rapidly</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Discovery & Design:</strong> Weekly meetings aligned teams on scope, UI/UX design (see <strong>Fig. 13</strong> and <strong>Fig. 14</strong>), and testing timelines. While the data pipeline was staged, engineering kept the momentum by developing animations and refining interactions based on client feedback.</li>
+							<li><strong>Challenges:</strong> Early in the project, potential data limitations emerged, but preliminary validations appeared promising. It wasn’t until the full data set reached beta testers that the extent of data granularity issues became evident—especially after adding a filter for truck type, which was a <em>must have</em> for meaningful results.</li>
+							<li><strong>Iterative Testing:</strong> Continuous feedback from beta users enabled the team to identify limitations before launching a broader beta, saving significant resources.</li>
+						</ul>
+					</div>
+					<!-- Outcomes Section -->
+					<h3 class="case-study-heading">Outcomes: Failing Fast to Learn More</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Saved Resources:</strong> Avoided the fallout of releasing an incomplete product, including potential reputational damage and wasted operational efforts.</li>
+							<li><strong>Improved Processes:</strong> Established a rapid iteration framework, strengthened cross-functional collaboration, and refined approaches to validating invoice data quality.</li>
+							<li><strong>Strategic Redirection:</strong> Insights from this project drove a company-wide initiative to improve invoice data collection, focusing on truck type categorization for greater accuracy.</li>
+						</ul>
+					</div>
+					<!-- Learnings Section -->
+					<h3 class="case-study-heading">Learnings: Insights for Future Success</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Data Matters:</strong> Accurate categorization of truck types is vital for reliable lane insights. This realization influenced data quality improvements across OTR Solutions.</li>
+							<li><strong>Customer Feedback is Key:</strong> Rapid testing with beta users uncovered limitations early, saving time and resources.</li>
+							<li><strong>Morale through Momentum:</strong> The team’s enthusiasm transitioned seamlessly to related projects, reinforcing the value of agility and shared goals.</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Case Study #6 -->
+				<section id="Bulk-Gift-Card" class="case-study">
+					<h2 class="case-study-title">From Concept to Beta: Building a Bulk Gift Card Ordering Solution</h2>
+					<div class="image-gallery">
+						<div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Wizard of Oz Support Process.drawio.png', 'Fig. 15: Wizard of Oz Process Workflow')">
+							<img src="assets/GoTu Rewards - Wizard of Oz Support Process.drawio.png" alt="Wizard of Oz Process Workflow Thumbnail">
+							<figcaption>Fig. 15: Wizard of Oz Process Workflow</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Automated Process.drawio.png', 'Fig. 16: Future-State Automated Workflow')">
+							<img src="assets/GoTu Rewards - Automated Process.drawio.png" alt="Future-State Automated Workflow Thumbnail">
+							<figcaption>Fig. 16: Future-State Automated Workflow</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Bulk Gift Card Wizard.drawio.png', 'Fig. 17: Bulk Gift Card Ordering Wizard Workflow')">
+							<img src="assets/GoTu Rewards - Bulk Gift Card Wizard.drawio.png" alt="Bulk Gift Card Ordering Wizard Workflow Thumbnail">
+							<figcaption>Fig. 17: Future-State Bulk Gift Card Ordering Wizard Workflow</figcaption>
+						</div>
+					</div>
+					<!-- Hook Section -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">Leveraging existing partnerships and positioning in the loyalty industry to create a new standalone revenue product, selling gift cards in bulk.</span>
+					</blockquote>
+					<!-- The Problem Section -->
+					<h3 class="case-study-heading">The Problem: Limited Options for Bulk Gift Card Orders</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Industry Opportunity:</strong> Extu identified an opportunity to test a potentially massive new product offering in the bulk gift card space. Historically, Extu serviced bulk orders as one-offs, and recent interest from clients highlighted the need to address this market.</li>
+							<li><strong>Competitor Challenges:</strong> Existing bulk gift card solutions presented several pain points:
+								<ul>
+									<li>Poor user experience, with steep learning curves for order setup.</li>
+									<li>High fees and limited card selection, especially internationally.</li>
+									<li>Complex ordering processes and inadequate features for tracking and managing orders.</li>
+								</ul>
+							</li>
+							<li><strong>User Feedback:</strong> "I have to build orders across multiple platforms to accommodate all the card types I want, which means a sales call to review <em>how to order</em> across multiple platforms once per year."</li>
+						</ul>
+					</div>
+					<!-- Vision Section -->
+					<h3 class="case-study-heading">The Vision: Validating the Bulk Gift Card Market</h3>
+					<div class="case-study-content">
+						<p>Extu set out to launch an MVP for bulk gift card orders with the following goals:</p>
+						<ul>
+							<li><strong>Test Market Demand:</strong> Validate interest in bulk gift cards as a standalone revenue product.</li>
+							<li><strong>Simplify Ordering:</strong> Offer a streamlined user experience for placing bulk orders.</li>
+							<li><strong>Lay the Foundation for Growth:</strong> Use the MVP to shape future iterations with automation and expanded card offerings.</li>
+						</ul>
+						<p><strong>Defining Success:</strong> Success for the MVP was measured by securing initial orders, positive user feedback, and commitments to larger future orders once the platform offered more options.</p>
+						<p><strong>Aspirational Goals:</strong> Extu aimed to integrate this offering within a broader platform uniting its TCM (Through Channel Marketing) and CIM (Channel Incentive Management) business units.</p>
+					</div>
+					<!-- Execution Section -->
+					<h3 class="case-study-heading">Execution: From Wizard of Oz MVP to Beta</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Planning and Research:</strong>
+								<ul>
+									<li>Conducted competitor analysis using AI-powered tools to identify smaller competitors and consolidate actionable insights.</li>
+									<li>Collaborated with Sales and Operations stakeholders to define a clear process map for manual support (see <strong>Fig. 15</strong>).</li>
+								</ul>
+							</li>
+							<li><strong>Development Approach:</strong>
+								<ul>
+									<li>Built a simple one-page form for placing bulk orders on the GoTu Rewards platform.</li>
+									<li>Used a three-sprint cycle to rapidly iterate on the MVP while simultaneously redesigning the GoTu Rewards platform.</li>
+									<li>Ensured rigorous internal testing in a Beta environment before launch.</li>
+								</ul>
+							</li>
+							<li><strong>Challenges:</strong>
+								<ul>
+									<li>Coordinating operational support between Sales, Finance, and Operations teams.</li>
+									<li>Addressing technical deployment issues and unplanned legal requirements (e.g., Force-Accept Updated Terms of Service).</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- Outcomes Section -->
+					<h3 class="case-study-heading">Outcomes: Early Validation of Market Potential</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Orders and Revenue:</strong> Secured double-digit orders totaling six-figure gross sales during the holiday season.</li>
+							<li><strong>Client Success:</strong> All orders were fulfilled on time, earning client praise and commitments for larger future orders.</li>
+							<li><strong>Organic Growth:</strong> Received organic orders from users discovering GoTu Rewards independently, providing additional validation.</li>
+							<li><strong>Roadmap Development:</strong> Positive feedback and initial success justified further investment in building a fully automated platform (see <strong>Fig. 16</strong>), and a streamlined ordering process (see <strong>Fig. 17</strong>).</li>
+						</ul>
+					</div>
+					<!-- Learnings Section -->
+					<h3 class="case-study-heading">Learnings: Broad Lessons from Building the MVP</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Embrace Rapid Iteration:</strong> Focus on releasing MVPs quickly to validate ideas before committing to full-scale development.</li>
+							<li><strong>Prioritize User Simplicity:</strong> A straightforward user experience can make or break adoption, especially in competitive markets.</li>
+							<li><strong>Expect the Unexpected:</strong> Challenges like legal requirements or unforeseen user profiles (e.g., resellers) require flexibility in planning and execution.</li>
+							<li><strong>Collaboration is Key:</strong> Regular cross-functional alignment fosters better solutions and ensures smoother execution in tight timelines.</li>
+						</ul>
+					</div>
+				</section>
 
-			<!-- Case Study #7 -->
-			            <section id="Multi-Step-Signup" class="case-study">
-                <h2 class="case-study-title">Simplifying Onboarding: Modernizing the GoTu Rewards Signup Flow</h2>
-                <div class="image-gallery">
-                    <div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Updated Enrollment Flow.drawio.png', 'Fig. 18: New Enrollment Workflow')">
-                        <img src="assets/GoTu Rewards - Updated Enrollment Flow.drawio.png" alt="New Enrollment Workflow Thumbnail">
-                        <figcaption>Fig. 18: New Enrollment Workflow</figcaption>
-                    </div>
-                    <div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards New Enrollment Flow - Page 1.png', 'Fig. 19: Enrollment Step 1 UI Mockup')">
-                        <img src="assets/GoTu Rewards New Enrollment Flow - Page 1.png" alt="Enrollment Step 1 UI Mockup Thumbnail">
-                        <figcaption>Fig. 19: Enrollment Step 1 UI Mockup</figcaption>
-                    </div>
-                </div>
-                <!-- Hook Section -->
-                <blockquote class="case-study-hook">
-                    <span class="highlight-hook">Creating a user-first signup flow to enhance lead generation and engagement by simplifying registration.</span>
-                </blockquote>
-                <!-- The Problem Section -->
-                <h3 class="case-study-heading">The Problem: Friction in the User Signup Experience</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>High Drop-Off Rates:</strong> Organic traffic consistently churned at the registration form stage due to the lengthy and overwhelming nature of the form.</li>
-                        <li><strong>Unnecessary Steps:</strong> A redundant text message validation step existed after registration but was disconnected from the overall process, further highlighting inefficiencies.</li>
-                        <li><strong>Unclear Workflow:</strong> The form required extensive upfront information and lacked clear guidance, leading to user abandonment.</li>
-                    </ul>
-                </div>
-                <!-- Vision Section -->
-                <h3 class="case-study-heading">The Vision: Simplifying User Onboarding</h3>
-                <div class="case-study-content">
-                    <p>Extu set out to redesign the GoTu Rewards signup process with the following objectives:</p>
-                    <ul>
-                        <li><strong>Streamline the Process:</strong> Break the long form into manageable steps and integrate modern user-centric features like a progress tracker and MELISSA address auto-fill API to enhance usability (see <strong>Fig. 18</strong>).</li>
-                        <li><strong>Increase Lead Capture:</strong> Focus on collecting minimal but essential user information (email, password, company name) in the first step to ensure lead generation (see <strong>Fig. 19</strong>).</li>
-                        <li><strong>Industry Best Practices:</strong> The new signup flow aimed to deliver a user-friendly experience that positioned GoTu Rewards as a modern, professional platform capable of supporting enterprise needs.</li>
-                        <li><strong>Aspirational Goal:</strong> Build a framework that could scale across enterprise loyalty platforms without requiring additional development effort.</li>
-                    </ul>
-                </div>
-                <!-- Execution Section -->
-                <h3 class="case-study-heading">Execution: From Concept to Completion</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Planning and Research:</strong>
-                            <ul>
-                                <li>Analyzed user behavior using Google Analytics and Hot Jar to identify drop-off points and areas needing improvement.</li>
-                                <li>Consulted industry standards and competitive benchmarks to design a user-first flow.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Development Approach:</strong>
-                            <ul>
-                                <li>Redesigned the entire signup flow to align with Extu’s updated design scheme, incorporating modern UI/UX standards.</li>
-                                <li>Leveraged existing system functionality in an innovative way to support the multi-step design, reducing development time to under one sprint.</li>
-                                <li>A front-end developer focused on implementing the new design while a full-stack developer reworked the backend to support the updated workflow.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Challenges:</strong>
-                            <ul>
-                                <li>Reconfiguring backend systems to enable dynamic redirects for incomplete registrations.</li>
-                                <li>Managing tight timelines by leveraging established UX principles rather than conducting A/B testing upfront.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Outcomes Section -->
-                <h3 class="case-study-heading">Outcomes: A User-Centric Solution with Tangible Outcomes</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Improved Completion Rates:</strong> Registration rates improved from 0% to 4%, with consistent new user signups weekly.</li>
-                        <li><strong>Enhanced Workflow Efficiency:</strong> Incomplete users were automatically directed to the second step upon return, minimizing friction and improving user retention.</li>
-                        <li><strong>Streamlined Sales Process:</strong> Leads began completing registrations independently ahead of their sales calls, improving productivity and reducing manual intervention.</li>
-                        <li><strong>Adopted by Enterprise Client:</strong> The multi-step flow framework was successfully adopted by another enterprise loyalty client after launch.</li>
-                    </ul>
-                </div>
-                <!-- Learnings Section -->
-                <h3 class="case-study-heading">Learnings: Broad Lessons from User-Centric Design</h3>
-                <div class="case-study-content">
-                    <ul>
-                        <li><strong>Focus on Incremental Wins:</strong> Simplifying one aspect of the workflow can significantly improve overall user engagement and satisfaction.</li>
-                        <li><strong>Leverage Best Practices:</strong> Quick implementation based on best practices can yield immediate results, with opportunities to refine later.</li>
-                        <li><strong>Data-Driven Insights:</strong> Tools like Google Analytics and Hot Jar provide actionable insights that directly inform effective design changes.</li>
-                        <li><strong>Reusing Existing Features:</strong> Reusing existing system features creatively to solve new problems can save time and resources while delivering impactful solutions.</li>
-                    </ul>
-                </div>
-            </section>
-			<!-- Contact Section -->
-			<section id="contact" class="cta-section">
-				<div class="cta-container">
-			        <h2>Interested in Working Together?</h2>
-			        <p>Let's create something extraordinary.</p>
-		            <div class="contact-links">
-            			<a href="mailto:bparton31.jobs@gmail.com" aria-label="Email Me!" class="contact-link">
-				            <i class="fas fa-envelope"></i> Email Me
-				        </a>
-                		<a href="https://www.linkedin.com/in/brian-parton/" aria-label="Find Me On LinkedIn" target="_blank" class="contact-link">
-			                <i class="fab fa-linkedin"></i> Connect on LinkedIn
-            			</a>
-		            </div>
-			    </div>
-			</section>
-		</div>
-		<footer class="portfolio-footer">
-		    <p>All visuals and workflows showcased on this portfolio were created by me using Figma and Draw.io.</p>
-		    <p>
-				© <span id="current-year"></span> Brian Parton.
-			    <a href="privacy.html" aria-label="Go to Privacy Page" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-		    </p>
-		</footer>
-		<!-- JavaScript for the hamburger menu -->
-		<script>
-		    document.addEventListener("DOMContentLoaded", () => {
-		    	const targetSection = document.querySelector("#load");
-	        	if (targetSection) {
-		            targetSection.scrollIntoView({ behavior: "smooth" });
-	    	    }
-			});
+				<!-- Case Study #7 -->
+							<section id="Multi-Step-Signup" class="case-study">
+					<h2 class="case-study-title">Simplifying Onboarding: Modernizing the GoTu Rewards Signup Flow</h2>
+					<div class="image-gallery">
+						<div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards - Updated Enrollment Flow.drawio.png', 'Fig. 18: New Enrollment Workflow')">
+							<img src="assets/GoTu Rewards - Updated Enrollment Flow.drawio.png" alt="New Enrollment Workflow Thumbnail">
+							<figcaption>Fig. 18: New Enrollment Workflow</figcaption>
+						</div>
+						<div class="thumbnail-container" onclick="showImage('assets/GoTu Rewards New Enrollment Flow - Page 1.png', 'Fig. 19: Enrollment Step 1 UI Mockup')">
+							<img src="assets/GoTu Rewards New Enrollment Flow - Page 1.png" alt="Enrollment Step 1 UI Mockup Thumbnail">
+							<figcaption>Fig. 19: Enrollment Step 1 UI Mockup</figcaption>
+						</div>
+					</div>
+					<!-- Hook Section -->
+					<blockquote class="case-study-hook">
+						<span class="highlight-hook">Creating a user-first signup flow to enhance lead generation and engagement by simplifying registration.</span>
+					</blockquote>
+					<!-- The Problem Section -->
+					<h3 class="case-study-heading">The Problem: Friction in the User Signup Experience</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>High Drop-Off Rates:</strong> Organic traffic consistently churned at the registration form stage due to the lengthy and overwhelming nature of the form.</li>
+							<li><strong>Unnecessary Steps:</strong> A redundant text message validation step existed after registration but was disconnected from the overall process, further highlighting inefficiencies.</li>
+							<li><strong>Unclear Workflow:</strong> The form required extensive upfront information and lacked clear guidance, leading to user abandonment.</li>
+						</ul>
+					</div>
+					<!-- Vision Section -->
+					<h3 class="case-study-heading">The Vision: Simplifying User Onboarding</h3>
+					<div class="case-study-content">
+						<p>Extu set out to redesign the GoTu Rewards signup process with the following objectives:</p>
+						<ul>
+							<li><strong>Streamline the Process:</strong> Break the long form into manageable steps and integrate modern user-centric features like a progress tracker and MELISSA address auto-fill API to enhance usability (see <strong>Fig. 18</strong>).</li>
+							<li><strong>Increase Lead Capture:</strong> Focus on collecting minimal but essential user information (email, password, company name) in the first step to ensure lead generation (see <strong>Fig. 19</strong>).</li>
+							<li><strong>Industry Best Practices:</strong> The new signup flow aimed to deliver a user-friendly experience that positioned GoTu Rewards as a modern, professional platform capable of supporting enterprise needs.</li>
+							<li><strong>Aspirational Goal:</strong> Build a framework that could scale across enterprise loyalty platforms without requiring additional development effort.</li>
+						</ul>
+					</div>
+					<!-- Execution Section -->
+					<h3 class="case-study-heading">Execution: From Concept to Completion</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Planning and Research:</strong>
+								<ul>
+									<li>Analyzed user behavior using Google Analytics and Hot Jar to identify drop-off points and areas needing improvement.</li>
+									<li>Consulted industry standards and competitive benchmarks to design a user-first flow.</li>
+								</ul>
+							</li>
+							<li><strong>Development Approach:</strong>
+								<ul>
+									<li>Redesigned the entire signup flow to align with Extu’s updated design scheme, incorporating modern UI/UX standards.</li>
+									<li>Leveraged existing system functionality in an innovative way to support the multi-step design, reducing development time to under one sprint.</li>
+									<li>A front-end developer focused on implementing the new design while a full-stack developer reworked the backend to support the updated workflow.</li>
+								</ul>
+							</li>
+							<li><strong>Challenges:</strong>
+								<ul>
+									<li>Reconfiguring backend systems to enable dynamic redirects for incomplete registrations.</li>
+									<li>Managing tight timelines by leveraging established UX principles rather than conducting A/B testing upfront.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- Outcomes Section -->
+					<h3 class="case-study-heading">Outcomes: A User-Centric Solution with Tangible Outcomes</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Improved Completion Rates:</strong> Registration rates improved from 0% to 4%, with consistent new user signups weekly.</li>
+							<li><strong>Enhanced Workflow Efficiency:</strong> Incomplete users were automatically directed to the second step upon return, minimizing friction and improving user retention.</li>
+							<li><strong>Streamlined Sales Process:</strong> Leads began completing registrations independently ahead of their sales calls, improving productivity and reducing manual intervention.</li>
+							<li><strong>Adopted by Enterprise Client:</strong> The multi-step flow framework was successfully adopted by another enterprise loyalty client after launch.</li>
+						</ul>
+					</div>
+					<!-- Learnings Section -->
+					<h3 class="case-study-heading">Learnings: Broad Lessons from User-Centric Design</h3>
+					<div class="case-study-content">
+						<ul>
+							<li><strong>Focus on Incremental Wins:</strong> Simplifying one aspect of the workflow can significantly improve overall user engagement and satisfaction.</li>
+							<li><strong>Leverage Best Practices:</strong> Quick implementation based on best practices can yield immediate results, with opportunities to refine later.</li>
+							<li><strong>Data-Driven Insights:</strong> Tools like Google Analytics and Hot Jar provide actionable insights that directly inform effective design changes.</li>
+							<li><strong>Reusing Existing Features:</strong> Reusing existing system features creatively to solve new problems can save time and resources while delivering impactful solutions.</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Contact Section -->
+				<section id="contact-me" class="cta-section">
+					<div class="cta-container">
+						<h2>Interested in Working Together?</h2>
+						<p>Let's create something extraordinary.</p>
+						<div class="contact-links">
+							<a href="mailto:bparton31.jobs@gmail.com" aria-label="Email Me!" class="contact-link">
+								<i class="fas fa-envelope"></i> Email Me
+							</a>
+							<a href="https://www.linkedin.com/in/brian-parton/" aria-label="Find Me On LinkedIn" target="_blank" class="contact-link">
+								<i class="fab fa-linkedin"></i> Connect on LinkedIn
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="portfolio-footer">
+				<p>All visuals and workflows showcased on this portfolio were created by me using Figma and Draw.io.</p>
+				<p>
+					© <span id="current-year"></span> Brian Parton.
+					<a href="privacy.html" aria-label="Go to Privacy Page" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+				</p>
+			</footer>
+			<!-- JavaScript for the hamburger menu -->
+			<script>
+				document.addEventListener("DOMContentLoaded", () => {
+					const targetSection = document.querySelector("#load");
+					if (targetSection) {
+						targetSection.scrollIntoView({ behavior: "smooth" });
+					}
+				});
 
-		    document.getElementById("current-year").textContent = new Date().getFullYear();
+				document.getElementById("current-year").textContent = new Date().getFullYear();
 
-    		const hamburger = document.querySelector('.hamburger-menu');
-		    const navMenu = document.querySelector('.header-nav ul');
-		    hamburger.addEventListener('click', () => {
-        		navMenu.classList.toggle('active');
-    		});
+				const hamburger = document.querySelector('.hamburger-menu');
+				const navMenu = document.querySelector('.header-nav ul');
+				hamburger.addEventListener('click', () => {
+					navMenu.classList.toggle('active');
+				});
 
-document.addEventListener("DOMContentLoaded", () => {
-    const fullImageContainer = document.getElementById("full-image-container");
+				document.addEventListener("DOMContentLoaded", () => {
+					const fullImageContainer = document.getElementById("full-image-container");
 
-    // Ensure the modal is hidden on page load
-    fullImageContainer.style.display = "none";
+					// Ensure the modal is hidden on page load
+					fullImageContainer.style.display = "none";
 
-    // Functions to show and hide the modal
-    function showImage(imageSrc, captionText) {
-        const fullImage = document.getElementById("full-image");
-        const fullImageCaption = document.getElementById("full-image-caption");
+					// Functions to show and hide the modal
+					function showImage(imageSrc, captionText) {
+						const fullImage = document.getElementById("full-image");
+						const fullImageCaption = document.getElementById("full-image-caption");
 
-        // Set the image source and caption
-        fullImage.src = imageSrc;
-        fullImageCaption.textContent = captionText;
+						// Set the image source and caption
+						fullImage.src = imageSrc;
+						fullImageCaption.textContent = captionText;
 
-        // Show the modal and blur the background
-        document.body.classList.add("modal-active");
-        fullImageContainer.style.display = "flex"; // Make modal visible
-    }
+						// Show the modal and blur the background
+						document.body.classList.add("modal-active");
+						fullImageContainer.style.display = "flex"; // Make modal visible
+					}
 
-    function closeImage() {
-        // Hide the modal and remove blur
-        document.body.classList.remove("modal-active");
-        fullImageContainer.style.display = "none"; // Hide modal
-    }
+					function closeImage() {
+						// Hide the modal and remove blur
+						document.body.classList.remove("modal-active");
+						fullImageContainer.style.display = "none"; // Hide modal
+					}
 
-    // Attach close event to modal background
-    fullImageContainer.addEventListener("click", (event) => {
-        const modalContent = document.querySelector(".modal-content");
-        if (!modalContent.contains(event.target)) {
-            closeImage();
-        }
-    });
+					// Attach close event to modal background
+					fullImageContainer.addEventListener("click", (event) => {
+						const modalContent = document.querySelector(".modal-content");
+						if (!modalContent.contains(event.target)) {
+							closeImage();
+						}
+					});
 
-    // Expose functions globally if needed (for onclick in HTML)
-    window.showImage = showImage;
-    window.closeImage = closeImage;
-});
+					// Expose functions globally if needed (for onclick in HTML)
+					window.showImage = showImage;
+					window.closeImage = closeImage;
+				});
 
-    		
-    		window.addEventListener('scroll', () => {
-			    const scrolled = document.documentElement.scrollTop || document.body.scrollTop;
-			    const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			    const percentageScrolled = Math.round((scrolled / totalHeight) * 100);
+				window.addEventListener('scroll', () => {
+					const scrolled = document.documentElement.scrollTop || document.body.scrollTop;
+					const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+					const percentageScrolled = Math.round((scrolled / totalHeight) * 100);
 
-			    // Add your Google Analytics scroll tracking here
-			    gtag('event', 'scroll', {
-			        'event_category': 'Engagement',
-			        'event_label': 'Scroll Depth',
-			        'value': 'percentageScrolled'
-			    });
-			});
-		</script>
+					// Add your Google Analytics scroll tracking here
+					gtag('event', 'scroll', {
+						'event_category': 'Engagement',
+						'event_label': 'Scroll Depth',
+						'value': 'percentageScrolled'
+					});
+				});
+			</script>
 		</div>
 	</body>
 </html>
