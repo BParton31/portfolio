@@ -3,6 +3,7 @@
     --secondary-color: #000000; /* Black for nav bars and footer */
     --background-color: #F7F7F7; /* Light gray for page background */
     --text-color: #111111; /* Neutral dark gray for text */
+    --text-secondary-color: #777; /* Dark gray for a secondary text color, like on captions */
     --hover-color: #F53A1D; /* Slightly darker hue for hover */
     --white: #FFFFFF; /* White for content and highlights */
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default box shadow */
@@ -429,8 +430,8 @@ footer button:hover {
 
 .case-study h3 {
     font-size: 20px;
-    font-weight: 400;
-    color: #666;
+    font-weight: 600;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -458,7 +459,7 @@ footer button:hover {
     max-width: 100%;
     display: block;
     margin: 0 auto auto auto;
-    border: 1px solid #FF6F00; /* Burnt orange */
+    border: 1px solid var(--hover-color); /* Burnt orange */
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -469,7 +470,7 @@ footer button:hover {
     margin-top: 10px;
     text-align: center;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary-color);
     font-family: "Open Sans", sans-serif;
 }
 
@@ -532,13 +533,13 @@ body.modal-active .content-wrapper {
 .full-image-container img {
     max-width: 100%; /* Ensure the image fits */
     max-height: 80vh; /* Prevent it from overflowing vertically */
-    border: 2px solid #FF6F00; /* Burnt orange border for styling */
+    border: 2px solid var(--hover-color); /* Burnt orange border for styling */
     border-radius: 8px; /* Rounded corners */
 }
 
 /* Style for the caption */
 .full-image-container p {
-    color: white;
+    color: var(--white);
     margin-top: 10px;
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
@@ -549,8 +550,8 @@ body.modal-active .content-wrapper {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #FF6F00;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     padding: 8px 12px;
@@ -561,7 +562,7 @@ body.modal-active .content-wrapper {
 }
 
 #close-preview-button:hover {
-    background-color: #cc5800;
+    background-color: var(--hover-color);
 }
 
 /* Disable body scrolling when modal is active */
@@ -573,14 +574,14 @@ body.modal-active {
 .case-study-hook {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FF6F00; /* Accent color */
+    color: var(--primary-color);
     text-align: center;
     margin: 20px 0;
 }
 
 .case-study-hook .highlight-hook {
     font-weight: bold; /* Make the text bold */
-    color: #FF7F50; /* Use orange color for emphasis */
+    color: var(--primary-color);
     font-size: 1.1rem; /* Slightly larger text for prominence */
 }
 
@@ -597,12 +598,12 @@ body.modal-active {
 }
   
 .ind-container .button-container a:visited {
-      color: white;
+      color: var(--white);
 }
   
 .ind-container .view-button {
-    background-color: #FF4500; /* Orange */
-    color: white; /* White text */
+    background-color: var(--primary-color);
+    color: var(--white);
     border: none;
     border-radius: 0; 
     height: 40px;
@@ -614,7 +615,7 @@ body.modal-active {
 }
   
 .ind-container .view-button:hover {
-    background-color: #F53A1D; /* Slightly darker orange */
+    background-color: var(--hover-color)
 }
   
 .ind-container .dropdown-content {
@@ -622,7 +623,7 @@ body.modal-active {
     position: absolute;
     top: calc(100%); /* Below the button */
     left: 0;
-    background-color: #FF4500; /* Orange */
+    background-color: var(--primary-color);
     border-radius: 5px;
     padding: 5px 0;
     z-index: 10;
@@ -631,7 +632,7 @@ body.modal-active {
 }
   
 .ind-container .dropdown-content a {
-    color: white; /* White text */
+    color: var(--white);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -640,11 +641,11 @@ body.modal-active {
 }
   
 .ind-container .dropdown-content a:hover {
-    background-color: #F53A1D; /* Slightly darker orange on hover */
+    background-color: var(--hover-color); /* Slightly darker orange on hover */
 }
 
 .ind-container .dropdown-content p {
-    color: white; /* White text */
+    color: var(--white); /* White text */
     text-decoration: none;
     padding: 0px 20px;
     display: block;
@@ -667,7 +668,7 @@ body.modal-active {
 }
   
 .ind-container .dropdown-btn:hover {
-    background-color: #555; /* Slightly lighter gray */
+    background-color: var(--text-secondary-color); /* Slightly lighter gray */
 }
 
 /* Portfolio - Case Studies section */
@@ -690,9 +691,9 @@ body.modal-active {
     display: flex;
     align-items: center;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap; /* Allow content to wrap on smaller screens */
     text-align: center;
@@ -715,13 +716,13 @@ body.modal-active {
   
 .case-study-icontent h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
   
 .case-study-icontent p {
     font-size: 1rem;
-    color: #666;
+    color: var(--text-secondary-color);
     margin: 0;
 }  
 
