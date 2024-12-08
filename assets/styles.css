@@ -675,7 +675,7 @@ body.modal-active {
 .case-studies-section {
     max-width: 100%; /* Full-width for the section container */
     background-color: var(--background-color); /* Match background color */
-    padding: 40px 20px; 
+    padding: 20px 20px; 
 }
   
 .case-studies-section h2 {
@@ -687,16 +687,14 @@ body.modal-active {
   
 .case-study-brief {
     max-width: 100%; 
-    margin: 0 auto; /* Center align and add spacing between items */
+    margin: 10px auto; /* Center align and add spacing between items */
     display: flex;
-    align-items: center;
     padding: 15px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-    text-align: center;
 }
   
 .case-study-brief img {
@@ -706,7 +704,8 @@ body.modal-active {
     object-fit: cover;
     margin-right: 20px;
     margin-bottom: 15px;
-    border-radius: 8px;
+    border: 2px solid var(--hover-color); /* Burnt orange border for styling */
+    border-radius: 8px; /* Rounded corners */
 }
   
 .case-study-icontent {
@@ -718,12 +717,13 @@ body.modal-active {
     font-size: 1.5rem;
     color: var(--text-color);
     margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
 }
   
 .case-study-icontent p {
     font-size: 1rem;
     color: var(--text-secondary-color);
-    margin: 0;
 }  
 
 .case-study-link {
