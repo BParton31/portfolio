@@ -895,4 +895,16 @@ body.modal-active {
     .button-container {
         padding: 10px 0;
     }
+
+    .case-study-brief img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .thumbnail-container img {
+        height: 200px; /* Adjust to your desired height */
+        object-fit: cover;
+        width: auto; /* Ensures aspect ratio is maintained */
+    }
 }
