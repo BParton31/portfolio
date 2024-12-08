@@ -141,12 +141,19 @@ button:hover {
 
 /* Contact Section */
 .cta-section {
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: var(--primary-color); /* Dark background */
     color: var(--white); /* White text for contrast */
     padding: 60px 20px;
     border-radius: 10px;
     text-align: center; /* Centers text horizontally */
     box-shadow: var(--box-shadow); /* Adds a slight shadow for depth */
+}
+
+.cta-section.portfolio {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .cta-section h2 {
@@ -263,7 +270,6 @@ footer button:hover {
 /* Hero Section */
 .hero {
     width: 100%; /* Full-width for the section container */
-    max-height: 225px;
     background-color: var(--secondary-color); /* Black */
     color: var(--white); /* White text */
     text-align: center;
@@ -372,11 +378,14 @@ footer button:hover {
     list-style-type: disc;
     color: var(--text-color);
     padding-left: 20px;
+    line-height: 1.4;
+    font-size: 1rem;
 }
 
 .content ul li {
     margin-bottom: 10px;
     margin-left: 20px; /* Adds spacing between the bullet and text */
+    margin-right: 20px;
     line-height: 1.4;
     font-size: 1rem;
 }
