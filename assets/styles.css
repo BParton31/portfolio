@@ -780,54 +780,109 @@ body.modal-active {
 }
 
 
-
-
-
-
-/* Additional Sidebar Adjustments for Responsive Design */
+/* Enhanced Mobile Styling */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%; /* Full width for smaller screens */
-        height: auto; /* Adjust height to content */
-        position: static; /* Remove fixed positioning */
-        display: none;
-    }
-
-	.content {
-        width: 100%; /* Full width on small screens */
-        margin-left: 0; /* Align with sidebar */
-    }
-
+    /* Main Content */
     .main-content {
+        margin: 0 auto; /* Center align */
+        width: 100%; /* Full width for small screens */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .content {
+        padding: 10px; /* Clean up padding for better alignment */
+        margin: 0 auto;
+        width: 100%; /* Ensure full width */
+    }
+
+    /* Sidebar Adjustments */
+    .sidebar {
+        display: none; /* Hide sidebar on small screens */
+        width: 0;
+    }
+
+    /* Case Studies Content */
+    .case-studies-content {
+        margin: 0;
+        padding: 15px; /* Add padding for spacing */
+        width: 100%; /* Use full screen width */
+        box-sizing: border-box; /* Ensure padding doesn't break layout */
+    }
+
+    .case-studies-content img {
+        width: 100%; /* Scale images to fit screen */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto;
+        display: block; /* Center images */
+    }
+
+    /* Remove Sidebar Impact */
+    .case-study,
+    .case-studies-section,
+    .content,
+    .portfolio-layout.brian {
+        padding: 10px; /* Add consistent padding */
         margin-left: 0;
+    }
+
+    .layout-container {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+        font-size: 2.5rem; /* Large enough for usability */
+        z-index: 1000; /* Ensure it’s above other elements */
+        color: var(--primary-color); /* Match design */
+        background-color: transparent; /* No background */
+        border: none; /* Remove border */
+        padding: 5px; /* Add padding for touch target */
+    }    
+
+    /* Header Navigation */
+    .header-nav {
+        height: 50px;
+        padding: 5px 0;
+        justify-content: flex-start;
     }
 
     .header-nav ul {
         display: none;
         flex-direction: column;
+        background-color: var(--secondary-color);
+        width: 100%; /* Full width for nav items */
+        padding: 15px; /* Add padding */
+        box-sizing: border-box;
     }
 
     .header-nav ul.active {
         display: flex;
+        top: 75px;
+        position: relative;
     }
 
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-        background-color: var(--secondary-color);
-        color: var(--white);
-        border: none;
-        font-size: 1.5rem;
+    .header-nav ul li {
+        margin: 10px 0;
+        text-align: center;
     }
 
+    /* Footer */
     footer {
-        padding: 15px 10px; /* Adjust padding for smaller screens */
+        padding: 15px 10px;
+        text-align: center;
     }
-    
+
     footer button {
-        font-size: 0.9rem; /* Reduce button size */
-        padding: 8px 12px; /* Adjust padding */
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .portfolio-layout.brian h1 {
+        padding-top: 30px;
+    }
+
+    .button-container {
+        padding: 10px 0;
     }
 }
-
